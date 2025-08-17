@@ -85,3 +85,7 @@ submissions/
 
 # To force-include a specific file, add a negate rule below, e.g.:
 # !path/to/allowed-small-file.csv
+
+# ===== Secrets =====
+.env
+.env.*
