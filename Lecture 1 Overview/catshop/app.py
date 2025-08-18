@@ -12,7 +12,7 @@ from flask import (
 
 from rich import print
 
-from web_agent_site.engine.engine import (
+from cat_shop.engine.engine import (
     load_products,
     init_search_engine,
     convert_web_app_string_to_var,
@@ -21,14 +21,14 @@ from web_agent_site.engine.engine import (
     map_action_to_html,
     END_BUTTON
 )
-from web_agent_site.engine.goal import get_reward, get_goals
-from web_agent_site.utils import (
+from cat_shop.engine.goal import get_reward, get_goals
+from cat_shop.utils import (
     generate_mturk_code,
     setup_logger,
     DEFAULT_FILE_PATH,
     DEBUG_PROD_SIZE,
 )
-from web_agent_site.cat_classifier import get_cat_classifier, CAT_CATEGORIES
+from cat_shop.cat_classifier import get_cat_classifier, CAT_CATEGORIES
 
 app = Flask(__name__)
 

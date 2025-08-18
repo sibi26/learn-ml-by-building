@@ -22,9 +22,9 @@ CAT_CATEGORIES = {
 }
 
 class CatClassifier:
-    def __init__(self, model_path="../models/gemma-cat-lora"):
+    def __init__(self, model_path="models/gemma-cat-lora"):
         """Initialize the cat classifier with Gemma-3 model"""
-        self.model_path = Path(model_path)
+        self.model_path = Path(__file__).parent.parent / model_path  # Absolute path from project root
         self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
         self.model = None
         self.tokenizer = None
@@ -34,7 +34,7 @@ class CatClassifier:
         """Load the fine-tuned Gemma-3 model"""
         try:
             # Load base model and tokenizer
-            base_model = "google/gemma-2b"  # Using 2b instead of 270m for better performance
+            base_model = "google/gemma-3-270m"  # Use Gemma-3 270m
             self.tokenizer = AutoTokenizer.from_pretrained(base_model)
             
             # Check if LoRA weights exist
@@ -43,7 +43,7 @@ class CatClassifier:
                 base_model_obj = AutoModelForCausalLM.from_pretrained(
                     base_model,
                     torch_dtype=torch.float16 if torch.cuda.is_available() else torch.float32,
-                    device_map="auto"
+                    device_map="auto" if torch.cuda.is_available() else None
                 )
                 self.model = PeftModel.from_pretrained(base_model_obj, str(self.model_path))
             else:
@@ -52,7 +52,7 @@ class CatClassifier:
                 self.model = AutoModelForCausalLM.from_pretrained(
                     base_model,
                     torch_dtype=torch.float16 if torch.cuda.is_available() else torch.float32,
-                    device_map="auto"
+                    device_map="auto" if torch.cuda.is_available() else None
                 )
             
             # Add padding token if needed
