@@ -1,4 +1,5 @@
 import argparse, json, logging, random
+import re
 from pathlib import Path
 from ast import literal_eval
 
@@ -12,7 +13,7 @@ from flask import (
 
 from rich import print
 
-from cat_shop.engine.engine import (
+from catshop.engine.engine import (
     load_products,
     init_search_engine,
     convert_web_app_string_to_var,
@@ -21,14 +22,14 @@ from cat_shop.engine.engine import (
     map_action_to_html,
     END_BUTTON
 )
-from cat_shop.engine.goal import get_reward, get_goals
-from cat_shop.utils import (
+from catshop.engine.goal import get_reward, get_goals
+from catshop.utils import (
     generate_mturk_code,
     setup_logger,
     DEFAULT_FILE_PATH,
     DEBUG_PROD_SIZE,
 )
-from cat_shop.cat_classifier import get_cat_classifier, CAT_CATEGORIES
+from catshop.cat_classifier import get_cat_classifier, CAT_CATEGORIES
 
 app = Flask(__name__)
 
@@ -39,6 +40,18 @@ product_prices = None
 attribute_to_asins = None
 goals = None
 weights = None
+
+# Make human/synthetic goals sound cat-like for the UI
+def catify_instruction(text: str) -> str:
+    if not text:
+        return "Purr-quest: find something delightful for a distinguished feline."
+    s = text
+    # Replace leading 'Find me' (case-insensitive)
+    s = re.sub(r'(?i)^find me', 'Find for this very picky cat', s)
+    # Only add comma before 'and' if not already preceded by a comma
+    # e.g., '..., and ...' stays the same; '... and ...' -> '..., and ...'
+    s = re.sub(r'(?<![,]) and ', ', and ', s)
+    return f"Purr-quest: {s} 😺"
 
 user_sessions = dict()
 user_log_dir = None
@@ -60,10 +73,11 @@ def index(session_id):
         all_products, product_item_dict, product_prices, attribute_to_asins = \
             load_products(
                 filepath=DEFAULT_FILE_PATH,
-                num_products=DEBUG_PROD_SIZE
+                num_products=DEBUG_PROD_SIZE,
+                human_goals=False  # Bypass items_human_ins.json dependency
             )
         search_engine = init_search_engine(num_products=DEBUG_PROD_SIZE)
-        goals = get_goals(all_products, product_prices)
+        goals = get_goals(all_products, product_prices, human_goals=False)
         random.seed(233)
         random.shuffle(goals)
         weights = [goal['weight'] for goal in goals]
@@ -71,18 +85,18 @@ def index(session_id):
     if session_id not in user_sessions and 'fixed' in session_id:
         goal_dix = int(session_id.split('_')[-1])
         goal = goals[goal_dix]
-        instruction_text = goal['instruction_text']
+        instruction_text = catify_instruction(goal['instruction_text'])
         user_sessions[session_id] = {'goal': goal, 'done': False}
         if user_log_dir is not None:
             setup_logger(session_id, user_log_dir)
     elif session_id not in user_sessions:
         goal = random.choices(goals, weights)[0]
-        instruction_text = goal['instruction_text']
+        instruction_text = catify_instruction(goal['instruction_text'])
         user_sessions[session_id] = {'goal': goal, 'done': False}
         if user_log_dir is not None:
             setup_logger(session_id, user_log_dir)
     else:
-        instruction_text = user_sessions[session_id]['goal']['instruction_text']
+        instruction_text = catify_instruction(user_sessions[session_id]['goal']['instruction_text'])
 
     if request.method == 'POST' and 'search_query' in request.form:
         keywords = request.form['search_query'].lower().split(' ')
@@ -105,6 +119,17 @@ def index(session_id):
         instruction_text=instruction_text,
     )
 
+
+@app.route('/cat_debug', methods=['GET'])
+def cat_debug():
+    clf = get_cat_classifier()
+    info = {
+        'using_lora': getattr(clf, 'using_lora', None),
+        'model_path': str(getattr(clf, 'model_path', '')),
+        'usage_counts': getattr(clf, 'usage_counts', {}),
+        'category_counts': getattr(clf, 'category_counts', {}),
+    }
+    return jsonify(info)
 
 @app.route(
     '/search_results/<session_id>/<keywords>/<page>',
@@ -130,6 +155,20 @@ def search_results(session_id, keywords, page):
             product.get('Description', '')
         )
         product['cat_classification'] = classification
+    # Debug: print classifier status
+    try:
+        print(
+            "CAT DEBUG | using_lora=",
+            getattr(cat_classifier, 'using_lora', None),
+            " model_path=",
+            getattr(cat_classifier, 'model_path', None),
+            " usage_counts=",
+            getattr(cat_classifier, 'usage_counts', None),
+            " category_counts=",
+            getattr(cat_classifier, 'category_counts', None),
+        )
+    except Exception:
+        pass
     html = map_action_to_html(
         'search',
         session_id=session_id,
@@ -305,6 +344,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="WebShop flask app backend configuration")
     parser.add_argument("--log", action='store_true', help="Log actions on WebShop in trajectory file")
     parser.add_argument("--attrs", action='store_true', help="Show attributes tab in item page")
+    parser.add_argument("--port", type=int, default=3000, help="Port to run the Flask app on (default: 3000)")
 
     args = parser.parse_args()
     if args.log:
@@ -312,4 +352,4 @@ if __name__ == "__main__":
         user_log_dir.mkdir(parents=True, exist_ok=True)
     SHOW_ATTRS_TAB = args.attrs
 
-    app.run(host='0.0.0.0', port=3000)
+    app.run(host='0.0.0.0', port=args.port)

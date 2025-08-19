@@ -65,6 +65,6 @@ def main():
 
 if __name__ == '__main__':
     """
-    python -m web_agent_site.attributes.annotate
+    python -m catshop.attributes.annotate
     """
     main()

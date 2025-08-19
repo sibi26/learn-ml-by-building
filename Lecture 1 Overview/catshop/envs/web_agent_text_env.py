@@ -11,7 +11,7 @@ from bs4 import BeautifulSoup
 from bs4.element import Comment
 from collections import defaultdict
 from flask import Flask
-from web_agent_site.engine.engine import (
+from catshop.engine.engine import (
     load_products,
     init_search_engine,
     get_top_n_product_from_keywords,
@@ -21,8 +21,8 @@ from web_agent_site.engine.engine import (
     ACTION_TO_TEMPLATE,
     END_BUTTON, NEXT_PAGE, PREV_PAGE, BACK_TO_SEARCH,
 )
-from web_agent_site.engine.goal import get_reward, get_goals
-from web_agent_site.utils import (
+from catshop.engine.goal import get_reward, get_goals
+from catshop.utils import (
     DEFAULT_FILE_PATH,
     FEAT_CONV,
     FEAT_IDS,

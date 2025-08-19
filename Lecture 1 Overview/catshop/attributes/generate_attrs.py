@@ -158,7 +158,7 @@ def generate_attrs(corpus_by_cat, k, save_name):
 
 if __name__ == '__main__':
     """
-    python -m web_agent_site.attributes.generate_attrs
+    python -m catshop.attributes.generate_attrs
 
     Inspect in notebooks/attributes.ipynb.
     """

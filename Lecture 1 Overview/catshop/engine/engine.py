@@ -1,4 +1,5 @@
 """
+Modified engine with rank-bm25 fallback for Apple Silicon compatibility
 """
 import os
 import re
@@ -8,14 +9,21 @@ from collections import defaultdict
 from ast import literal_eval
 from decimal import Decimal
 
-import cleantext
 from tqdm import tqdm
 from rank_bm25 import BM25Okapi
 from flask import render_template_string
 from rich import print
-from pyserini.search.lucene import LuceneSearcher
 
-from web_agent_site.utils import (
+# Try to import pyserini, fall back to BM25 if not available
+try:
+    from pyserini.search.lucene import LuceneSearcher
+    PYSERINI_AVAILABLE = True
+    print("✅ Using Pyserini/Lucene search engine")
+except ImportError:
+    PYSERINI_AVAILABLE = False
+    print("📚 Using BM25 search engine (pyserini not available)")
+
+from catshop.utils import (
     BASE_DIR,
     DEFAULT_FILE_PATH,
     DEFAULT_REVIEW_PATH,
@@ -166,9 +174,15 @@ def get_top_n_product_from_keywords(
         top_n_products = [p for p in all_products if p['query'] == query]
     else:
         keywords = ' '.join(keywords)
-        hits = search_engine.search(keywords, k=SEARCH_RETURN_N)
-        docs = [search_engine.doc(hit.docid) for hit in hits]
-        top_n_asins = [json.loads(doc.raw())['id'] for doc in docs]
+        if PYSERINI_AVAILABLE:
+            hits = search_engine.search(keywords, k=SEARCH_RETURN_N)
+            docs = [search_engine.doc(hit.docid) for hit in hits]
+            top_n_asins = [json.loads(doc.raw())['id'] for doc in docs]
+        else:
+            # BM25 fallback search
+            hits = search_engine.search(keywords, k=SEARCH_RETURN_N)
+            top_n_asins = [hit.docid for hit in hits]
+        
         top_n_products = [product_item_dict[asin] for asin in top_n_asins if asin in product_item_dict]
     return top_n_products
 
@@ -192,18 +206,96 @@ def generate_product_prices(all_products):
     return product_prices
 
 
+class BM25SearchEngine:
+    """Fallback search engine using BM25 when pyserini is not available"""
+    def __init__(self, products):
+        # Create corpus from product titles and descriptions
+        self.products = products
+        corpus = []
+        self.doc_ids = []
+        
+        for p in products:
+            # Combine various text fields for searching
+            text_parts = []
+            if p.get('name'):
+                text_parts.append(p['name'])
+            if p.get('Title'):
+                text_parts.append(p['Title'])
+            if p.get('Description'):
+                text_parts.append(p['Description'][:500])  # Limit description length
+            if p.get('category'):
+                text_parts.append(p['category'])
+            if p.get('query'):
+                text_parts.append(p['query'])
+            
+            text = ' '.join(text_parts).lower()
+            corpus.append(text.split())
+            self.doc_ids.append(p.get('asin'))
+        
+        print(f"Building BM25 index for {len(corpus)} products...")
+        self.bm25 = BM25Okapi(corpus)
+        print("BM25 index ready!")
+    
+    def search(self, query, k=50):
+        # Simple BM25 search
+        query_tokens = query.lower().split()
+        scores = self.bm25.get_scores(query_tokens)
+        
+        # Get top-k results
+        top_indices = sorted(range(len(scores)), key=lambda i: scores[i], reverse=True)[:k]
+        
+        # Return mock hits compatible with pyserini interface
+        class Hit:
+            def __init__(self, docid, score):
+                self.docid = docid
+                self.score = score
+        
+        hits = [Hit(self.doc_ids[i], scores[i]) for i in top_indices if i < len(self.doc_ids)]
+        return hits
+    
+    def doc(self, docid):
+        """Mock document method for compatibility"""
+        class Doc:
+            def __init__(self, docid):
+                self.docid = docid
+            def raw(self):
+                return json.dumps({'id': docid})
+        return Doc(docid)
+
+
 def init_search_engine(num_products=None):
-    if num_products == 100:
-        indexes = 'indexes_100'
-    elif num_products == 1000:
-        indexes = 'indexes_1k'
-    elif num_products == 100000:
-        indexes = 'indexes_100k'
-    elif num_products is None:
-        indexes = 'indexes'
+    if PYSERINI_AVAILABLE:
+        # Original pyserini implementation
+        if num_products == 100:
+            indexes = 'indexes_100'
+        elif num_products == 1000:
+            indexes = 'indexes_1k'
+        elif num_products == 100000:
+            indexes = 'indexes_100k'
+        elif num_products is None:
+            indexes = 'indexes'
+        else:
+            raise NotImplementedError(f'num_products being {num_products} is not supported yet.')
+        
+        index_path = os.path.join(BASE_DIR, f'../search_engine/{indexes}')
+        if os.path.exists(index_path):
+            search_engine = LuceneSearcher(index_path)
+        else:
+            print(f"⚠️ Pyserini index not found at {index_path}, falling back to BM25")
+            # Load products and create BM25 engine
+            with open(DEFAULT_FILE_PATH) as f:
+                products = json.load(f)
+            if num_products:
+                products = products[:num_products]
+            search_engine = BM25SearchEngine(products)
     else:
-        raise NotImplementedError(f'num_products being {num_products} is not supported yet.')
-    search_engine = LuceneSearcher(os.path.join(BASE_DIR, f'../search_engine/{indexes}'))
+        # Fallback: Create a BM25-based search engine
+        with open(DEFAULT_FILE_PATH) as f:
+            products = json.load(f)
+        if num_products:
+            products = products[:num_products]
+        search_engine = BM25SearchEngine(products)
+    
     return search_engine
 
 
@@ -242,13 +334,15 @@ def load_products(filepath, num_products=None, human_goals=True):
     #     all_reviews[r['asin']] = r['reviews']
     #     all_ratings[r['asin']] = r['average_rating']
 
+    # Always load default attributes
+    with open(DEFAULT_ATTR_PATH) as f:
+        attributes = json.load(f)
+    # Load human attributes only when requested
     if human_goals:
         with open(HUMAN_ATTR_PATH) as f:
             human_attributes = json.load(f)
-    with open(DEFAULT_ATTR_PATH) as f:
-        attributes = json.load(f)
-    with open(HUMAN_ATTR_PATH) as f:
-        human_attributes = json.load(f)
+    else:
+        human_attributes = {}
     print('Attributes loaded.')
 
     asins = set()
@@ -321,16 +415,6 @@ def load_products(filepath, num_products=None, human_goals=True):
                 options[option_name] = option_values
         products[i]['options'] = options
         products[i]['option_to_image'] = option_to_image
-
-        # without color, size, price, availability
-        # if asin in attributes and 'attributes' in attributes[asin]:
-        #     products[i]['Attributes'] = attributes[asin]['attributes']
-        # else:
-        #     products[i]['Attributes'] = ['DUMMY_ATTR']
-        # products[i]['instruction_text'] = \
-        #     attributes[asin].get('instruction', None)
-        # products[i]['instruction_attributes'] = \
-        #     attributes[asin].get('instruction_attributes', None)
 
         # without color, size, price, availability
         if asin in attributes and 'attributes' in attributes[asin]:

@@ -13,7 +13,7 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import ElementNotInteractableException
-from web_agent_site.engine.engine import parse_action, END_BUTTON
+from catshop.engine.engine import parse_action, END_BUTTON
 
 class WebAgentSiteEnv(gym.Env):
     """Gym environment for HTML mode of WebShop environment"""

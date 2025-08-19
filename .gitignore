@@ -89,3 +89,19 @@ submissions/
 # ===== Secrets =====
 .env
 .env.*
+
+# ===== Lecture 1 Overview: exclude specific drafts/notes =====
+Lecture 1 Overview/catshop_notebook.md
+Lecture 1 Overview/01-Catshop (1).md
+Lecture 1 Overview/active-learning-notebook.md
+Lecture 1 Overview/catshop-slides-notebook.md
+Lecture 1 Overview/ml_lecture1_complete.md
+Lecture 1 Overview/ml_prelecture_setup.md
+Lecture 1 Overview/temp.md
+Lecture 1 Overview/verification-notebook.md
+
+# ===== Lecture 1 Overview: generated artifacts =====
+Lecture 1 Overview/models/active_learning_checkpoints/
+Lecture 1 Overview/models/lecture_assets/
+Lecture 1 Overview/web_agent_site/
+Lecture 1 Overview/catshop/models/gemma-cat-lora/

@@ -3,13 +3,27 @@ Functions for specifying goals and reward calculations.
 """
 import itertools
 import random
-import spacy
+import re
 from collections import defaultdict
 from rich import print
 from thefuzz import fuzz
-from web_agent_site.engine.normalize import normalize_color
+from catshop.engine.normalize import normalize_color
 
-nlp = spacy.load("en_core_web_sm")
+# spaCy is optional; fall back to simple token extraction if unavailable
+try:
+    import spacy  # type: ignore
+    try:
+        nlp = spacy.load("en_core_web_sm")
+    except Exception:
+        nlp = None
+except Exception:
+    spacy = None
+    nlp = None
+
+def _simple_nouns(text: str):
+    """Very simple fallback: return lowercase alphabetic tokens as proxy for nouns."""
+    tokens = re.findall(r"[A-Za-z]+", text or "")
+    return [t.lower() for t in tokens if len(t) > 1]
 
 PRICE_RANGE = [10.0 * i for i in range(1, 100)]
 
@@ -140,11 +154,14 @@ def get_type_reward(purchased_product, goal):
     purchased_type = purchased_product['name']
     desired_type = goal['name']
 
-    purchased_type_parse = nlp(purchased_type)
-    desired_type_parse = nlp(desired_type)
-
-    purchased_type_parse = [t.text.lower() for t in purchased_type_parse if t.pos_ in ('PNOUN', 'NOUN', 'PROPN')]
-    desired_type_parse = [t.text.lower() for t in desired_type_parse if t.pos_ in ('PNOUN', 'NOUN', 'PROPN')]
+    if nlp is not None:
+        purchased_type_parse_doc = nlp(purchased_type)
+        desired_type_parse_doc = nlp(desired_type)
+        purchased_type_parse = [t.text.lower() for t in purchased_type_parse_doc if t.pos_ in ('PNOUN', 'NOUN', 'PROPN')]
+        desired_type_parse = [t.text.lower() for t in desired_type_parse_doc if t.pos_ in ('PNOUN', 'NOUN', 'PROPN')]
+    else:
+        purchased_type_parse = _simple_nouns(purchased_type)
+        desired_type_parse = _simple_nouns(desired_type)
 
     n_intersect_type = len(
         set(purchased_type_parse) & set(desired_type_parse)
