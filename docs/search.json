@@ -96,54 +96,6 @@
     ]
   },
   {
-    "objectID": "lectures/00-setup.html#setup-instructions",
-    "href": "lectures/00-setup.html#setup-instructions",
-    "title": "Lecture 0: Environment Setup",
-    "section": "🔧 Setup Instructions",
-    "text": "🔧 Setup Instructions\n\nOption 1: Google Colab (Recommended for Beginners)\n\nClick the “Open in Colab” link above\nSign in with your Google account\nYou’re ready to go! No local installation needed\n\n\n\nOption 2: Local Setup\n# Clone the repository\ngit clone https://github.com/jinming99/learn-ml-by-building.git\ncd learn-ml-by-building\n\n# Create virtual environment\npython -m venv ml-env\nsource ml-env/bin/activate  # On Windows: ml-env\\Scripts\\activate\n\n# Install requirements\npip install -r requirements.txt\n\n# Launch Jupyter\njupyter notebook",
-    "crumbs": [
-      "Home",
-      "Module 1: Let's Predict",
-      "L0: Environment Setup"
-    ]
-  },
-  {
-    "objectID": "lectures/00-setup.html#key-concepts",
-    "href": "lectures/00-setup.html#key-concepts",
-    "title": "Lecture 0: Environment Setup",
-    "section": "💡 Key Concepts",
-    "text": "💡 Key Concepts\n\nWhy Environment Setup Matters\n\nReproducibility: Same code works for everyone\nPackage Management: Avoid version conflicts\nCollaboration: Share code that others can run\n\n\n\nTools We’ll Use Throughout the Course\n\nNumPy: Numerical computing\nPandas: Data manipulation\nMatplotlib/Seaborn: Visualization\nScikit-learn: Classical ML algorithms\nPyTorch/TensorFlow: Deep learning",
-    "crumbs": [
-      "Home",
-      "Module 1: Let's Predict",
-      "L0: Environment Setup"
-    ]
-  },
-  {
-    "objectID": "lectures/00-setup.html#verification-checklist",
-    "href": "lectures/00-setup.html#verification-checklist",
-    "title": "Lecture 0: Environment Setup",
-    "section": "✅ Verification Checklist",
-    "text": "✅ Verification Checklist\nComplete these to ensure your setup is working:\n\nPython 3.8+ installed\nCan run Jupyter notebooks\nNumPy and Pandas import successfully\nCan create basic plots with Matplotlib\nGitHub repository cloned/accessible",
-    "crumbs": [
-      "Home",
-      "Module 1: Let's Predict",
-      "L0: Environment Setup"
-    ]
-  },
-  {
-    "objectID": "lectures/00-setup.html#common-issues-solutions",
-    "href": "lectures/00-setup.html#common-issues-solutions",
-    "title": "Lecture 0: Environment Setup",
-    "section": "🚨 Common Issues & Solutions",
-    "text": "🚨 Common Issues & Solutions\n\n\n\n\n\n\nTroubleshooting\n\n\n\nImport errors? → Check your virtual environment is activated\nJupyter not found? → Run pip install jupyter\nGPU not available in Colab? → Runtime → Change runtime type → GPU",
-    "crumbs": [
-      "Home",
-      "Module 1: Let's Predict",
-      "L0: Environment Setup"
-    ]
-  },
-  {
     "objectID": "lectures/00-setup.html#pre-class-preparation",
     "href": "lectures/00-setup.html#pre-class-preparation",
     "title": "Lecture 0: Environment Setup",
@@ -158,6 +110,18 @@
   {
     "objectID": "lectures/01-overview.html",
     "href": "lectures/01-overview.html",
+    "title": "Lecture 1: Welcome to Machine Learning",
+    "section": "",
+    "text": "Welcome to Machine Learning! This course takes a unique “Learn by Building” approach where you’ll implement real ML systems from day one. In today’s hands-on session, we’ll explore the three fundamental paradigms of machine learning—supervised, unsupervised, and active learning—by building CatShop, an e-commerce system that thinks like a cat using Google’s Gemma-3 language model.",
+    "crumbs": [
+      "Home",
+      "Module 1: Let's Predict",
+      "L1: Welcome to ML"
+    ]
+  },
+  {
+    "objectID": "lectures/01-overview.html#overview",
+    "href": "lectures/01-overview.html#overview",
     "title": "Lecture 1: Welcome to Machine Learning",
     "section": "",
     "text": "Welcome to Machine Learning! This course takes a unique “Learn by Building” approach where you’ll implement real ML systems from day one. In today’s hands-on session, we’ll explore the three fundamental paradigms of machine learning—supervised, unsupervised, and active learning—by building CatShop, an e-commerce system that thinks like a cat using Google’s Gemma-3 language model.",
@@ -192,11 +156,23 @@
     ]
   },
   {
-    "objectID": "lectures/01-overview.html#outline",
-    "href": "lectures/01-overview.html#outline",
+    "objectID": "lectures/01-overview.html#interactive-demo",
+    "href": "lectures/01-overview.html#interactive-demo",
     "title": "Lecture 1: Welcome to Machine Learning",
-    "section": "📝 Outline",
-    "text": "📝 Outline\n\nWhat is Machine Learning?\nCourse logistics and policies\nDemos and examples\n\n\nNext: Lecture 2: k-NN →",
+    "section": "Interactive Demo",
+    "text": "Interactive Demo\n\n\n\n\n\n\n🐱 CatShop Web Application\n\n\n\nExperience your trained model in action with the CatShop e-commerce demo, featuring real-time cat perspective classifications, confidence visualization, and interactive chat.\nBuilt upon the WebShop environment with modifications for educational purposes.",
+    "crumbs": [
+      "Home",
+      "Module 1: Let's Predict",
+      "L1: Welcome to ML"
+    ]
+  },
+  {
+    "objectID": "lectures/01-overview.html#acknowledgments-resources",
+    "href": "lectures/01-overview.html#acknowledgments-resources",
+    "title": "Lecture 1: Welcome to Machine Learning",
+    "section": "Acknowledgments & Resources",
+    "text": "Acknowledgments & Resources\n\nCore Technologies\n\nGemma-3 270M: Google’s efficient language model\nPEFT/LoRA: Parameter-efficient fine-tuning\nTransformers: Hugging Face’s model library\n\n\n\nDataset & Environment\n\nWebShop: E-commerce product data and environment\nYao et al., “WebShop: Towards Scalable Real-World Web Interaction with Grounded Language Agents”, NeurIPS 2022\n\n\nNext: Lecture 2: k-Nearest Neighbors →",
     "crumbs": [
       "Home",
       "Module 1: Let's Predict",
@@ -324,18 +300,6 @@
     ]
   },
   {
-    "objectID": "syllabus.html#emergency-preparedness",
-    "href": "syllabus.html#emergency-preparedness",
-    "title": "Course Syllabus",
-    "section": "Emergency Preparedness",
-    "text": "Emergency Preparedness\n\nEmergency Notifications: Sign up for VT Alerts at alerts.vt.edu\nClass Cancellation: Check Canvas announcements and email\nBuilding Evacuation: Follow posted evacuation routes",
-    "crumbs": [
-      "Home",
-      "Course Info",
-      "Syllabus"
-    ]
-  },
-  {
     "objectID": "syllabus.html#tentative-nature-of-syllabus",
     "href": "syllabus.html#tentative-nature-of-syllabus",
     "title": "Course Syllabus",
@@ -345,206 +309,6 @@
       "Home",
       "Course Info",
       "Syllabus"
-    ]
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Machine Learning: Learn by Building",
-    "section": "",
-    "text": "This course takes a hands-on approach to machine learning. You’ll:\n\nBuild real ML systems, not just study theory\nCreate an AI portfolio of mini research papers\nExplain complex concepts simply (teaching = understanding)\nWork with cutting-edge tools while mastering fundamentals\n\nWe believe the best way to understand machine learning is to build it, break it, and rebuild it better."
-  },
-  {
-    "objectID": "index.html#current-week",
-    "href": "index.html#current-week",
-    "title": "Machine Learning: Learn by Building",
-    "section": "",
-    "text": "Week 1: Getting Started\n\n\n\n\nMonday: Complete Environment Setup\nWednesday: Start Lecture 1: ML Overview\nFriday: Introduction to k-NN\n\nNext Deadline: Project 1 Proposal - February 1"
-  },
-  {
-    "objectID": "index.html#quick-links",
-    "href": "index.html#quick-links",
-    "title": "Machine Learning: Learn by Building",
-    "section": "",
-    "text": "Open in GitHub →\nOpen in Colab →\n\n\n\nPiazza Forum →\nOffice Hours: MW 10-11am\n\n\n\nCanvas →\nProject 1 Details →"
-  },
-  {
-    "objectID": "index.html#course-philosophy",
-    "href": "index.html#course-philosophy",
-    "title": "Machine Learning: Learn by Building",
-    "section": "",
-    "text": "This course takes a hands-on approach to machine learning. You’ll:\n\nBuild real ML systems, not just study theory\nCreate an AI portfolio of mini research papers\nExplain complex concepts simply (teaching = understanding)\nWork with cutting-edge tools while mastering fundamentals\n\nWe believe the best way to understand machine learning is to build it, break it, and rebuild it better."
-  },
-  {
-    "objectID": "index.html#learning-path",
-    "href": "index.html#learning-path",
-    "title": "Machine Learning: Learn by Building",
-    "section": "Learning Path",
-    "text": "Learning Path\ngraph LR\n    A[Module 1&lt;br/&gt;Let's Predict] --&gt; B[Module 2&lt;br/&gt;Let's Understand]\n    B --&gt; C[Module 3&lt;br/&gt;Let's Discover]\n    C --&gt; D[Module 4&lt;br/&gt;Let's See & Chat]\n    D --&gt; E[Module 5&lt;br/&gt;Let's Act]\n    E --&gt; F[Module 6&lt;br/&gt;Let's Impact]"
-  },
-  {
-    "objectID": "index.html#getting-started",
-    "href": "index.html#getting-started",
-    "title": "Machine Learning: Learn by Building",
-    "section": "Getting Started",
-    "text": "Getting Started\n\nSet up your environment → Setup Guide\nJoin Piazza for discussions and announcements\nReview the syllabus → Course Policies\nCheck the schedule → Week-by-Week"
-  },
-  {
-    "objectID": "index.html#recent-announcements",
-    "href": "index.html#recent-announcements",
-    "title": "Machine Learning: Learn by Building",
-    "section": "Recent Announcements",
-    "text": "Recent Announcements\n\n\n\n\n\n\nJanuary 15, 2025\n\n\n\nWelcome to ECE 4424! Please complete the environment setup before our first class. Join our Piazza forum using the access code sent via email."
-  },
-  {
-    "objectID": "index.html#course-team",
-    "href": "index.html#course-team",
-    "title": "Machine Learning: Learn by Building",
-    "section": "Course Team",
-    "text": "Course Team\nInstructor: Ming Jin\nEmail: jinming@vt.edu\nOffice Hours: TBD\nTeaching Assistant: Sherawat, Kamal\nEmail: kamals@vt.edu\nOffice Hours: TBD"
-  },
-  {
-    "objectID": "projects/index.html",
-    "href": "projects/index.html",
-    "title": "Projects Overview",
-    "section": "",
-    "text": "Each project is designed to deepen your understanding while building practical skills. You’ll submit mini research papers that demonstrate both technical implementation and critical analysis.",
-    "crumbs": [
-      "Home",
-      "Projects",
-      "Overview"
-    ]
-  },
-  {
-    "objectID": "projects/index.html#project-structure",
-    "href": "projects/index.html#project-structure",
-    "title": "Projects Overview",
-    "section": "",
-    "text": "Each project is designed to deepen your understanding while building practical skills. You’ll submit mini research papers that demonstrate both technical implementation and critical analysis.",
-    "crumbs": [
-      "Home",
-      "Projects",
-      "Overview"
-    ]
-  },
-  {
-    "objectID": "projects/index.html#grading-distribution",
-    "href": "projects/index.html#grading-distribution",
-    "title": "Projects Overview",
-    "section": "Grading Distribution",
-    "text": "Grading Distribution\n\n\n\nProject\nWeight\nDue Date\nFocus Area\n\n\n\n\nProject 1: Foundations\n15%\nFeb 14\nClassical ML algorithms\n\n\nProject 2: Neural Networks\n15%\nMar 21\nDeep learning\n\n\nProject 3: Modern AI\n15%\nApr 4\nRL/Unsupervised/GenAI\n\n\nCapstone Project\n45%\nApr 25\nSelf-directed research",
-    "crumbs": [
-      "Home",
-      "Projects",
-      "Overview"
-    ]
-  },
-  {
-    "objectID": "projects/index.html#project-reports",
-    "href": "projects/index.html#project-reports",
-    "title": "Projects Overview",
-    "section": "Project Reports",
-    "text": "Project Reports\n\nFormat Requirements\n\nLength: 3-5 pages (Projects 1-3), 6-8 pages (Capstone)\nStructure:\n\nIntroduction & Problem Statement\nDataset Description\nMethods & Implementation\nExperiments & Results\nAnalysis & Discussion\nConclusion & Future Work\n\nCode: Submit via GitHub links\nFormat: PDF via Canvas\n\n\n\nEvaluation Criteria\nEach project will be evaluated on:\n\nTechnical Implementation (40%)\n\nCorrectness of algorithms\nCode quality and documentation\nAppropriate use of libraries\n\nExperimental Design (30%)\n\nSystematic evaluation\nAppropriate metrics\nHyperparameter tuning\n\nAnalysis & Insights (20%)\n\nUnderstanding of results\nDiscussion of limitations\nBias-variance analysis where appropriate\n\nPresentation (10%)\n\nClear writing\nEffective visualizations\nProper citations",
-    "crumbs": [
-      "Home",
-      "Projects",
-      "Overview"
-    ]
-  },
-  {
-    "objectID": "projects/index.html#collaboration-policy",
-    "href": "projects/index.html#collaboration-policy",
-    "title": "Projects Overview",
-    "section": "Collaboration Policy",
-    "text": "Collaboration Policy\n\nTeams of 2-3 students allowed for Projects 1-3\nIndividual work required for Capstone\nClear contribution statements required for team projects",
-    "crumbs": [
-      "Home",
-      "Projects",
-      "Overview"
-    ]
-  },
-  {
-    "objectID": "projects/index.html#getting-started",
-    "href": "projects/index.html#getting-started",
-    "title": "Projects Overview",
-    "section": "Getting Started",
-    "text": "Getting Started\n\nReview project descriptions and starter code\nForm teams (if desired) via Piazza\nStart early - these projects require iteration\nUse office hours for guidance",
-    "crumbs": [
-      "Home",
-      "Projects",
-      "Overview"
-    ]
-  },
-  {
-    "objectID": "projects/index.html#resources",
-    "href": "projects/index.html#resources",
-    "title": "Projects Overview",
-    "section": "Resources",
-    "text": "Resources\n\nStarter Code\nAll starter code is available in the main repository: - Project 1 Starter - Project 2 Starter (Coming Soon) - Project 3 Starter (Coming Soon)\n\n\nCompute Resources\n\nGoogle Colab free tier is sufficient for Projects 1-2\nGPU access available for advanced projects\nContact instructors for additional compute needs",
-    "crumbs": [
-      "Home",
-      "Projects",
-      "Overview"
-    ]
-  },
-  {
-    "objectID": "projects/index.html#tips-for-success",
-    "href": "projects/index.html#tips-for-success",
-    "title": "Projects Overview",
-    "section": "Tips for Success",
-    "text": "Tips for Success\n\n\n\n\n\n\nBest Practices\n\n\n\n\nStart Early: ML projects always take longer than expected\nIterate: Your first model won’t be your best\nDocument: Keep notes on what you try and why\nVisualize: A good plot is worth 1000 numbers\nCollaborate: Discuss ideas, but write your own code",
-    "crumbs": [
-      "Home",
-      "Projects",
-      "Overview"
-    ]
-  },
-  {
-    "objectID": "projects/index.html#example-projects",
-    "href": "projects/index.html#example-projects",
-    "title": "Projects Overview",
-    "section": "Example Projects",
-    "text": "Example Projects\n\nPast Successful Projects\n\nImage classification with CNNs on custom datasets\nTime series prediction for energy consumption\nReinforcement learning for game playing\nText generation with fine-tuned transformers\nClustering analysis of social media data\n\n\n\nCapstone Ideas\n\nApply ML to your research area\nReproduce and extend a recent paper\nCreate a novel dataset and benchmark\nCombine multiple techniques for a complex problem\nBuild an interactive ML application\n\n\nReady to start? → Project 1: Foundational Predictive Modeling",
-    "crumbs": [
-      "Home",
-      "Projects",
-      "Overview"
-    ]
-  },
-  {
-    "objectID": "projects/project1.html",
-    "href": "projects/project1.html",
-    "title": "Project 1: Foundations",
-    "section": "",
-    "text": "This is a placeholder page for Project 1. Detailed instructions, rubric, and starter notebooks will be posted here.",
-    "crumbs": [
-      "Home",
-      "Projects",
-      "Project 1: Foundations"
-    ]
-  },
-  {
-    "objectID": "projects/project1.html#deliverables",
-    "href": "projects/project1.html#deliverables",
-    "title": "Project 1: Foundations",
-    "section": "Deliverables",
-    "text": "Deliverables\n\nTo be announced.",
-    "crumbs": [
-      "Home",
-      "Projects",
-      "Project 1: Foundations"
-    ]
-  },
-  {
-    "objectID": "projects/project1.html#timeline",
-    "href": "projects/project1.html#timeline",
-    "title": "Project 1: Foundations",
-    "section": "Timeline",
-    "text": "Timeline\n\nTo be announced.",
-    "crumbs": [
-      "Home",
-      "Projects",
-      "Project 1: Foundations"
     ]
   },
   {
@@ -668,40 +432,176 @@
     ]
   },
   {
-    "objectID": "announcements.html",
-    "href": "announcements.html",
-    "title": "Announcements",
+    "objectID": "projects/project1.html",
+    "href": "projects/project1.html",
+    "title": "Project 1: Foundations",
     "section": "",
-    "text": "Welcome to the course! Please complete environment setup.",
+    "text": "This is a placeholder page for Project 1. Detailed instructions, rubric, and starter notebooks will be posted here.",
     "crumbs": [
       "Home",
-      "Course Info",
-      "Announcements"
+      "Projects",
+      "Project 1: Foundations"
     ]
   },
   {
-    "objectID": "announcements.html#january-15-2025",
-    "href": "announcements.html#january-15-2025",
-    "title": "Announcements",
-    "section": "",
-    "text": "Welcome to the course! Please complete environment setup.",
+    "objectID": "projects/project1.html#deliverables",
+    "href": "projects/project1.html#deliverables",
+    "title": "Project 1: Foundations",
+    "section": "Deliverables",
+    "text": "Deliverables\n\nTo be announced.",
     "crumbs": [
       "Home",
-      "Course Info",
-      "Announcements"
+      "Projects",
+      "Project 1: Foundations"
     ]
   },
   {
-    "objectID": "announcements.html#check-back-for-updates",
-    "href": "announcements.html#check-back-for-updates",
-    "title": "Announcements",
-    "section": "Check back for updates",
-    "text": "Check back for updates\nNew announcements will be posted here throughout the semester.",
+    "objectID": "projects/project1.html#timeline",
+    "href": "projects/project1.html#timeline",
+    "title": "Project 1: Foundations",
+    "section": "Timeline",
+    "text": "Timeline\n\nTo be announced.",
     "crumbs": [
       "Home",
-      "Course Info",
-      "Announcements"
+      "Projects",
+      "Project 1: Foundations"
     ]
+  },
+  {
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "Projects Overview",
+    "section": "",
+    "text": "Each project is designed to deepen your understanding while building practical skills. You’ll submit mini research papers that demonstrate both technical implementation and critical analysis.",
+    "crumbs": [
+      "Home",
+      "Projects",
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "projects/index.html#project-structure",
+    "href": "projects/index.html#project-structure",
+    "title": "Projects Overview",
+    "section": "",
+    "text": "Each project is designed to deepen your understanding while building practical skills. You’ll submit mini research papers that demonstrate both technical implementation and critical analysis.",
+    "crumbs": [
+      "Home",
+      "Projects",
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "projects/index.html#grading-distribution",
+    "href": "projects/index.html#grading-distribution",
+    "title": "Projects Overview",
+    "section": "Grading Distribution",
+    "text": "Grading Distribution\n\n\n\nProject\nWeight\nDue Date\nFocus Area\n\n\n\n\nProject 1: Foundations\n15%\nFeb 14\nClassical ML algorithms\n\n\nProject 2: Neural Networks\n15%\nMar 21\nDeep learning\n\n\nProject 3: Modern AI\n15%\nApr 4\nRL/Unsupervised/GenAI\n\n\nCapstone Project\n45%\nApr 25\nSelf-directed research",
+    "crumbs": [
+      "Home",
+      "Projects",
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "projects/index.html#project-reports",
+    "href": "projects/index.html#project-reports",
+    "title": "Projects Overview",
+    "section": "Project Reports",
+    "text": "Project Reports\n\nFormat Requirements\n\nLength: 3-5 pages (Projects 1-3), 6-8 pages (Capstone)\nStructure:\n\nIntroduction & Problem Statement\nDataset Description\nMethods & Implementation\nExperiments & Results\nAnalysis & Discussion\nConclusion & Future Work\n\nCode: Submit via GitHub links\nFormat: PDF via Canvas\n\n\n\nEvaluation Criteria\nEach project will be evaluated on:\n\nTechnical Implementation (40%)\n\nCorrectness of algorithms\nCode quality and documentation\nAppropriate use of libraries\n\nExperimental Design (30%)\n\nSystematic evaluation\nAppropriate metrics\nHyperparameter tuning\n\nAnalysis & Insights (20%)\n\nUnderstanding of results\nDiscussion of limitations\nBias-variance analysis where appropriate\n\nPresentation (10%)\n\nClear writing\nEffective visualizations\nProper citations",
+    "crumbs": [
+      "Home",
+      "Projects",
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "projects/index.html#collaboration-policy",
+    "href": "projects/index.html#collaboration-policy",
+    "title": "Projects Overview",
+    "section": "Collaboration Policy",
+    "text": "Collaboration Policy\n\nTeams of 2-3 students allowed for Projects 1-3\nIndividual work required for Capstone\nClear contribution statements required for team projects",
+    "crumbs": [
+      "Home",
+      "Projects",
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "projects/index.html#getting-started",
+    "href": "projects/index.html#getting-started",
+    "title": "Projects Overview",
+    "section": "Getting Started",
+    "text": "Getting Started\n\nReview project descriptions and starter code\nForm teams (if desired) via Piazza\nStart early - these projects require iteration\nUse office hours for guidance",
+    "crumbs": [
+      "Home",
+      "Projects",
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "projects/index.html#resources",
+    "href": "projects/index.html#resources",
+    "title": "Projects Overview",
+    "section": "Resources",
+    "text": "Resources\n\nStarter Code\nAll starter code is available in the main repository: - Project 1 Starter - Project 2 Starter (Coming Soon) - Project 3 Starter (Coming Soon)\n\n\nCompute Resources\n\nGoogle Colab free tier is sufficient for Projects 1-2\nGPU access available for advanced projects\nContact instructors for additional compute needs",
+    "crumbs": [
+      "Home",
+      "Projects",
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "projects/index.html#tips-for-success",
+    "href": "projects/index.html#tips-for-success",
+    "title": "Projects Overview",
+    "section": "Tips for Success",
+    "text": "Tips for Success\n\n\n\n\n\n\nBest Practices\n\n\n\n\nStart Early: ML projects always take longer than expected\nIterate: Your first model won’t be your best\nDocument: Keep notes on what you try and why\nVisualize: A good plot is worth 1000 numbers\nCollaborate: Discuss ideas, but write your own code",
+    "crumbs": [
+      "Home",
+      "Projects",
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "projects/index.html#example-projects",
+    "href": "projects/index.html#example-projects",
+    "title": "Projects Overview",
+    "section": "Example Projects",
+    "text": "Example Projects\n\nPast Successful Projects\n\nImage classification with CNNs on custom datasets\nTime series prediction for energy consumption\nReinforcement learning for game playing\nText generation with fine-tuned transformers\nClustering analysis of social media data\n\n\n\nCapstone Ideas\n\nApply ML to your research area\nReproduce and extend a recent paper\nCreate a novel dataset and benchmark\nCombine multiple techniques for a complex problem\nBuild an interactive ML application\n\n\nReady to start? → Project 1: Foundational Predictive Modeling",
+    "crumbs": [
+      "Home",
+      "Projects",
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Machine Learning: Learn by Building",
+    "section": "",
+    "text": "This course takes a hands-on approach to machine learning. You’ll:\n\nBuild real ML systems, not just study theory\nCreate an AI portfolio of mini research papers\nExplain complex concepts simply (teaching = understanding)\nWork with cutting-edge tools while mastering fundamentals\n\nWe believe the best way to understand machine learning is to build it, break it, and rebuild it better."
+  },
+  {
+    "objectID": "index.html#course-philosophy",
+    "href": "index.html#course-philosophy",
+    "title": "Machine Learning: Learn by Building",
+    "section": "",
+    "text": "This course takes a hands-on approach to machine learning. You’ll:\n\nBuild real ML systems, not just study theory\nCreate an AI portfolio of mini research papers\nExplain complex concepts simply (teaching = understanding)\nWork with cutting-edge tools while mastering fundamentals\n\nWe believe the best way to understand machine learning is to build it, break it, and rebuild it better."
+  },
+  {
+    "objectID": "index.html#getting-started",
+    "href": "index.html#getting-started",
+    "title": "Machine Learning: Learn by Building",
+    "section": "Getting Started",
+    "text": "Getting Started\n\nSet up your environment → Setup Guide\nJoin Piazza for discussions and announcements\nReview the syllabus → Course Policies\nCheck the schedule → Week-by-Week"
+  },
+  {
+    "objectID": "index.html#course-team",
+    "href": "index.html#course-team",
+    "title": "Machine Learning: Learn by Building",
+    "section": "Course Team",
+    "text": "Course Team\nInstructor: Ming Jin\nEmail: jinming@vt.edu\nOffice Hours: TBD\nTeaching Assistant: Sherawat, Kamal\nEmail: kamals@vt.edu\nOffice Hours: TBD"
   },
   {
     "objectID": "lectures/03-linear.html",
@@ -764,6 +664,18 @@
     ]
   },
   {
+    "objectID": "lectures/02-knn.html#overview",
+    "href": "lectures/02-knn.html#overview",
+    "title": "Lecture 2: k-Nearest Neighbors",
+    "section": "",
+    "text": "In this hands-on lecture, we tackle a real problem: finding compatible ML project teammates using k-Nearest Neighbors. Yes, you’ll actually use this system to form your project teams! We’ll explore how to frame real-world problems as ML tasks, understand the elegance of lazy learning, and confront the challenges of high-dimensional spaces.",
+    "crumbs": [
+      "Home",
+      "Module 1: Let's Predict",
+      "L2: k-NN"
+    ]
+  },
+  {
     "objectID": "lectures/02-knn.html#learning-objectives",
     "href": "lectures/02-knn.html#learning-objectives",
     "title": "Lecture 2: k-Nearest Neighbors",
@@ -781,63 +693,6 @@
     "title": "Lecture 2: k-Nearest Neighbors",
     "section": "Materials",
     "text": "Materials\n\n\n\n\n\n\nQuick Access\n\n\n\nLecture Notebook\nOpen in Colab\nLecture Folder\n\n\n\n\n\n\n\n\nPre-Class Requirements\n\n\n\n\n\nComplete the Project Matchmaker Form by Mon 8/26, 12:00 PM ET. Required for Lecture 2: k-NN; counts toward participation.",
-    "crumbs": [
-      "Home",
-      "Module 1: Let's Predict",
-      "L2: k-NN"
-    ]
-  },
-  {
-    "objectID": "lectures/02-knn.html#outline",
-    "href": "lectures/02-knn.html#outline",
-    "title": "Lecture 2: k-Nearest Neighbors (k-NN)",
-    "section": "📝 Outline",
-    "text": "📝 Outline\n\nk-NN intuition and algorithm\nDecision boundaries\nHyperparameters and scaling\n\n\nPrev: ← Lecture 1: Overview | Next: Lecture 3: Linear Regression →",
-    "crumbs": [
-      "Home",
-      "Module 1: Let's Predict",
-      "L2: k-NN"
-    ]
-  },
-  {
-    "objectID": "resources.html",
-    "href": "resources.html",
-    "title": "Resources",
-    "section": "",
-    "text": "Python Installation\nGoogle Colab\nGitHub Student Pack"
-  },
-  {
-    "objectID": "resources.html#software-tools",
-    "href": "resources.html#software-tools",
-    "title": "Resources",
-    "section": "",
-    "text": "Python Installation\nGoogle Colab\nGitHub Student Pack"
-  },
-  {
-    "objectID": "resources.html#documentation",
-    "href": "resources.html#documentation",
-    "title": "Resources",
-    "section": "Documentation",
-    "text": "Documentation\n\nNumPy Documentation\nPyTorch Tutorials\nScikit-learn User Guide"
-  },
-  {
-    "objectID": "lectures/00-setup.html#objectives",
-    "href": "lectures/00-setup.html#objectives",
-    "title": "Lecture 0: Environment Setup",
-    "section": "",
-    "text": "Set up Python environment for ML development\nUse Jupyter notebooks effectively\nRun code both locally and on Google Colab\nNavigate course GitHub repository",
-    "crumbs": [
-      "Home",
-      "Module 1: Let's Predict",
-      "L0: Environment Setup"
-    ]
-  },
-  {
-    "objectID": "lectures/02-knn.html#overview",
-    "href": "lectures/02-knn.html#overview",
-    "title": "Lecture 2: k-Nearest Neighbors",
-    "section": "",
-    "text": "In this hands-on lecture, we tackle a real problem: finding compatible ML project teammates using k-Nearest Neighbors. Yes, you’ll actually use this system to form your project teams! We’ll explore how to frame real-world problems as ML tasks, understand the elegance of lazy learning, and confront the challenges of high-dimensional spaces.",
     "crumbs": [
       "Home",
       "Module 1: Let's Predict",
@@ -869,18 +724,6 @@
     ]
   },
   {
-    "objectID": "lectures/02-knn.html#pre-class-preparation",
-    "href": "lectures/02-knn.html#pre-class-preparation",
-    "title": "Lecture 2: k-Nearest Neighbors",
-    "section": "Pre-Class Preparation",
-    "text": "Pre-Class Preparation\n\nReview vector distances and norms from linear algebra\nComplete Lecture 0 environment setup\nThink about: what makes a good project teammate?",
-    "crumbs": [
-      "Home",
-      "Module 1: Let's Predict",
-      "L2: k-NN"
-    ]
-  },
-  {
     "objectID": "lectures/02-knn.html#additional-resources",
     "href": "lectures/02-knn.html#additional-resources",
     "title": "Lecture 2: k-Nearest Neighbors",
@@ -893,63 +736,24 @@
     ]
   },
   {
-    "objectID": "lectures/01-overview.html#overview",
-    "href": "lectures/01-overview.html#overview",
-    "title": "Lecture 1: Welcome to Machine Learning",
+    "objectID": "resources.html",
+    "href": "resources.html",
+    "title": "Resources",
     "section": "",
-    "text": "Welcome to Machine Learning! This course takes a unique “Learn by Building” approach where you’ll implement real ML systems from day one. In today’s hands-on session, we’ll explore the three fundamental paradigms of machine learning—supervised, unsupervised, and active learning—by building CatShop, an e-commerce system that thinks like a cat using Google’s Gemma-3 language model.",
-    "crumbs": [
-      "Home",
-      "Module 1: Let's Predict",
-      "L1: Welcome to ML"
-    ]
+    "text": "Python Installation\nGoogle Colab\nGitHub Student Pack"
   },
   {
-    "objectID": "lectures/01-overview.html#interactive-demo",
-    "href": "lectures/01-overview.html#interactive-demo",
-    "title": "Lecture 1: Welcome to Machine Learning",
-    "section": "Interactive Demo",
-    "text": "Interactive Demo\n\n\n\n\n\n\n🐱 CatShop Web Application\n\n\n\nExperience your trained model in action with the CatShop e-commerce demo, featuring real-time cat perspective classifications, confidence visualization, and interactive chat.\nBuilt upon the WebShop environment with modifications for educational purposes.",
-    "crumbs": [
-      "Home",
-      "Module 1: Let's Predict",
-      "L1: Welcome to ML"
-    ]
+    "objectID": "resources.html#software-tools",
+    "href": "resources.html#software-tools",
+    "title": "Resources",
+    "section": "",
+    "text": "Python Installation\nGoogle Colab\nGitHub Student Pack"
   },
   {
-    "objectID": "lectures/01-overview.html#pre-class-preparation",
-    "href": "lectures/01-overview.html#pre-class-preparation",
-    "title": "Lecture 1: Welcome to Machine Learning",
-    "section": "Pre-Class Preparation",
-    "text": "Pre-Class Preparation\n\nInstall Python 3.8+ and Jupyter\nEnsure GPU access via Colab (recommended) or local CUDA\nJoin the course Piazza forum\nReview Course Syllabus",
-    "crumbs": [
-      "Home",
-      "Module 1: Let's Predict",
-      "L1: Welcome to ML"
-    ]
-  },
-  {
-    "objectID": "lectures/01-overview.html#acknowledgments-resources",
-    "href": "lectures/01-overview.html#acknowledgments-resources",
-    "title": "Lecture 1: Welcome to Machine Learning",
-    "section": "Acknowledgments & Resources",
-    "text": "Acknowledgments & Resources\n\nCore Technologies\n\nGemma-3 270M: Google’s efficient language model\nPEFT/LoRA: Parameter-efficient fine-tuning\nTransformers: Hugging Face’s model library\n\n\n\nDataset & Environment\n\nWebShop: E-commerce product data and environment\nYao et al., “WebShop: Towards Scalable Real-World Web Interaction with Grounded Language Agents”, NeurIPS 2022\n\n\nNext: Lecture 2: k-Nearest Neighbors →",
-    "crumbs": [
-      "Home",
-      "Module 1: Let's Predict",
-      "L1: Welcome to ML"
-    ]
-  },
-  {
-    "objectID": "lectures/00-setup.html#pre-class-preparation-1",
-    "href": "lectures/00-setup.html#pre-class-preparation-1",
-    "title": "Lecture 0: Environment Setup",
-    "section": "## Pre-Class Preparation",
-    "text": "## Pre-Class Preparation\nNext: Lecture 1: Welcome to Machine Learning →\nIMPORTANT: Complete Pre-Lecture 1 Setup before the lecture!",
-    "crumbs": [
-      "Home",
-      "Module 1: Let's Predict",
-      "L0: Environment Setup"
-    ]
+    "objectID": "resources.html#documentation",
+    "href": "resources.html#documentation",
+    "title": "Resources",
+    "section": "Documentation",
+    "text": "Documentation\n\nNumPy Documentation\nPyTorch Tutorials\nScikit-learn User Guide"
   }
 ]
