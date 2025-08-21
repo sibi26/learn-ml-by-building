@@ -1,27 +1,27 @@
 ---
 title: "Course Syllabus"
-subtitle: "ECE 4424: Machine Learning - Spring 2025"
+subtitle: "ECE4424/CS4824: Machine Learning - Fall 2025"
 ---
 
 ## Course Information
 
-**Course**: ECE 4424 - Machine Learning  
+**Course**: ECE4424/CS4824 - Machine Learning  
 **Credits**: 3  
 **Prerequisites**: ECE 2714 (Signals and Systems) or equivalent; programming experience  
-**Time**: MWF 9:05-9:55 AM  
-**Location**: [Building Room] / Zoom Link on Canvas  
+**Time**: MW 5:30pm - 6:45pm  
+**Location**: GOODW 125  
 **Course Website**: https://jinming99.github.io/learn-ml-by-building/
 
 ### Instructor
 **Dr. Ming Jin**  
-📧 jinming@vt.edu  
-🏢 Office: [Building Room Number]  
-📅 Office Hours: Wednesday 10:00-11:00 AM or by appointment  
+Email: jinming@vt.edu  
+Office: [Building Room Number]  
+Office Hours: Wednesday 10:00-11:00 AM or by appointment  
 
 ### Teaching Assistant
-**[Name TBD]**  
-📧 [Email TBD]  
-📅 Office Hours: [TBD]
+**Sherawat, Kamal**  
+Email: kamals@vt.edu  
+Office Hours: TBD
 
 ## Course Description
 

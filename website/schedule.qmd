@@ -1,6 +1,6 @@
 ---
 title: "Course Schedule"
-subtitle: "Spring 2025"
+subtitle: "Fall 2025"
 ---
 
 ## Module Overview

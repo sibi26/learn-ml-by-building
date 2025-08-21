@@ -1,9 +1,9 @@
 ---
 title: "Machine Learning: Learn by Building"
-subtitle: "ECE 4424 - Spring 2025"
+subtitle: "ECE4424/CS4824 - Fall 2025"
 ---
 
-## 🚀 Current Week
+## Current Week
 
 :::{.callout-important}
 ## Week 1: Getting Started
@@ -18,21 +18,21 @@ subtitle: "ECE 4424 - Spring 2025"
 
 :::{.grid}
 :::{.g-col-4}
-### 📓 This Week's Notebook
+### This Week's Notebook
 [Open in GitHub →](https://github.com/jinming99/learn-ml-by-building/blob/main/Lecture%201%20Overview/01-Overview.ipynb)
 
 [Open in Colab →](https://colab.research.google.com/github/jinming99/learn-ml-by-building/blob/main/Lecture%201%20Overview/01-Overview.ipynb)
 :::
 
 :::{.g-col-4}
-### 💬 Discussion
+### Discussion
 [Piazza Forum →](https://piazza.com/class/YOUR_CLASS_CODE)
 
 Office Hours: MW 10-11am
 :::
 
 :::{.g-col-4}
-### 📊 Grades
+### Grades
 [Canvas →](https://canvas.vt.edu/courses/YOUR_COURSE_ID)
 
 [Project 1 Details →](projects/project1.qmd)
@@ -78,9 +78,9 @@ Welcome to ECE 4424! Please complete the environment setup before our first clas
 ## Course Team
 
 **Instructor**: Ming Jin  
-📧 jinming@vt.edu  
-🏢 Office Hours: Wednesday 10-11am
+Email: jinming@vt.edu  
+Office Hours: Wednesday 10-11am
 
-**Teaching Assistant**: TBD  
-📧 TBD  
-🏢 Office Hours: TBD
+**Teaching Assistant**: Sherawat, Kamal  
+Email: kamals@vt.edu  
+Office Hours: TBD

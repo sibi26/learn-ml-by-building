@@ -3,14 +3,15 @@ project:
   output-dir: ../docs
 
 website:
-  title: "ECE 4424: Machine Learning"
-  description: "Learn ML by Building - Spring 2025"
+  title: "ECE4424/CS4824: Machine Learning"
+  description: "Learn ML by Building - Fall 2025"
   site-url: https://jinming99.github.io/learn-ml-by-building/
   repo-url: https://github.com/jinming99/learn-ml-by-building
   repo-actions: [edit, issue]
   
   navbar:
-    background: light
+    background: primary
+    foreground: light
     left:
       - text: "Home"
         href: index.qmd
@@ -34,11 +35,11 @@ website:
     contents:
       - section: "Course Info"
         contents:
-          - text: "📚 Syllabus"
+          - text: "Syllabus"
             href: syllabus.qmd
-          - text: "📅 Schedule"
+          - text: "Schedule"
             href: schedule.qmd
-          - text: "📢 Announcements"
+          - text: "Announcements"
             href: announcements.qmd
       
       - section: "Module 1: Let's Predict"
@@ -93,6 +94,6 @@ website:
 format:
   html:
     theme: sandstone
-    css: styles.css
+    # css: styles.css
     toc: true
     toc-depth: 2
