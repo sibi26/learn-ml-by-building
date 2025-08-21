@@ -1,0 +1,9 @@
+---
+title: "Announcements"
+---
+
+## January 15, 2025
+Welcome to the course! Please complete environment setup.
+
+## Check back for updates
+New announcements will be posted here throughout the semester.

@@ -1,0 +1,98 @@
+project:
+  type: website
+  output-dir: ../docs
+
+website:
+  title: "ECE 4424: Machine Learning"
+  description: "Learn ML by Building - Spring 2025"
+  site-url: https://jinming99.github.io/learn-ml-by-building/
+  repo-url: https://github.com/jinming99/learn-ml-by-building
+  repo-actions: [edit, issue]
+  
+  navbar:
+    background: light
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "Schedule"
+        href: schedule.qmd
+      - text: "Projects"
+        href: projects/index.qmd
+      - text: "Resources"
+        href: resources.qmd
+    right:
+      - icon: github
+        href: https://github.com/jinming99/learn-ml-by-building
+      - text: "Piazza"
+        href: https://piazza.com/class/melrw2iqdro2ar/
+      - text: "Canvas"
+        href: https://canvas.vt.edu/
+  
+  sidebar:
+    style: "floating"
+    collapse-level: 2
+    contents:
+      - section: "Course Info"
+        contents:
+          - text: "📚 Syllabus"
+            href: syllabus.qmd
+          - text: "📅 Schedule"
+            href: schedule.qmd
+          - text: "📢 Announcements"
+            href: announcements.qmd
+      
+      - section: "Module 1: Let's Predict"
+        contents:
+          - text: "L0: Environment Setup"
+            href: lectures/00-setup.qmd
+          - text: "L1: Welcome to ML"
+            href: lectures/01-overview.qmd
+          - text: "L2: k-NN"
+            href: lectures/02-knn.qmd
+          - text: "L3: Linear Regression"
+            href: lectures/03-linear.qmd
+          - text: "L4-6: Coming Soon"
+            href: "#"
+      
+      - section: "Module 2: Let's Understand"
+        contents:
+          - text: "L7-11: Coming Soon"
+            href: "#"
+      
+      - section: "Module 3: Let's Discover"
+        contents:
+          - text: "L12-13: Coming Soon"
+            href: "#"
+      
+      - section: "Module 4: Let's See & Chat"
+        contents:
+          - text: "L14-20: Coming Soon"
+            href: "#"
+      
+      - section: "Module 5: Let's Act"
+        contents:
+          - text: "L21-23: Coming Soon"
+            href: "#"
+      
+      - section: "Module 6: Let's Impact"
+        contents:
+          - text: "L24-25: Coming Soon"
+            href: "#"
+      
+      - section: "Projects"
+        contents:
+          - text: "Overview"
+            href: projects/index.qmd
+          - text: "Project 1: Foundations"
+            href: projects/project1.qmd
+          - text: "Project 2-3: Coming Soon"
+            href: "#"
+          - text: "Capstone Guidelines"
+            href: projects/capstone.qmd
+
+format:
+  html:
+    theme: sandstone
+    css: styles.css
+    toc: true
+    toc-depth: 2

@@ -1,0 +1,13 @@
+---
+title: "Resources"
+---
+
+## Software & Tools
+- [Python Installation](https://www.python.org/)
+- [Google Colab](https://colab.research.google.com/)
+- [GitHub Student Pack](https://education.github.com/pack)
+
+## Documentation
+- [NumPy Documentation](https://numpy.org/doc/)
+- [PyTorch Tutorials](https://pytorch.org/tutorials/)
+- [Scikit-learn User Guide](https://scikit-learn.org/stable/user_guide.html)

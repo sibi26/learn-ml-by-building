@@ -1,0 +1,94 @@
+---
+title: "Lecture 0: Environment Setup"
+subtitle: "Getting Your ML Development Environment Ready"
+---
+
+## 🎯 Learning Objectives
+
+After this lecture, you will be able to:
+
+- Set up Python environment for ML development
+- Use Jupyter notebooks effectively
+- Run code both locally and on Google Colab
+- Navigate course GitHub repository
+
+## 📚 Materials
+
+:::{.callout-tip}
+## Quick Access
+**[📓 Setup Notebook](https://github.com/jinming99/learn-ml-by-building/blob/main/Lecture%200%20Environment%20Setup/00-Environment-Setup.ipynb)**  
+**[🚀 Open in Colab](https://colab.research.google.com/github/jinming99/learn-ml-by-building/blob/main/Lecture%200%20Environment%20Setup/00-Environment-Setup.ipynb)**  
+:::
+
+### Additional Resources
+- [📁 Lecture Folder](https://github.com/jinming99/learn-ml-by-building/tree/main/Lecture%200%20Environment%20Setup)
+- [📝 Setup Guide (SETUP.md)](https://github.com/jinming99/learn-ml-by-building/blob/main/Lecture%200%20Environment%20Setup/SETUP.md)
+- [Python Requirements](https://github.com/jinming99/learn-ml-by-building/blob/main/requirements.txt)
+
+## 🔧 Setup Instructions
+
+### Option 1: Google Colab (Recommended for Beginners)
+1. Click the "Open in Colab" link above
+2. Sign in with your Google account
+3. You're ready to go! No local installation needed
+
+### Option 2: Local Setup
+```bash
+# Clone the repository
+git clone https://github.com/jinming99/learn-ml-by-building.git
+cd learn-ml-by-building
+
+# Create virtual environment
+python -m venv ml-env
+source ml-env/bin/activate  # On Windows: ml-env\Scripts\activate
+
+# Install requirements
+pip install -r requirements.txt
+
+# Launch Jupyter
+jupyter notebook
+```
+
+## 💡 Key Concepts
+
+### Why Environment Setup Matters
+- **Reproducibility**: Same code works for everyone
+- **Package Management**: Avoid version conflicts
+- **Collaboration**: Share code that others can run
+
+### Tools We'll Use Throughout the Course
+- **NumPy**: Numerical computing
+- **Pandas**: Data manipulation
+- **Matplotlib/Seaborn**: Visualization
+- **Scikit-learn**: Classical ML algorithms
+- **PyTorch/TensorFlow**: Deep learning
+
+## ✅ Verification Checklist
+
+Complete these to ensure your setup is working:
+
+- [ ] Python 3.8+ installed
+- [ ] Can run Jupyter notebooks
+- [ ] NumPy and Pandas import successfully
+- [ ] Can create basic plots with Matplotlib
+- [ ] GitHub repository cloned/accessible
+
+## 🚨 Common Issues & Solutions
+
+:::{.callout-warning}
+## Troubleshooting
+**Import errors?** → Check your virtual environment is activated  
+**Jupyter not found?** → Run `pip install jupyter`  
+**GPU not available in Colab?** → Runtime → Change runtime type → GPU
+:::
+
+## 📝 Pre-Class Preparation
+
+Before next class:
+1. Complete environment setup
+2. Run through the setup notebook
+3. Post any issues on Piazza
+
+---
+
+**Next**: [Lecture 1: Welcome to Machine Learning →](01-overview.qmd)

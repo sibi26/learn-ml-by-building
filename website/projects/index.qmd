@@ -1,0 +1,112 @@
+---
+title: "Projects Overview"
+subtitle: "Building Your AI Portfolio"
+---
+
+## Project Structure
+
+Each project is designed to deepen your understanding while building practical skills. You'll submit mini research papers that demonstrate both technical implementation and critical analysis.
+
+## Grading Distribution
+
+| Project | Weight | Due Date | Focus Area |
+|---------|--------|----------|------------|
+| [Project 1: Foundations](project1.qmd) | 15% | Feb 14 | Classical ML algorithms |
+| Project 2: Neural Networks | 15% | Mar 21 | Deep learning |
+| Project 3: Modern AI | 15% | Apr 4 | RL/Unsupervised/GenAI |
+| [Capstone Project](capstone.qmd) | 45% | Apr 25 | Self-directed research |
+
+## Project Reports
+
+### Format Requirements
+- **Length**: 3-5 pages (Projects 1-3), 6-8 pages (Capstone)
+- **Structure**: 
+  - Introduction & Problem Statement
+  - Dataset Description
+  - Methods & Implementation
+  - Experiments & Results
+  - Analysis & Discussion
+  - Conclusion & Future Work
+- **Code**: Submit via GitHub links
+- **Format**: PDF via Canvas
+
+### Evaluation Criteria
+
+Each project will be evaluated on:
+
+1. **Technical Implementation** (40%)
+   - Correctness of algorithms
+   - Code quality and documentation
+   - Appropriate use of libraries
+
+2. **Experimental Design** (30%)
+   - Systematic evaluation
+   - Appropriate metrics
+   - Hyperparameter tuning
+
+3. **Analysis & Insights** (20%)
+   - Understanding of results
+   - Discussion of limitations
+   - Bias-variance analysis where appropriate
+
+4. **Presentation** (10%)
+   - Clear writing
+   - Effective visualizations
+   - Proper citations
+
+## Collaboration Policy
+
+- Teams of 2-3 students allowed for Projects 1-3
+- Individual work required for Capstone
+- Clear contribution statements required for team projects
+
+## Getting Started
+
+1. Review project descriptions and starter code
+2. Form teams (if desired) via Piazza
+3. Start early - these projects require iteration
+4. Use office hours for guidance
+
+## Resources
+
+### Starter Code
+All starter code is available in the main repository:
+- [Project 1 Starter](https://github.com/jinming99/learn-ml-by-building/tree/main/projects/project1)
+- Project 2 Starter (Coming Soon)
+- Project 3 Starter (Coming Soon)
+
+### Compute Resources
+- Google Colab free tier is sufficient for Projects 1-2
+- GPU access available for advanced projects
+- Contact instructors for additional compute needs
+
+## Tips for Success
+
+:::{.callout-tip}
+## Best Practices
+1. **Start Early**: ML projects always take longer than expected
+2. **Iterate**: Your first model won't be your best
+3. **Document**: Keep notes on what you try and why
+4. **Visualize**: A good plot is worth 1000 numbers
+5. **Collaborate**: Discuss ideas, but write your own code
+:::
+
+## Example Projects
+
+### Past Successful Projects
+- Image classification with CNNs on custom datasets
+- Time series prediction for energy consumption
+- Reinforcement learning for game playing
+- Text generation with fine-tuned transformers
+- Clustering analysis of social media data
+
+### Capstone Ideas
+- Apply ML to your research area
+- Reproduce and extend a recent paper
+- Create a novel dataset and benchmark
+- Combine multiple techniques for a complex problem
+- Build an interactive ML application
+
+---
+
+Ready to start? → [Project 1: Foundational Predictive Modeling](project1.qmd)
