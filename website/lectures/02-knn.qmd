@@ -1,24 +1,64 @@
 ---
-title: "Lecture 2: k-Nearest Neighbors (k-NN)"
-subtitle: "Instance-based learning and distance metrics"
+title: "Lecture 2: k-Nearest Neighbors"
+subtitle: "Framing Prediction Problems & Instance-Based Learning"
 ---
 
-## 🎯 Learning Objectives
+## Overview
 
-- Explain k-NN for classification and regression
-- Choose k and distance metrics
-- Evaluate with cross-validation
+In this hands-on lecture, we tackle a real problem: **finding compatible ML project teammates** using k-Nearest Neighbors. Yes, you'll actually use this system to form your project teams! We'll explore how to frame real-world problems as ML tasks, understand the elegance of lazy learning, and confront the challenges of high-dimensional spaces.
 
-## 📚 Materials
+## Learning Objectives
 
-- Placeholder links. Content coming soon.
+By the end of this lecture, you will:
 
-## 📝 Outline
+- **Frame** real-world problems as ML tasks with inputs (X) and outputs (y)
+- **Apply** k-NN for classification and regression tasks
+- **Analyze** the impact of distance metrics and feature scaling
+- **Understand** the curse of dimensionality and its practical implications
+- **Design** fair and effective matching systems with domain constraints
+- **Evaluate** trade-offs between different similarity measures
 
-- k-NN intuition and algorithm
-- Decision boundaries
-- Hyperparameters and scaling
+## Materials
+
+:::{.callout-tip}
+## Quick Access
+**[Lecture Notebook](https://github.com/jinming99/learn-ml-by-building/blob/main/Lecture%202%20KNN/02-KNN.ipynb)**  
+**[Open in Colab](https://colab.research.google.com/github/jinming99/learn-ml-by-building/blob/main/Lecture%202%20KNN/02-KNN.ipynb)**  
+**[Lecture Folder](https://github.com/jinming99/learn-ml-by-building/tree/main/Lecture%202%20KNN)**
+:::
+
+:::{.callout-important collapse=false}
+## Pre-Class Requirements
+Complete the [Project Matchmaker Form](https://docs.google.com/forms/d/e/1FAIpQLSfx5iz7JF3ePe1-c-HkKMlxiUICjjog9D89YGy5VtqfhUFu_g/viewform?usp=sharing&ouid=116115729328867711828) by Mon 8/26, 12:00 PM ET. Required for [Lecture 2: k-NN](02-knn.qmd); counts toward participation.
+:::
+
+## Interactive Demo
+
+:::{.callout-note}
+## 🎮 Team Matcher Visualization
+Experience k-NN in action with our **[Interactive Team Matching Demo](https://github.com/jinming99/learn-ml-by-building/tree/main/Lecture%202%20KNN/project-matchmaker)**
+
+This real-time visualization lets you:
+
+- Adjust k parameter and see immediate effects
+- Explore different dimension pairs 
+- View how proximity translates to similarity
+- Discover natural clustering patterns in the class
+:::
+
+## Key Topics
+
+1. **The Data Journey**: From text surveys → NLP features → 8D vectors
+2. **k-NN Fundamentals**: The beautiful simplicity of "you are your neighbors"
+3. **Distance Metrics**: Euclidean, Manhattan, Cosine, and when each matters
+4. **Curse of Dimensionality**: When all points become equidistant
+5. **Fairness in ML**: Ensuring inclusive team formation
+
+## Additional Resources
+
+- [Scikit-learn k-NN Documentation](https://scikit-learn.org/stable/modules/neighbors.html)
+
 
 ---
 
-Prev: [← Lecture 1: Overview](01-overview.qmd)  |  Next: [Lecture 3: Linear Regression →](03-linear.qmd)
+**Previous**: [← Lecture 1: Welcome to ML](01-overview.qmd) | **Next**: [Lecture 3: Linear Regression →](03-linear.qmd)

@@ -88,7 +88,7 @@
     "href": "lectures/00-setup.html#materials",
     "title": "Lecture 0: Environment Setup",
     "section": "Materials",
-    "text": "Materials\n\n\n\n\n\n\nQuick Access\n\n\n\nSetup Notebook\nOpen in Colab\n\n\n\nAdditional Resources\n\nLecture Folder\nSetup Guide (SETUP.md)",
+    "text": "Materials\n\n\n\n\n\n\nQuick Access\n\n\n\nSetup Notebook\nOpen in Colab\nLecture Folder\n\n\n\n\n\n\n\n\nReminder\n\n\n\n\n\nJoin the course Piazza forum (Required for participation)\nComplete the Project Matchmaker Form by Mon 8/26, 12:00 PM ET. Required for Lecture 2: k-NN; counts toward participation.",
     "crumbs": [
       "Home",
       "Module 1: Let's Predict",
@@ -147,8 +147,8 @@
     "objectID": "lectures/00-setup.html#pre-class-preparation",
     "href": "lectures/00-setup.html#pre-class-preparation",
     "title": "Lecture 0: Environment Setup",
-    "section": "📝 Pre-Class Preparation",
-    "text": "📝 Pre-Class Preparation\n\nComplete environment setup\nRun through the setup notebook\nPost any issues on Piazza\n\n\nNext: Lecture 1: Welcome to Machine Learning →",
+    "section": "Pre-Class Preparation",
+    "text": "Pre-Class Preparation\n\nComplete environment setup: Setup Guide (SETUP.md)\nRun through the setup notebook\nPost any issues on Piazza\n\n\nNext: Lecture 1: Welcome to Machine Learning →",
     "crumbs": [
       "Home",
       "Module 1: Let's Predict",
@@ -160,7 +160,7 @@
     "href": "lectures/01-overview.html",
     "title": "Lecture 1: Welcome to Machine Learning",
     "section": "",
-    "text": "Understand course structure and goals\nReview what ML is and common applications\nOverview of tools and workflow",
+    "text": "Welcome to Machine Learning! This course takes a unique “Learn by Building” approach where you’ll implement real ML systems from day one. In today’s hands-on session, we’ll explore the three fundamental paradigms of machine learning—supervised, unsupervised, and active learning—by building CatShop, an e-commerce system that thinks like a cat using Google’s Gemma-3 language model.",
     "crumbs": [
       "Home",
       "Module 1: Let's Predict",
@@ -171,8 +171,8 @@
     "objectID": "lectures/01-overview.html#learning-objectives",
     "href": "lectures/01-overview.html#learning-objectives",
     "title": "Lecture 1: Welcome to Machine Learning",
-    "section": "",
-    "text": "Understand course structure and goals\nReview what ML is and common applications\nOverview of tools and workflow",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nBy the end of this lecture, you will:\n\nExperience all three ML paradigms through hands-on implementation\nFine-tune Gemma-3 (270M parameters) using LoRA for efficient adaptation\nObserve catastrophic forgetting and model trade-offs\nBuild a complete ML application from data to deployment\nUnderstand how active learning reduces labeling costs",
     "crumbs": [
       "Home",
       "Module 1: Let's Predict",
@@ -183,8 +183,8 @@
     "objectID": "lectures/01-overview.html#materials",
     "href": "lectures/01-overview.html#materials",
     "title": "Lecture 1: Welcome to Machine Learning",
-    "section": "📚 Materials",
-    "text": "📚 Materials\n\nPlaceholder links. Content coming soon.",
+    "section": "Materials",
+    "text": "Materials\n\n\n\n\n\n\nQuick Access\n\n\n\nPre-Lecture Setup\nCourse Overview\nCatShop Notebook\nOpen in Colab\nLecture Folder\n\n\n\n\n\n\n\n\nPre-Class Requirements\n\n\n\n\n\nComplete Pre-Lecture 1 Setup before the lecture!\n\n\n\n\n\n\n\n\n\nReminder\n\n\n\n\n\nJoin the course Piazza forum (Required for participation)\nComplete the Project Matchmaker Form by Mon 8/26, 12:00 PM ET. Required for Lecture 2: k-NN; counts toward participation.",
     "crumbs": [
       "Home",
       "Module 1: Let's Predict",
@@ -754,9 +754,9 @@
   {
     "objectID": "lectures/02-knn.html",
     "href": "lectures/02-knn.html",
-    "title": "Lecture 2: k-Nearest Neighbors (k-NN)",
+    "title": "Lecture 2: k-Nearest Neighbors",
     "section": "",
-    "text": "Explain k-NN for classification and regression\nChoose k and distance metrics\nEvaluate with cross-validation",
+    "text": "In this hands-on lecture, we tackle a real problem: finding compatible ML project teammates using k-Nearest Neighbors. Yes, you’ll actually use this system to form your project teams! We’ll explore how to frame real-world problems as ML tasks, understand the elegance of lazy learning, and confront the challenges of high-dimensional spaces.",
     "crumbs": [
       "Home",
       "Module 1: Let's Predict",
@@ -766,9 +766,9 @@
   {
     "objectID": "lectures/02-knn.html#learning-objectives",
     "href": "lectures/02-knn.html#learning-objectives",
-    "title": "Lecture 2: k-Nearest Neighbors (k-NN)",
-    "section": "",
-    "text": "Explain k-NN for classification and regression\nChoose k and distance metrics\nEvaluate with cross-validation",
+    "title": "Lecture 2: k-Nearest Neighbors",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nBy the end of this lecture, you will:\n\nFrame real-world problems as ML tasks with inputs (X) and outputs (y)\nApply k-NN for classification and regression tasks\nAnalyze the impact of distance metrics and feature scaling\nUnderstand the curse of dimensionality and its practical implications\nDesign fair and effective matching systems with domain constraints\nEvaluate trade-offs between different similarity measures",
     "crumbs": [
       "Home",
       "Module 1: Let's Predict",
@@ -778,9 +778,9 @@
   {
     "objectID": "lectures/02-knn.html#materials",
     "href": "lectures/02-knn.html#materials",
-    "title": "Lecture 2: k-Nearest Neighbors (k-NN)",
-    "section": "📚 Materials",
-    "text": "📚 Materials\n\nPlaceholder links. Content coming soon.",
+    "title": "Lecture 2: k-Nearest Neighbors",
+    "section": "Materials",
+    "text": "Materials\n\n\n\n\n\n\nQuick Access\n\n\n\nLecture Notebook\nOpen in Colab\nLecture Folder\n\n\n\n\n\n\n\n\nPre-Class Requirements\n\n\n\n\n\nComplete the Project Matchmaker Form by Mon 8/26, 12:00 PM ET. Required for Lecture 2: k-NN; counts toward participation.",
     "crumbs": [
       "Home",
       "Module 1: Let's Predict",
@@ -826,6 +826,126 @@
     "title": "Lecture 0: Environment Setup",
     "section": "",
     "text": "Set up Python environment for ML development\nUse Jupyter notebooks effectively\nRun code both locally and on Google Colab\nNavigate course GitHub repository",
+    "crumbs": [
+      "Home",
+      "Module 1: Let's Predict",
+      "L0: Environment Setup"
+    ]
+  },
+  {
+    "objectID": "lectures/02-knn.html#overview",
+    "href": "lectures/02-knn.html#overview",
+    "title": "Lecture 2: k-Nearest Neighbors",
+    "section": "",
+    "text": "In this hands-on lecture, we tackle a real problem: finding compatible ML project teammates using k-Nearest Neighbors. Yes, you’ll actually use this system to form your project teams! We’ll explore how to frame real-world problems as ML tasks, understand the elegance of lazy learning, and confront the challenges of high-dimensional spaces.",
+    "crumbs": [
+      "Home",
+      "Module 1: Let's Predict",
+      "L2: k-NN"
+    ]
+  },
+  {
+    "objectID": "lectures/02-knn.html#interactive-demo",
+    "href": "lectures/02-knn.html#interactive-demo",
+    "title": "Lecture 2: k-Nearest Neighbors",
+    "section": "Interactive Demo",
+    "text": "Interactive Demo\n\n\n\n\n\n\n🎮 Team Matcher Visualization\n\n\n\nExperience k-NN in action with our Interactive Team Matching Demo\nThis real-time visualization lets you:\n\nAdjust k parameter and see immediate effects\nExplore different dimension pairs\nView how proximity translates to similarity\nDiscover natural clustering patterns in the class",
+    "crumbs": [
+      "Home",
+      "Module 1: Let's Predict",
+      "L2: k-NN"
+    ]
+  },
+  {
+    "objectID": "lectures/02-knn.html#key-topics",
+    "href": "lectures/02-knn.html#key-topics",
+    "title": "Lecture 2: k-Nearest Neighbors",
+    "section": "Key Topics",
+    "text": "Key Topics\n\nThe Data Journey: From text surveys → NLP features → 8D vectors\nk-NN Fundamentals: The beautiful simplicity of “you are your neighbors”\nDistance Metrics: Euclidean, Manhattan, Cosine, and when each matters\nCurse of Dimensionality: When all points become equidistant\nFairness in ML: Ensuring inclusive team formation",
+    "crumbs": [
+      "Home",
+      "Module 1: Let's Predict",
+      "L2: k-NN"
+    ]
+  },
+  {
+    "objectID": "lectures/02-knn.html#pre-class-preparation",
+    "href": "lectures/02-knn.html#pre-class-preparation",
+    "title": "Lecture 2: k-Nearest Neighbors",
+    "section": "Pre-Class Preparation",
+    "text": "Pre-Class Preparation\n\nReview vector distances and norms from linear algebra\nComplete Lecture 0 environment setup\nThink about: what makes a good project teammate?",
+    "crumbs": [
+      "Home",
+      "Module 1: Let's Predict",
+      "L2: k-NN"
+    ]
+  },
+  {
+    "objectID": "lectures/02-knn.html#additional-resources",
+    "href": "lectures/02-knn.html#additional-resources",
+    "title": "Lecture 2: k-Nearest Neighbors",
+    "section": "Additional Resources",
+    "text": "Additional Resources\n\nScikit-learn k-NN Documentation\n\n\nPrevious: ← Lecture 1: Welcome to ML | Next: Lecture 3: Linear Regression →",
+    "crumbs": [
+      "Home",
+      "Module 1: Let's Predict",
+      "L2: k-NN"
+    ]
+  },
+  {
+    "objectID": "lectures/01-overview.html#overview",
+    "href": "lectures/01-overview.html#overview",
+    "title": "Lecture 1: Welcome to Machine Learning",
+    "section": "",
+    "text": "Welcome to Machine Learning! This course takes a unique “Learn by Building” approach where you’ll implement real ML systems from day one. In today’s hands-on session, we’ll explore the three fundamental paradigms of machine learning—supervised, unsupervised, and active learning—by building CatShop, an e-commerce system that thinks like a cat using Google’s Gemma-3 language model.",
+    "crumbs": [
+      "Home",
+      "Module 1: Let's Predict",
+      "L1: Welcome to ML"
+    ]
+  },
+  {
+    "objectID": "lectures/01-overview.html#interactive-demo",
+    "href": "lectures/01-overview.html#interactive-demo",
+    "title": "Lecture 1: Welcome to Machine Learning",
+    "section": "Interactive Demo",
+    "text": "Interactive Demo\n\n\n\n\n\n\n🐱 CatShop Web Application\n\n\n\nExperience your trained model in action with the CatShop e-commerce demo, featuring real-time cat perspective classifications, confidence visualization, and interactive chat.\nBuilt upon the WebShop environment with modifications for educational purposes.",
+    "crumbs": [
+      "Home",
+      "Module 1: Let's Predict",
+      "L1: Welcome to ML"
+    ]
+  },
+  {
+    "objectID": "lectures/01-overview.html#pre-class-preparation",
+    "href": "lectures/01-overview.html#pre-class-preparation",
+    "title": "Lecture 1: Welcome to Machine Learning",
+    "section": "Pre-Class Preparation",
+    "text": "Pre-Class Preparation\n\nInstall Python 3.8+ and Jupyter\nEnsure GPU access via Colab (recommended) or local CUDA\nJoin the course Piazza forum\nReview Course Syllabus",
+    "crumbs": [
+      "Home",
+      "Module 1: Let's Predict",
+      "L1: Welcome to ML"
+    ]
+  },
+  {
+    "objectID": "lectures/01-overview.html#acknowledgments-resources",
+    "href": "lectures/01-overview.html#acknowledgments-resources",
+    "title": "Lecture 1: Welcome to Machine Learning",
+    "section": "Acknowledgments & Resources",
+    "text": "Acknowledgments & Resources\n\nCore Technologies\n\nGemma-3 270M: Google’s efficient language model\nPEFT/LoRA: Parameter-efficient fine-tuning\nTransformers: Hugging Face’s model library\n\n\n\nDataset & Environment\n\nWebShop: E-commerce product data and environment\nYao et al., “WebShop: Towards Scalable Real-World Web Interaction with Grounded Language Agents”, NeurIPS 2022\n\n\nNext: Lecture 2: k-Nearest Neighbors →",
+    "crumbs": [
+      "Home",
+      "Module 1: Let's Predict",
+      "L1: Welcome to ML"
+    ]
+  },
+  {
+    "objectID": "lectures/00-setup.html#pre-class-preparation-1",
+    "href": "lectures/00-setup.html#pre-class-preparation-1",
+    "title": "Lecture 0: Environment Setup",
+    "section": "## Pre-Class Preparation",
+    "text": "## Pre-Class Preparation\nNext: Lecture 1: Welcome to Machine Learning →\nIMPORTANT: Complete Pre-Lecture 1 Setup before the lecture!",
     "crumbs": [
       "Home",
       "Module 1: Let's Predict",

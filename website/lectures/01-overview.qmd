@@ -1,24 +1,67 @@
 ---
 title: "Lecture 1: Welcome to Machine Learning"
-subtitle: "Course overview and expectations"
+subtitle: "Course Introduction & Learning ML Through a Cat's Eyes"
 ---
 
-## 🎯 Learning Objectives
+## Overview
 
-- Understand course structure and goals
-- Review what ML is and common applications
-- Overview of tools and workflow
+Welcome to Machine Learning! This course takes a unique "Learn by Building" approach where you'll implement real ML systems from day one. In today's hands-on session, we'll explore the three fundamental paradigms of machine learning—supervised, unsupervised, and active learning—by building **CatShop**, an e-commerce system that thinks like a cat using Google's Gemma-3 language model.
 
-## 📚 Materials
+## Learning Objectives
 
-- Placeholder links. Content coming soon.
+By the end of this lecture, you will:
 
-## 📝 Outline
+- **Experience** all three ML paradigms through hands-on implementation
+- **Fine-tune** Gemma-3 (270M parameters) using LoRA for efficient adaptation
+- **Observe** catastrophic forgetting and model trade-offs
+- **Build** a complete ML application from data to deployment
+- **Understand** how active learning reduces labeling costs
 
-- What is Machine Learning?
-- Course logistics and policies
-- Demos and examples
+## Materials
+
+:::{.callout-tip}
+## Quick Access
+**[Pre-Lecture Setup](https://github.com/jinming99/learn-ml-by-building/blob/main/Lecture%201%20Overview/01-Pre-Lecture-Setup.ipynb)**  
+**[Course Overview](https://github.com/jinming99/learn-ml-by-building/blob/main/Lecture%201%20Overview/01-Course-Overview.ipynb)**  
+**[CatShop Notebook](https://github.com/jinming99/learn-ml-by-building/blob/main/Lecture%201%20Overview/01-Catshop.ipynb)**  
+**[Open in Colab](https://colab.research.google.com/github/jinming99/learn-ml-by-building/blob/main/Lecture%201%20Overview/01-Catshop.ipynb)**  
+**[Lecture Folder](https://github.com/jinming99/learn-ml-by-building/tree/main/Lecture%201%20Overview)**
+:::
+
+:::{.callout-important collapse=false}
+## Pre-Class Requirements
+
+Complete **[Pre-Lecture 1 Setup](https://github.com/jinming99/learn-ml-by-building/blob/main/Lecture%201%20Overview/01-Pre-Lecture-Setup.ipynb)** before the lecture!
+:::
+
+:::{.callout-warning collapse=false}
+## Reminder
+Join the course Piazza forum (Required for participation)
+
+Complete the [Project Matchmaker Form](https://docs.google.com/forms/d/e/1FAIpQLSfx5iz7JF3ePe1-c-HkKMlxiUICjjog9D89YGy5VtqfhUFu_g/viewform?usp=sharing&ouid=116115729328867711828) by Mon 8/26, 12:00 PM ET. Required for [Lecture 2: k-NN](02-knn.qmd); counts toward participation.
+:::
+
+## Interactive Demo
+
+:::{.callout-note}
+## 🐱 CatShop Web Application
+Experience your trained model in action with the CatShop e-commerce demo, featuring real-time cat perspective classifications, confidence visualization, and interactive chat.
+
+Built upon the [WebShop environment](https://webshop-pnlp.github.io/) with modifications for educational purposes.
+:::
+
+## Acknowledgments & Resources
+
+### Core Technologies
+- **[Gemma-3 270M](https://huggingface.co/google/gemma-3-270m)**: Google's efficient language model
+- **[PEFT/LoRA](https://github.com/huggingface/peft)**: Parameter-efficient fine-tuning
+- **[Transformers](https://huggingface.co/docs/transformers)**: Hugging Face's model library
+
+### Dataset & Environment
+- **[WebShop](https://webshop-pnlp.github.io/)**: E-commerce product data and environment  
+  *Yao et al., "WebShop: Towards Scalable Real-World Web Interaction with Grounded Language Agents", NeurIPS 2022*
+
 
 ---
 
-Next: [Lecture 2: k-NN →](02-knn.qmd)
+**Next**: [Lecture 2: k-Nearest Neighbors →](02-knn.qmd)

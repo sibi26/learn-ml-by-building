@@ -16,16 +16,20 @@ subtitle: "Getting Your ML Development Environment Ready"
 ## Quick Access
 **[Setup Notebook](https://github.com/jinming99/learn-ml-by-building/blob/main/Lecture%200%20Environment%20Setup/00-Environment-Setup.ipynb)**  
 **[Open in Colab](https://colab.research.google.com/github/jinming99/learn-ml-by-building/blob/main/Lecture%200%20Environment%20Setup/00-Environment-Setup.ipynb)**  
+**[Lecture Folder](https://github.com/jinming99/learn-ml-by-building/tree/main/Lecture%200%20Environment%20Setup)**
 :::
 
-### Additional Resources
-- [Lecture Folder](https://github.com/jinming99/learn-ml-by-building/tree/main/Lecture%200%20Environment%20Setup)
-- [Setup Guide (SETUP.md)](https://github.com/jinming99/learn-ml-by-building/blob/main/Lecture%200%20Environment%20Setup/SETUP.md)
 
+:::{.callout-warning collapse=false}
+## Reminder
+Join the course Piazza forum (Required for participation)
 
-## 📝 Pre-Class Preparation
+Complete the [Project Matchmaker Form](https://docs.google.com/forms/d/e/1FAIpQLSfx5iz7JF3ePe1-c-HkKMlxiUICjjog9D89YGy5VtqfhUFu_g/viewform?usp=sharing&ouid=116115729328867711828) by Mon 8/26, 12:00 PM ET. Required for [Lecture 2: k-NN](02-knn.qmd); counts toward participation.
+:::
 
-1. Complete environment setup
+## Pre-Class Preparation
+
+1. Complete environment setup: [Setup Guide (SETUP.md)](https://github.com/jinming99/learn-ml-by-building/blob/main/Lecture%200%20Environment%20Setup/SETUP.md)
 2. Run through the setup notebook
 3. Post any issues on Piazza
 
