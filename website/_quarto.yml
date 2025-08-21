@@ -93,7 +93,7 @@ website:
 
 format:
   html:
-    theme: sandstone
+    theme: morph
     # css: styles.css
     toc: true
     toc-depth: 2

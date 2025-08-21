@@ -64,7 +64,7 @@
     "href": "lectures/00-setup.html",
     "title": "Lecture 0: Environment Setup",
     "section": "",
-    "text": "After this lecture, you will be able to:\n\nSet up Python environment for ML development\nUse Jupyter notebooks effectively\nRun code both locally and on Google Colab\nNavigate course GitHub repository",
+    "text": "Set up Python environment for ML development\nUse Jupyter notebooks effectively\nRun code both locally and on Google Colab\nNavigate course GitHub repository",
     "crumbs": [
       "Home",
       "Module 1: Let's Predict",
@@ -76,7 +76,7 @@
     "href": "lectures/00-setup.html#learning-objectives",
     "title": "Lecture 0: Environment Setup",
     "section": "",
-    "text": "After this lecture, you will be able to:\n\nSet up Python environment for ML development\nUse Jupyter notebooks effectively\nRun code both locally and on Google Colab\nNavigate course GitHub repository",
+    "text": "Set up Python environment for ML development\nUse Jupyter notebooks effectively\nRun code both locally and on Google Colab\nNavigate course GitHub repository",
     "crumbs": [
       "Home",
       "Module 1: Let's Predict",
@@ -87,8 +87,8 @@
     "objectID": "lectures/00-setup.html#materials",
     "href": "lectures/00-setup.html#materials",
     "title": "Lecture 0: Environment Setup",
-    "section": "📚 Materials",
-    "text": "📚 Materials\n\n\n\n\n\n\nQuick Access\n\n\n\n📓 Setup Notebook\n🚀 Open in Colab\n\n\n\nAdditional Resources\n\n📁 Lecture Folder\n📝 Setup Guide (SETUP.md)\nPython Requirements",
+    "section": "Materials",
+    "text": "Materials\n\n\n\n\n\n\nQuick Access\n\n\n\nSetup Notebook\nOpen in Colab\n\n\n\nAdditional Resources\n\nLecture Folder\nSetup Guide (SETUP.md)",
     "crumbs": [
       "Home",
       "Module 1: Let's Predict",
@@ -148,7 +148,7 @@
     "href": "lectures/00-setup.html#pre-class-preparation",
     "title": "Lecture 0: Environment Setup",
     "section": "📝 Pre-Class Preparation",
-    "text": "📝 Pre-Class Preparation\nBefore next class: 1. Complete environment setup 2. Run through the setup notebook 3. Post any issues on Piazza\n\nNext: Lecture 1: Welcome to Machine Learning →",
+    "text": "📝 Pre-Class Preparation\n\nComplete environment setup\nRun through the setup notebook\nPost any issues on Piazza\n\n\nNext: Lecture 1: Welcome to Machine Learning →",
     "crumbs": [
       "Home",
       "Module 1: Let's Predict",
@@ -819,5 +819,17 @@
     "title": "Resources",
     "section": "Documentation",
     "text": "Documentation\n\nNumPy Documentation\nPyTorch Tutorials\nScikit-learn User Guide"
+  },
+  {
+    "objectID": "lectures/00-setup.html#objectives",
+    "href": "lectures/00-setup.html#objectives",
+    "title": "Lecture 0: Environment Setup",
+    "section": "",
+    "text": "Set up Python environment for ML development\nUse Jupyter notebooks effectively\nRun code both locally and on Google Colab\nNavigate course GitHub repository",
+    "crumbs": [
+      "Home",
+      "Module 1: Let's Predict",
+      "L0: Environment Setup"
+    ]
   }
 ]
