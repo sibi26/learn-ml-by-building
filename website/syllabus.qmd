@@ -6,8 +6,6 @@ subtitle: "ECE4424/CS4824: Machine Learning - Fall 2025"
 ## Course Information
 
 **Course**: ECE4424/CS4824 - Machine Learning  
-**Credits**: 3  
-**Prerequisites**: ECE 2714 (Signals and Systems) or equivalent; programming experience  
 **Time**: MW 5:30pm - 6:45pm  
 **Location**: GOODW 125  
 **Course Website**: https://jinming99.github.io/learn-ml-by-building/
@@ -15,8 +13,8 @@ subtitle: "ECE4424/CS4824: Machine Learning - Fall 2025"
 ### Instructor
 **Dr. Ming Jin**  
 Email: jinming@vt.edu  
-Office: [Building Room Number]  
-Office Hours: Wednesday 10:00-11:00 AM or by appointment  
+Office: Whittemore 420
+Office Hours: TBD
 
 ### Teaching Assistant
 **Sherawat, Kamal**  
@@ -72,20 +70,20 @@ Upon successful completion of this course, students will be able to:
 
 | Component | Weight | Description |
 |-----------|--------|-------------|
-| **Project 1: Foundations** | 15% | Fundamental predictive modeling & principles |
+| **Project 1: Foundations** | 15% | KNN and fundamental principles |
 | **Project 2: Neural Networks** | 15% | Deep learning architectures & applications |
-| **Project 3: Modern AI** | 15% | Advanced topics (RL/Unsupervised/GenAI) |
+| **Project 3: Reinforcement Learning** | 15% | Advanced topics (RL/GenAI) |
 | **Capstone Project** | 45% | Self-directed research project |
-| **Educational Content** | 3% | "Explain ML to a Kid" videos (2 required) |
-| **Participation** | 2% | Piazza contributions, peer engagement |
-| **Flex/Adjustment** | 5% | Reserved for bonus opportunities |
+| **Educational Content** | 5% | "Explain ML to a Kid" videos (2 required) |
+| **Participation** | 5% | Piazza contributions, peer engagement |
+| **Flex/Adjustment** | up to 5% | Reserved for bonus opportunities |
 
 ### Project Specifications
 
-**Format**: Mini research papers following conference paper structure  
-**Submission**: PDF report via Canvas, code via GitHub  
-**Collaboration**: Teams of 2-3 allowed for Projects 1-3 with contribution statements  
-**Capstone**: Individual work required  
+- **Format**: Mini research papers following conference paper structure  
+- **Submission**: PDF report via Canvas, code via GitHub  
+- **Collaboration**: Individual work required for Projects 1-3 
+- **Capstone**: Teams of 2-3 allowed with contribution statements  
 
 ### Late Policy
 - Three (3) free late days for the entire semester (use strategically)
@@ -100,22 +98,19 @@ Upon successful completion of this course, students will be able to:
 **Virginia Tech Honor Code**: "As a Hokie, I will conduct myself with honor and integrity at all times. I will not lie, cheat, or steal, nor will I accept the actions of those who do."
 
 Specific to this course:
+
 - All submitted work must be your own or properly cited
 - Collaboration is encouraged for understanding concepts
-- Code sharing or copying is prohibited
-- Use of AI tools (GitHub Copilot, ChatGPT, etc.) must be explicitly disclosed
+- Use of AI tools (ChatGPT, etc.) must be explicitly disclosed
 - Violations will result in a grade of F(0) for the assignment and referral to the Honor System
 
 ### Attendance Policy
-- Attendance is not mandatory but strongly encouraged
-- Lecture recordings will be available on Canvas
 - In-class activities may contribute to participation grade
 - Consistent absence may impact ability to succeed
 
 ### Communication
 - **Primary**: Piazza for all course-related questions
 - **Email**: For personal/confidential matters only
-- **Response time**: Within 48 hours on weekdays
 
 ## University Policies
 
@@ -128,46 +123,16 @@ Students with disabilities who need academic accommodations should:
 2. Provide accommodation letter to instructor
 3. Discuss accommodations early in the semester
 
-[SSD Website](https://ssd.vt.edu/)
-
-### Mental Health and Well-being
-- **Cook Counseling Center**: 540-231-6557, [ucc.vt.edu](https://ucc.vt.edu/)
-- **Emergency**: 540-231-6444 (after hours)
-- **Dean of Students Office**: 540-231-3787, [dos.vt.edu](https://dos.vt.edu/)
-- **Hokie Wellness**: [hokiewellness.vt.edu](https://hokiewellness.vt.edu/)
-
-### Technical Support
-- **4Help**: IT support at 540-231-4357, [4help.vt.edu](https://4help.vt.edu/)
-- **Canvas Support**: Available 24/7 through Canvas Help menu
-- **Library Resources**: [lib.vt.edu](https://lib.vt.edu/)
-
 ## Required Resources
-
-### Software (Free)
-- Python 3.8+ with Jupyter Notebook
-- Git and GitHub account
-- Google Colab (free tier sufficient)
-- Text editor (VS Code recommended)
 
 ### Hardware
 - Laptop capable of running Python
 - Internet connection for Colab/Canvas
-- No GPU required (cloud resources provided)
-
-### Textbooks (Optional - Free Online)
-- *Pattern Recognition and Machine Learning* - Bishop
-- *The Elements of Statistical Learning* - Hastie, Tibshirani, Friedman
-- *Deep Learning* - Goodfellow, Bengio, Courville
-- Course lecture notes and notebooks (primary resource)
-
-## Emergency Preparedness
-- **Emergency Notifications**: Sign up for VT Alerts at [alerts.vt.edu](https://alerts.vt.edu/)
-- **Class Cancellation**: Check Canvas announcements and email
-- **Building Evacuation**: Follow posted evacuation routes
+- No GPU required
 
 ## Tentative Nature of Syllabus
-This syllabus is subject to change. Students will be notified of any changes via Canvas announcement and updated on the course website.
+This syllabus is subject to change. Students will be notified of any changes during class and updated on the course website.
 
 ---
 
-*Last Updated: January 2025*
+*Last Updated: August 2025*

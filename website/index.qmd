@@ -3,42 +3,6 @@ title: "Machine Learning: Learn by Building"
 subtitle: "ECE4424/CS4824 - Fall 2025"
 ---
 
-## Current Week
-
-:::{.callout-important}
-## Week 1: Getting Started
-- **Monday**: Complete [Environment Setup](lectures/00-setup.qmd)
-- **Wednesday**: Start [Lecture 1: ML Overview](lectures/01-overview.qmd)
-- **Friday**: Introduction to k-NN
-
-**Next Deadline**: Project 1 Proposal - February 1
-:::
-
-## Quick Links
-
-:::{.grid}
-:::{.g-col-4}
-### This Week's Notebook
-[Open in GitHub →](https://github.com/jinming99/learn-ml-by-building/blob/main/Lecture%201%20Overview/01-Overview.ipynb)
-
-[Open in Colab →](https://colab.research.google.com/github/jinming99/learn-ml-by-building/blob/main/Lecture%201%20Overview/01-Overview.ipynb)
-:::
-
-:::{.g-col-4}
-### Discussion
-[Piazza Forum →](https://piazza.com/class/YOUR_CLASS_CODE)
-
-Office Hours: MW 10-11am
-:::
-
-:::{.g-col-4}
-### Grades
-[Canvas →](https://canvas.vt.edu/courses/YOUR_COURSE_ID)
-
-[Project 1 Details →](projects/project1.qmd)
-:::
-:::
-
 ## Course Philosophy
 
 This course takes a **hands-on approach** to machine learning. You'll:
@@ -50,16 +14,6 @@ This course takes a **hands-on approach** to machine learning. You'll:
 
 We believe the best way to understand machine learning is to build it, break it, and rebuild it better.
 
-## Learning Path
-
-```mermaid
-graph LR
-    A[Module 1<br/>Let's Predict] --> B[Module 2<br/>Let's Understand]
-    B --> C[Module 3<br/>Let's Discover]
-    C --> D[Module 4<br/>Let's See & Chat]
-    D --> E[Module 5<br/>Let's Act]
-    E --> F[Module 6<br/>Let's Impact]
-```
 
 ## Getting Started
 
@@ -68,18 +22,11 @@ graph LR
 3. **Review the syllabus** → [Course Policies](syllabus.qmd)
 4. **Check the schedule** → [Week-by-Week](schedule.qmd)
 
-## Recent Announcements
-
-:::{.callout-note}
-## January 15, 2025
-Welcome to ECE 4424! Please complete the environment setup before our first class. Join our Piazza forum using the access code sent via email.
-:::
-
 ## Course Team
 
 **Instructor**: Ming Jin  
 Email: jinming@vt.edu  
-Office Hours: Wednesday 10-11am
+Office Hours: TBD
 
 **Teaching Assistant**: Sherawat, Kamal  
 Email: kamals@vt.edu  

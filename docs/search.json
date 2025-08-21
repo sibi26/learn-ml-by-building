@@ -208,7 +208,7 @@
     "href": "syllabus.html",
     "title": "Course Syllabus",
     "section": "",
-    "text": "Course: ECE 4424 - Machine Learning\nCredits: 3\nPrerequisites: ECE 2714 (Signals and Systems) or equivalent; programming experience\nTime: MWF 9:05-9:55 AM\nLocation: [Building Room] / Zoom Link on Canvas\nCourse Website: https://jinming99.github.io/learn-ml-by-building/\n\n\nDr. Ming Jin\n📧 jinming@vt.edu\n🏢 Office: [Building Room Number]\n📅 Office Hours: Wednesday 10:00-11:00 AM or by appointment\n\n\n\n[Name TBD]\n📧 [Email TBD]\n📅 Office Hours: [TBD]",
+    "text": "Course: ECE4424/CS4824 - Machine Learning\nTime: MW 5:30pm - 6:45pm\nLocation: GOODW 125\nCourse Website: https://jinming99.github.io/learn-ml-by-building/\n\n\nDr. Ming Jin\nEmail: jinming@vt.edu\nOffice: Whittemore 420 Office Hours: TBD\n\n\n\nSherawat, Kamal\nEmail: kamals@vt.edu\nOffice Hours: TBD",
     "crumbs": [
       "Home",
       "Course Info",
@@ -220,7 +220,7 @@
     "href": "syllabus.html#course-information",
     "title": "Course Syllabus",
     "section": "",
-    "text": "Course: ECE 4424 - Machine Learning\nCredits: 3\nPrerequisites: ECE 2714 (Signals and Systems) or equivalent; programming experience\nTime: MWF 9:05-9:55 AM\nLocation: [Building Room] / Zoom Link on Canvas\nCourse Website: https://jinming99.github.io/learn-ml-by-building/\n\n\nDr. Ming Jin\n📧 jinming@vt.edu\n🏢 Office: [Building Room Number]\n📅 Office Hours: Wednesday 10:00-11:00 AM or by appointment\n\n\n\n[Name TBD]\n📧 [Email TBD]\n📅 Office Hours: [TBD]",
+    "text": "Course: ECE4424/CS4824 - Machine Learning\nTime: MW 5:30pm - 6:45pm\nLocation: GOODW 125\nCourse Website: https://jinming99.github.io/learn-ml-by-building/\n\n\nDr. Ming Jin\nEmail: jinming@vt.edu\nOffice: Whittemore 420 Office Hours: TBD\n\n\n\nSherawat, Kamal\nEmail: kamals@vt.edu\nOffice Hours: TBD",
     "crumbs": [
       "Home",
       "Course Info",
@@ -280,7 +280,7 @@
     "href": "syllabus.html#course-assessment",
     "title": "Course Syllabus",
     "section": "Course Assessment",
-    "text": "Course Assessment\n\nGrade Components (100 points total)\n\n\n\n\n\n\n\n\nComponent\nWeight\nDescription\n\n\n\n\nProject 1: Foundations\n15%\nFundamental predictive modeling & principles\n\n\nProject 2: Neural Networks\n15%\nDeep learning architectures & applications\n\n\nProject 3: Modern AI\n15%\nAdvanced topics (RL/Unsupervised/GenAI)\n\n\nCapstone Project\n45%\nSelf-directed research project\n\n\nEducational Content\n3%\n“Explain ML to a Kid” videos (2 required)\n\n\nParticipation\n2%\nPiazza contributions, peer engagement\n\n\nFlex/Adjustment\n5%\nReserved for bonus opportunities\n\n\n\n\n\nProject Specifications\nFormat: Mini research papers following conference paper structure\nSubmission: PDF report via Canvas, code via GitHub\nCollaboration: Teams of 2-3 allowed for Projects 1-3 with contribution statements\nCapstone: Individual work required\n\n\nLate Policy\n\nThree (3) free late days for the entire semester (use strategically)\nAfter exhausting free days: 10% penalty per day\nNo late submissions accepted for final capstone project\nMedical/emergency extensions require documentation through Dean of Students",
+    "text": "Course Assessment\n\nGrade Components (100 points total)\n\n\n\n\n\n\n\n\nComponent\nWeight\nDescription\n\n\n\n\nProject 1: Foundations\n15%\nKNN and fundamental principles\n\n\nProject 2: Neural Networks\n15%\nDeep learning architectures & applications\n\n\nProject 3: Reinforcement Learning\n15%\nAdvanced topics (RL/GenAI)\n\n\nCapstone Project\n45%\nSelf-directed research project\n\n\nEducational Content\n5%\n“Explain ML to a Kid” videos (2 required)\n\n\nParticipation\n5%\nPiazza contributions, peer engagement\n\n\nFlex/Adjustment\nup to 5%\nReserved for bonus opportunities\n\n\n\n\n\nProject Specifications\n\nFormat: Mini research papers following conference paper structure\n\nSubmission: PDF report via Canvas, code via GitHub\n\nCollaboration: Individual work required for Projects 1-3\nCapstone: Teams of 2-3 allowed with contribution statements\n\n\n\nLate Policy\n\nThree (3) free late days for the entire semester (use strategically)\nAfter exhausting free days: 10% penalty per day\nNo late submissions accepted for final capstone project\nMedical/emergency extensions require documentation through Dean of Students",
     "crumbs": [
       "Home",
       "Course Info",
@@ -292,7 +292,7 @@
     "href": "syllabus.html#course-policies",
     "title": "Course Syllabus",
     "section": "Course Policies",
-    "text": "Course Policies\n\nAcademic Integrity\nVirginia Tech Honor Code: “As a Hokie, I will conduct myself with honor and integrity at all times. I will not lie, cheat, or steal, nor will I accept the actions of those who do.”\nSpecific to this course: - All submitted work must be your own or properly cited - Collaboration is encouraged for understanding concepts - Code sharing or copying is prohibited - Use of AI tools (GitHub Copilot, ChatGPT, etc.) must be explicitly disclosed - Violations will result in a grade of F(0) for the assignment and referral to the Honor System\n\n\nAttendance Policy\n\nAttendance is not mandatory but strongly encouraged\nLecture recordings will be available on Canvas\nIn-class activities may contribute to participation grade\nConsistent absence may impact ability to succeed\n\n\n\nCommunication\n\nPrimary: Piazza for all course-related questions\nEmail: For personal/confidential matters only\nResponse time: Within 48 hours on weekdays",
+    "text": "Course Policies\n\nAcademic Integrity\nVirginia Tech Honor Code: “As a Hokie, I will conduct myself with honor and integrity at all times. I will not lie, cheat, or steal, nor will I accept the actions of those who do.”\nSpecific to this course:\n\nAll submitted work must be your own or properly cited\nCollaboration is encouraged for understanding concepts\nUse of AI tools (ChatGPT, etc.) must be explicitly disclosed\nViolations will result in a grade of F(0) for the assignment and referral to the Honor System\n\n\n\nAttendance Policy\n\nIn-class activities may contribute to participation grade\nConsistent absence may impact ability to succeed\n\n\n\nCommunication\n\nPrimary: Piazza for all course-related questions\nEmail: For personal/confidential matters only",
     "crumbs": [
       "Home",
       "Course Info",
@@ -304,7 +304,7 @@
     "href": "syllabus.html#university-policies",
     "title": "Course Syllabus",
     "section": "University Policies",
-    "text": "University Policies\n\nPrinciples of Community\nVirginia Tech is committed to creating an inclusive community that values diversity and seeks to promote an environment of mutual respect. Full statement\n\n\nServices for Students with Disabilities (SSD)\nStudents with disabilities who need academic accommodations should: 1. Register with Services for Students with Disabilities (SSD) - 540-231-3788 2. Provide accommodation letter to instructor 3. Discuss accommodations early in the semester\nSSD Website\n\n\nMental Health and Well-being\n\nCook Counseling Center: 540-231-6557, ucc.vt.edu\nEmergency: 540-231-6444 (after hours)\nDean of Students Office: 540-231-3787, dos.vt.edu\nHokie Wellness: hokiewellness.vt.edu\n\n\n\nTechnical Support\n\n4Help: IT support at 540-231-4357, 4help.vt.edu\nCanvas Support: Available 24/7 through Canvas Help menu\nLibrary Resources: lib.vt.edu",
+    "text": "University Policies\n\nPrinciples of Community\nVirginia Tech is committed to creating an inclusive community that values diversity and seeks to promote an environment of mutual respect. Full statement\n\n\nServices for Students with Disabilities (SSD)\nStudents with disabilities who need academic accommodations should: 1. Register with Services for Students with Disabilities (SSD) - 540-231-3788 2. Provide accommodation letter to instructor 3. Discuss accommodations early in the semester",
     "crumbs": [
       "Home",
       "Course Info",
@@ -316,7 +316,7 @@
     "href": "syllabus.html#required-resources",
     "title": "Course Syllabus",
     "section": "Required Resources",
-    "text": "Required Resources\n\nSoftware (Free)\n\nPython 3.8+ with Jupyter Notebook\nGit and GitHub account\nGoogle Colab (free tier sufficient)\nText editor (VS Code recommended)\n\n\n\nHardware\n\nLaptop capable of running Python\nInternet connection for Colab/Canvas\nNo GPU required (cloud resources provided)\n\n\n\nTextbooks (Optional - Free Online)\n\nPattern Recognition and Machine Learning - Bishop\nThe Elements of Statistical Learning - Hastie, Tibshirani, Friedman\nDeep Learning - Goodfellow, Bengio, Courville\nCourse lecture notes and notebooks (primary resource)",
+    "text": "Required Resources\n\nHardware\n\nLaptop capable of running Python\nInternet connection for Colab/Canvas\nNo GPU required",
     "crumbs": [
       "Home",
       "Course Info",
@@ -340,7 +340,7 @@
     "href": "syllabus.html#tentative-nature-of-syllabus",
     "title": "Course Syllabus",
     "section": "Tentative Nature of Syllabus",
-    "text": "Tentative Nature of Syllabus\nThis syllabus is subject to change. Students will be notified of any changes via Canvas announcement and updated on the course website.\n\nLast Updated: January 2025",
+    "text": "Tentative Nature of Syllabus\nThis syllabus is subject to change. Students will be notified of any changes during class and updated on the course website.\n\nLast Updated: August 2025",
     "crumbs": [
       "Home",
       "Course Info",
@@ -352,7 +352,7 @@
     "href": "index.html",
     "title": "Machine Learning: Learn by Building",
     "section": "",
-    "text": "Week 1: Getting Started\n\n\n\n\nMonday: Complete Environment Setup\nWednesday: Start Lecture 1: ML Overview\nFriday: Introduction to k-NN\n\nNext Deadline: Project 1 Proposal - February 1"
+    "text": "This course takes a hands-on approach to machine learning. You’ll:\n\nBuild real ML systems, not just study theory\nCreate an AI portfolio of mini research papers\nExplain complex concepts simply (teaching = understanding)\nWork with cutting-edge tools while mastering fundamentals\n\nWe believe the best way to understand machine learning is to build it, break it, and rebuild it better."
   },
   {
     "objectID": "index.html#current-week",
@@ -365,15 +365,15 @@
     "objectID": "index.html#quick-links",
     "href": "index.html#quick-links",
     "title": "Machine Learning: Learn by Building",
-    "section": "Quick Links",
-    "text": "Quick Links\n\n\n📓 This Week’s Notebook\nOpen in GitHub →\nOpen in Colab →\n\n\n💬 Discussion\nPiazza Forum →\nOffice Hours: MW 10-11am\n\n\n📊 Grades\nCanvas →\nProject 1 Details →"
+    "section": "",
+    "text": "Open in GitHub →\nOpen in Colab →\n\n\n\nPiazza Forum →\nOffice Hours: MW 10-11am\n\n\n\nCanvas →\nProject 1 Details →"
   },
   {
     "objectID": "index.html#course-philosophy",
     "href": "index.html#course-philosophy",
     "title": "Machine Learning: Learn by Building",
-    "section": "Course Philosophy",
-    "text": "Course Philosophy\nThis course takes a hands-on approach to machine learning. You’ll:\n\nBuild real ML systems, not just study theory\nCreate an AI portfolio of mini research papers\nExplain complex concepts simply (teaching = understanding)\nWork with cutting-edge tools while mastering fundamentals\n\nWe believe the best way to understand machine learning is to build it, break it, and rebuild it better."
+    "section": "",
+    "text": "This course takes a hands-on approach to machine learning. You’ll:\n\nBuild real ML systems, not just study theory\nCreate an AI portfolio of mini research papers\nExplain complex concepts simply (teaching = understanding)\nWork with cutting-edge tools while mastering fundamentals\n\nWe believe the best way to understand machine learning is to build it, break it, and rebuild it better."
   },
   {
     "objectID": "index.html#learning-path",
@@ -401,7 +401,7 @@
     "href": "index.html#course-team",
     "title": "Machine Learning: Learn by Building",
     "section": "Course Team",
-    "text": "Course Team\nInstructor: Ming Jin\n📧 jinming@vt.edu\n🏢 Office Hours: Wednesday 10-11am\nTeaching Assistant: TBD\n📧 TBD\n🏢 Office Hours: TBD"
+    "text": "Course Team\nInstructor: Ming Jin\nEmail: jinming@vt.edu\nOffice Hours: TBD\nTeaching Assistant: Sherawat, Kamal\nEmail: kamals@vt.edu\nOffice Hours: TBD"
   },
   {
     "objectID": "projects/index.html",
