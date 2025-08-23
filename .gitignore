@@ -19,6 +19,10 @@ env/
 venv/
 ENV/
 ml_env/
+venv_macbook/
+
+# Lecture 3 Linear Regression specific venv
+Lecture 3 Linear Regression/linear_regression_env/
 
 # ===== OS-generated files (macOS) =====
 .DS_Store
@@ -82,6 +86,8 @@ kaggle.json
 *_answers.ipynb
 grades/
 submissions/
+Project 1 KNN Music Recommender (instructor)/
+temp/
 
 # To force-include a specific file, add a negate rule below, e.g.:
 # !path/to/allowed-small-file.csv
@@ -98,6 +104,7 @@ Lecture 1 Overview/catshop-slides-notebook.md
 Lecture 1 Overview/ml_lecture1_complete.md
 Lecture 1 Overview/ml_prelecture_setup.md
 Lecture 1 Overview/temp.md
+Lecture 1 Overview/ACTIVE_LEARNING_GUIDE.md
 Lecture 1 Overview/verification-notebook.md
 
 # ===== Lecture 1 Overview: generated artifacts =====
@@ -106,3 +113,30 @@ Lecture 1 Overview/models/lecture_assets/
 Lecture 1 Overview/web_agent_site/
 Lecture 1 Overview/catshop/models/gemma-cat-lora/
 Lecture 1 Overview/models/
+
+# ===== Quarto website build artifacts =====
+# Keep docs/ committed because GitHub Pages serves from /docs (configured in website/_quarto.yml)
+# DO NOT ignore docs/ unless you deploy elsewhere (Netlify/Quarto Pub).
+website/_site/
+website/.quarto/
+.quarto/
+
+# ===== Python tooling & test artifacts =====
+.venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+
+# ===== Local databases and lockfiles =====
+*.sqlite
+*.db
+*.lock
+
+# ===== Direnv and local env files =====
+.envrc
+
+# ===== Project 1 KNN Music Recommender: local env & checkpoints =====
+Project 1 KNN Music Recommender/.venv-music/
+Project 1 KNN Music Recommender/.ipynb_checkpoints/
