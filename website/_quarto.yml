@@ -7,7 +7,7 @@ website:
   description: "Learn ML by Building - Fall 2025"
   site-url: https://jinming99.github.io/learn-ml-by-building/
   repo-url: https://github.com/jinming99/learn-ml-by-building
-  repo-actions: [edit, issue]
+  repo-actions: []
   
   navbar:
     background: primary
@@ -39,8 +39,6 @@ website:
             href: syllabus.qmd
           - text: "Schedule"
             href: schedule.qmd
-          - text: "Announcements"
-            href: announcements.qmd
       
       - section: "Module 1: Let's Predict"
         contents:

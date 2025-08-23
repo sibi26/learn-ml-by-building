@@ -1,24 +1,46 @@
 ---
 title: "Lecture 3: Linear Regression"
-subtitle: "From least squares to gradient descent"
+subtitle: "The Universal Pattern Finder - From Simple Lines to Complex Curves"
 ---
 
-## 🎯 Learning Objectives
+## Overview
 
-- Formulate linear regression
-- Derive normal equations
-- Implement gradient descent
+Linear regression is far more powerful than its name suggests. In this hands-on lecture, we'll discover how the same algorithm that fits straight lines can capture complex curved relationships in real-world data. Through interactive experiments with automotive engineering and weather forecasting datasets, you'll master polynomial features, understand the "lifting technique," and learn when models become too complex.
 
-## 📚 Materials
+## Learning Objectives
 
-- Placeholder links. Content coming soon.
+By the end of this lecture, you will:
 
-## 📝 Outline
+- **Understand** linear regression model, parameters, and MSE loss function
+- **Master** polynomial features through hands-on interaction
+- **Apply** regression to real problems (automotive MPG, weather bias correction)
+- **Visualize** the "lifting technique" that transforms curves into hyperplanes
+- **Recognize** overfitting and understand model complexity trade-offs
+- **Engineer** domain-specific features that outperform blind polynomial expansion
 
-- Model, loss, and optimization
-- Bias-variance considerations
-- Extensions
+## Materials
+
+:::{.callout-tip}
+## Quick Access
+**[Linear Regression Notebook](https://github.com/jinming99/learn-ml-by-building/blob/main/Lecture%203%20Linear/03-Linear-Regression.ipynb)**  
+**[Open in Colab](https://colab.research.google.com/github/jinming99/learn-ml-by-building/blob/main/Lecture%203%20Linear/03-Linear-Regression.ipynb)**  
+**[Lecture Folder](https://github.com/jinming99/learn-ml-by-building/tree/main/Lecture%203%20Linear)**
+:::
+
+:::{.callout-important collapse=false}
+## Pre-Class Requirements
+Complete the [Environment Setup Guide](https://github.com/jinming99/learn-ml-by-building/blob/main/Lecture%203%20Linear%20Regression/ENV_SETUP.md).
+:::
+
+## Datasets & Acknowledgments
+
+### Real-World Datasets Used
+- **[Auto MPG Dataset](https://archive.ics.uci.edu/ml/datasets/auto+mpg)**: 398 vehicles from 1970-1982  
+  *UCI Machine Learning Repository, accessed via MLxtend*
+
+- **[ECMWF Weather Data](https://www.ecmwf.int/)**: 5.2M observations from 8,000+ weather stations  
+  *European Centre for Medium-Range Weather Forecasts, via ClimeLab (Apache 2.0)*
 
 ---
 
-Prev: [← Lecture 2: k-NN](02-knn.qmd)
+**Previous**: [← Lecture 2: k-NN](02-knn.qmd) | **Next**: Lecture 4: Logistic Regression (Coming Soon)

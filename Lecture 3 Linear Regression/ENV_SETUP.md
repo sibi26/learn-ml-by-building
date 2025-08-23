@@ -2,6 +2,12 @@
 
 This guide sets up a dedicated virtual environment for the Linear Regression lecture only. It won’t affect your shared `ml_lectures_env`.
 
+## Version Policy
+- **Lectures (existing)**: use Python 3.9 for maximum compatibility with older notebooks and packages.
+- **New projects**: use Python 3.11 for better performance and long-term support.
+
+This page focuses on the lecture's 3.9 environment. See the end for quick 3.11 setup notes.
+
 ## Location
 - Lecture folder: `Lecture 3 Linear Regression/`
 - Env path: `Lecture 3 Linear Regression/linear_regression_env/`
@@ -9,7 +15,7 @@ This guide sets up a dedicated virtual environment for the Linear Regression lec
 
 ## Prerequisites
 - macOS
-- Python 3.9 recommended (the venv uses a Python 3.9 interpreter)
+- Python 3.9 (this lecture venv uses a Python 3.9 interpreter)
 
 ## Create and Activate the Environment
 ```bash
