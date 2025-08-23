@@ -601,14 +601,26 @@
     "href": "index.html#course-team",
     "title": "Machine Learning: Learn by Building",
     "section": "Course Team",
-    "text": "Course Team\nInstructor: Ming Jin\nEmail: jinming@vt.edu\nOffice Hours: TBD\nTeaching Assistant: Sherawat, Kamal\nEmail: kamals@vt.edu\nOffice Hours: TBD"
+    "text": "Course Team\n\n\n\n\n\nInstructor: Ming Jin\nEmail: jinming@vt.edu\nOffice Hours: TBD\n\n\n:::{.grid .align-items-center .g-4 mt-3} :::{.g-col-12 .g-col-md-3 .text-center}   :::\n\nTeaching Assistant: Sherawat, Kamal\nEmail: kamals@vt.edu\nOffice Hours: TBD\n\n:::"
   },
   {
     "objectID": "lectures/03-linear.html",
     "href": "lectures/03-linear.html",
     "title": "Lecture 3: Linear Regression",
     "section": "",
-    "text": "Formulate linear regression\nDerive normal equations\nImplement gradient descent",
+    "text": "Linear regression is far more powerful than its name suggests. In this hands-on lecture, we’ll discover how the same algorithm that fits straight lines can capture complex curved relationships in real-world data. Through interactive experiments with automotive engineering and weather forecasting datasets, you’ll master polynomial features, understand the “lifting technique,” and learn when models become too complex.",
+    "crumbs": [
+      "Home",
+      "Module 1: Let's Predict",
+      "L3: Linear Regression"
+    ]
+  },
+  {
+    "objectID": "lectures/03-linear.html#overview",
+    "href": "lectures/03-linear.html#overview",
+    "title": "Lecture 3: Linear Regression",
+    "section": "",
+    "text": "Linear regression is far more powerful than its name suggests. In this hands-on lecture, we’ll discover how the same algorithm that fits straight lines can capture complex curved relationships in real-world data. Through interactive experiments with automotive engineering and weather forecasting datasets, you’ll master polynomial features, understand the “lifting technique,” and learn when models become too complex.",
     "crumbs": [
       "Home",
       "Module 1: Let's Predict",
@@ -619,8 +631,8 @@
     "objectID": "lectures/03-linear.html#learning-objectives",
     "href": "lectures/03-linear.html#learning-objectives",
     "title": "Lecture 3: Linear Regression",
-    "section": "",
-    "text": "Formulate linear regression\nDerive normal equations\nImplement gradient descent",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nBy the end of this lecture, you will:\n\nUnderstand linear regression model, parameters, and MSE loss function\nMaster polynomial features through hands-on interaction\nApply regression to real problems (automotive MPG, weather bias correction)\nVisualize the “lifting technique” that transforms curves into hyperplanes\nRecognize overfitting and understand model complexity trade-offs\nEngineer domain-specific features that outperform blind polynomial expansion",
     "crumbs": [
       "Home",
       "Module 1: Let's Predict",
@@ -631,8 +643,8 @@
     "objectID": "lectures/03-linear.html#materials",
     "href": "lectures/03-linear.html#materials",
     "title": "Lecture 3: Linear Regression",
-    "section": "📚 Materials",
-    "text": "📚 Materials\n\nPlaceholder links. Content coming soon.",
+    "section": "Materials",
+    "text": "Materials\n\n\n\n\n\n\nQuick Access\n\n\n\nLinear Regression Notebook\nOpen in Colab\nLecture Folder\n\n\n\n\n\n\n\n\nPre-Class Requirements\n\n\n\n\n\nComplete the Environment Setup Guide.",
     "crumbs": [
       "Home",
       "Module 1: Let's Predict",
@@ -640,11 +652,11 @@
     ]
   },
   {
-    "objectID": "lectures/03-linear.html#outline",
-    "href": "lectures/03-linear.html#outline",
+    "objectID": "lectures/03-linear.html#datasets-acknowledgments",
+    "href": "lectures/03-linear.html#datasets-acknowledgments",
     "title": "Lecture 3: Linear Regression",
-    "section": "📝 Outline",
-    "text": "📝 Outline\n\nModel, loss, and optimization\nBias-variance considerations\nExtensions\n\n\nPrev: ← Lecture 2: k-NN",
+    "section": "Datasets & Acknowledgments",
+    "text": "Datasets & Acknowledgments\n\nReal-World Datasets Used\n\nAuto MPG Dataset: 398 vehicles from 1970-1982\nUCI Machine Learning Repository, accessed via MLxtend\nECMWF Weather Data: 5.2M observations from 8,000+ weather stations\nEuropean Centre for Medium-Range Weather Forecasts, via ClimeLab (Apache 2.0)\n\n\nPrevious: ← Lecture 2: k-NN | Next: Lecture 4: Logistic Regression (Coming Soon)",
     "crumbs": [
       "Home",
       "Module 1: Let's Predict",
