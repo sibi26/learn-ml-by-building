@@ -1,138 +1,18 @@
----
-title: "Course Syllabus"
+-title: "Course Syllabus"
 subtitle: "ECE4424/CS4824: Machine Learning - Fall 2025"
----
 
-## Course Information
+## Official Syllabus
 
-**Course**: ECE4424/CS4824 - Machine Learning  
-**Time**: MW 5:30pm - 6:45pm  
-**Location**: GOODW 125  
-**Course Website**: https://jinming99.github.io/learn-ml-by-building/
+For the most up-to-date and complete syllabus, please refer to the official Google Doc:
 
-### Instructor
-**Dr. Ming Jin**  
-Email: jinming@vt.edu  
-Office: Whittemore 420
-Office Hours: TBD
+- Syllabus (published): https://docs.google.com/document/d/e/2PACX-1vRawfzMzEKCan7nd1jOMbaCGrcMYo-DGU1XgfIBKJSRBiuF_Fj0E4KCeslTIGzRs5R60XAsYvURItxv/pub
 
-### Teaching Assistant
-**Sherawat, Kamal**  
-Email: kamals@vt.edu  
-Office Hours: TBD
+Any updates will appear in the Google Doc.
 
-## Course Description
+## Capstone Project Rubrics
 
-Algorithms and principles involved in machine learning with applications to various engineering domains; fundamentals of representing uncertainty, learning from data, supervised learning, unsupervised learning, and learning theory; design and analysis of machine learning systems; design and implementation of a technical project applied to real-world datasets.
+Rubrics for the capstone project are available here:
 
-## Course Philosophy
+- Capstone Rubrics (Google Doc): https://docs.google.com/document/d/19t7HrBbnLVrmRtOs5qiSXxERDdMcxxKG-LZQqSTZmJs/edit?usp=sharing
 
-This course embraces a **"Learn ML by Building"** philosophy:
-
-- **Fundamentals First**: Core concepts and unifying principles form the foundation
-- **Scaffolded Learning**: Progressive complexity with provided code skeletons
-- **AI Portfolio**: Build a collection of projects as mini research papers
-- **Practical Impact**: Bridge theory and application through hands-on implementation
-
-## Course Learning Objectives
-
-Upon successful completion of this course, students will be able to:
-
-1. Analyze and contrast broad classes of machine learning algorithms (supervised vs. unsupervised)
-2. Describe and apply fundamental concepts of learning from data (maximum likelihood estimation, maximum a posteriori, overfitting vs underfitting, regularization, cross-validation)
-3. Design and implement supervised learning algorithms for regression and classification
-4. Apply unsupervised learning algorithms for clustering and dimensionality reduction
-5. Build and train neural networks using modern deep learning frameworks
-6. Implement basic reinforcement learning agents
-7. Evaluate ML systems for performance, fairness, and societal impact
-8. Communicate complex ML concepts clearly through written reports and presentations
-
-## Virginia Tech Grading Scale
-
-| Letter Grade | Percentage | Grade Points |
-|--------------|------------|--------------|
-| A | 93-100% | 4.0 |
-| A- | 90-92% | 3.7 |
-| B+ | 87-89% | 3.3 |
-| B | 83-86% | 3.0 |
-| B- | 80-82% | 2.7 |
-| C+ | 77-79% | 2.3 |
-| C | 73-76% | 2.0 |
-| C- | 70-72% | 1.7 |
-| D+ | 67-69% | 1.3 |
-| D | 63-66% | 1.0 |
-| D- | 60-62% | 0.7 |
-| F | <60% | 0.0 |
-
-## Course Assessment
-
-### Grade Components (100 points total)
-
-| Component | Weight | Description |
-|-----------|--------|-------------|
-| **Project 1: Foundations** | 15% | KNN and fundamental principles |
-| **Project 2: Neural Networks** | 15% | Deep learning architectures & applications |
-| **Project 3: Reinforcement Learning** | 15% | Advanced topics (RL/GenAI) |
-| **Capstone Project** | 45% | Self-directed research project |
-| **Educational Content** | 5% | "Explain ML to a Kid" videos (2 required) |
-| **Participation** | 5% | Piazza contributions, peer engagement |
-| **Flex/Adjustment** | up to 5% | Reserved for bonus opportunities |
-
-### Project Specifications
-
-- **Format**: Mini research papers following conference paper structure  
-- **Submission**: PDF report via Canvas, code via GitHub  
-- **Collaboration**: Individual work required for Projects 1-3 
-- **Capstone**: Teams of 2-3 allowed with contribution statements  
-
-### Late Policy
-- Three (3) free late days for the entire semester (use strategically)
-- After exhausting free days: 10% penalty per day
-- No late submissions accepted for final capstone project
-- Medical/emergency extensions require documentation through Dean of Students
-
-## Course Policies
-
-### Academic Integrity
-
-**Virginia Tech Honor Code**: "As a Hokie, I will conduct myself with honor and integrity at all times. I will not lie, cheat, or steal, nor will I accept the actions of those who do."
-
-Specific to this course:
-
-- All submitted work must be your own or properly cited
-- Collaboration is encouraged for understanding concepts
-- Use of AI tools (ChatGPT, etc.) must be explicitly disclosed
-- Violations will result in a grade of F(0) for the assignment and referral to the Honor System
-
-### Attendance Policy
-- In-class activities may contribute to participation grade
-- Consistent absence may impact ability to succeed
-
-### Communication
-- **Primary**: Piazza for all course-related questions
-- **Email**: For personal/confidential matters only
-
-## University Policies
-
-### Principles of Community
-Virginia Tech is committed to creating an inclusive community that values diversity and seeks to promote an environment of mutual respect. [Full statement](https://inclusive.vt.edu/Programs/vtpoc0.html)
-
-### Services for Students with Disabilities (SSD)
-Students with disabilities who need academic accommodations should:
-1. Register with Services for Students with Disabilities (SSD) - 540-231-3788
-2. Provide accommodation letter to instructor
-3. Discuss accommodations early in the semester
-
-## Required Resources
-
-### Hardware
-- Laptop capable of running Python
-- Internet connection for Colab/Canvas
-- No GPU required
-
-## Tentative Nature of Syllabus
-This syllabus is subject to change. Students will be notified of any changes during class and updated on the course website.
-
----
-
-*Last Updated: August 2025*
+If you need a printable or offline copy, use File → Download in Google Docs.

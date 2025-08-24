@@ -3,17 +3,6 @@ title: "Course Schedule"
 subtitle: "Fall 2025"
 ---
 
-## Module Overview
-
-| Module | Weeks | Theme | Project |
-|--------|-------|-------|---------|
-| **1: Let's Predict** | 1-3 | Foundations & Core Supervised Learning | Project 1 |
-| **2: Let's Understand** | 4-5 | Data, Evaluation, Robustness | Project 1 Due |
-| **3: Let's Discover** | 6 | Unsupervised Learning | - |
-| **4: Let's See & Chat** | 7-10 | Neural Networks & Deep Learning | Project 2 |
-| **5: Let's Act** | 11-12 | Reinforcement Learning | Project 3 |
-| **6: Let's Impact** | 13 | Ethics & Future | Capstone Proposal |
-
 ## Week-by-Week Schedule
 
 :::{.callout-tip}
@@ -23,38 +12,32 @@ The schedule below is embedded from Google Sheets and updates automatically.
 :::
 
 <iframe 
-  src="https://docs.google.com/spreadsheets/d/1Rfe9l8TIzAjvbFVapTWAr60tp_GFOB0yn-YckQa4O94/pubhtml?widget=true&headers=false" 
+  src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQbIP8KGlIkCFWv5SEDa3dLss-nElLTMD6dlOj_UGH8UC5ypQuQMyubtuf3On_FjFvaCtIpXhX25M_B/pubhtml" 
   width="100%" 
   height="800" 
   frameborder="0"
   style="border: 1px solid #ddd; border-radius: 4px;">
 </iframe>
 
-### How to Get Your Google Sheet Embed URL:
-1. Create your schedule in Google Sheets
-2. File → Share → Publish to web
-3. Choose "Embed" and select the specific sheet
-4. Copy the iframe code and replace above
-5. Recommended settings: 
-   - Remove gridlines for cleaner look
-   - Use conditional formatting for module colors
-   - Freeze header row
-
 ## Important Dates
 
 :::{.callout-warning}
-## Key Deadlines
-- **Feb 3**: Project 1 Proposal
-- **Feb 14**: Project 1 Due
-- **Mar 14**: Project 2 Proposal  
-- **Mar 21**: Project 2 Due
-- **Apr 4**: Project 3 Due
-- **Apr 11**: Capstone Proposal
-- **Apr 25**: Capstone Project Due
+## Assignment & Capstone Due Dates
+
+- Project 1 (KNN): Friday, September 12
+- Capstone Proposal: Friday, September 19
+- ML Video for Kids 1: Friday, October 3
+- Capstone Milestone Report: Friday, October 17
+- Project 2 (Unsupervised Learning): Friday, October 31
+- ML Video for Kids 2: Friday, November 14
+- Project 3 (RL): Friday, November 21
+- Capstone Final Report: Friday, December 12
+
+## Other Key Dates
+
+- First Day of Class: Monday, August 25
+- Labor Day (No Class): Monday, September 1
+- Thanksgiving Break (No Class): Monday, November 24 - Wednesday, November 26
+- Capstone Spotlight Presentations: Wednesday, December 3
+- Last Day of Class: Wednesday, December 10
 :::
-
-## Grading Timeline
-
-- Projects 1-3: Graded within 1 week of submission
-- Capstone: Final grades by May 2
-- "Explain ML to a Kid" videos: Rolling submissions, graded within 3 days

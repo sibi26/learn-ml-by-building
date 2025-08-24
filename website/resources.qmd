@@ -10,4 +10,5 @@ title: "Resources"
 ## Documentation
 - [NumPy Documentation](https://numpy.org/doc/)
 - [PyTorch Tutorials](https://pytorch.org/tutorials/)
+- [fast.ai](https://www.fast.ai/) — inspiration for our practical, project-first teaching approach
 - [Scikit-learn User Guide](https://scikit-learn.org/stable/user_guide.html)

@@ -4,19 +4,7 @@
     "href": "schedule.html",
     "title": "Course Schedule",
     "section": "",
-    "text": "Module\nWeeks\nTheme\nProject\n\n\n\n\n1: Let’s Predict\n1-3\nFoundations & Core Supervised Learning\nProject 1\n\n\n2: Let’s Understand\n4-5\nData, Evaluation, Robustness\nProject 1 Due\n\n\n3: Let’s Discover\n6\nUnsupervised Learning\n-\n\n\n4: Let’s See & Chat\n7-10\nNeural Networks & Deep Learning\nProject 2\n\n\n5: Let’s Act\n11-12\nReinforcement Learning\nProject 3\n\n\n6: Let’s Impact\n13\nEthics & Future\nCapstone Proposal",
-    "crumbs": [
-      "Home",
-      "Course Info",
-      "Schedule"
-    ]
-  },
-  {
-    "objectID": "schedule.html#module-overview",
-    "href": "schedule.html#module-overview",
-    "title": "Course Schedule",
-    "section": "",
-    "text": "Module\nWeeks\nTheme\nProject\n\n\n\n\n1: Let’s Predict\n1-3\nFoundations & Core Supervised Learning\nProject 1\n\n\n2: Let’s Understand\n4-5\nData, Evaluation, Robustness\nProject 1 Due\n\n\n3: Let’s Discover\n6\nUnsupervised Learning\n-\n\n\n4: Let’s See & Chat\n7-10\nNeural Networks & Deep Learning\nProject 2\n\n\n5: Let’s Act\n11-12\nReinforcement Learning\nProject 3\n\n\n6: Let’s Impact\n13\nEthics & Future\nCapstone Proposal",
+    "text": "Live Schedule\n\n\n\nThe schedule below is embedded from Google Sheets and updates automatically. Open in Google Sheets →",
     "crumbs": [
       "Home",
       "Course Info",
@@ -27,8 +15,8 @@
     "objectID": "schedule.html#week-by-week-schedule",
     "href": "schedule.html#week-by-week-schedule",
     "title": "Course Schedule",
-    "section": "Week-by-Week Schedule",
-    "text": "Week-by-Week Schedule\n\n\n\n\n\n\nLive Schedule\n\n\n\nThe schedule below is embedded from Google Sheets and updates automatically. Open in Google Sheets →\n\n\n\n\n\nHow to Get Your Google Sheet Embed URL:\n\nCreate your schedule in Google Sheets\nFile → Share → Publish to web\nChoose “Embed” and select the specific sheet\nCopy the iframe code and replace above\nRecommended settings:\n\nRemove gridlines for cleaner look\nUse conditional formatting for module colors\nFreeze header row",
+    "section": "",
+    "text": "Live Schedule\n\n\n\nThe schedule below is embedded from Google Sheets and updates automatically. Open in Google Sheets →",
     "crumbs": [
       "Home",
       "Course Info",
@@ -40,7 +28,7 @@
     "href": "schedule.html#important-dates",
     "title": "Course Schedule",
     "section": "Important Dates",
-    "text": "Important Dates\n\n\n\n\n\n\nKey Deadlines\n\n\n\n\nFeb 3: Project 1 Proposal\nFeb 14: Project 1 Due\nMar 14: Project 2 Proposal\n\nMar 21: Project 2 Due\nApr 4: Project 3 Due\nApr 11: Capstone Proposal\nApr 25: Capstone Project Due",
+    "text": "Important Dates\n\n\n\n\n\n\nAssignment & Capstone Due Dates\n\n\n\n\nProject 1 (KNN): Friday, September 12\nCapstone Proposal: Friday, September 19\nML Video for Kids 1: Friday, October 3\nCapstone Milestone Report: Friday, October 17\nProject 2 (Unsupervised Learning): Friday, October 31\nML Video for Kids 2: Friday, November 14\nProject 3 (RL): Friday, November 21\nCapstone Final Report: Friday, December 12\n\n\nOther Key Dates\n\nFirst Day of Class: Monday, August 25\nLabor Day (No Class): Monday, September 1\nThanksgiving Break (No Class): Monday, November 24 - Wednesday, November 26\nCapstone Spotlight Presentations: Wednesday, December 3\nLast Day of Class: Wednesday, December 10",
     "crumbs": [
       "Home",
       "Course Info",
@@ -48,11 +36,11 @@
     ]
   },
   {
-    "objectID": "schedule.html#grading-timeline",
-    "href": "schedule.html#grading-timeline",
+    "objectID": "schedule.html#other-key-dates",
+    "href": "schedule.html#other-key-dates",
     "title": "Course Schedule",
-    "section": "Grading Timeline",
-    "text": "Grading Timeline\n\nProjects 1-3: Graded within 1 week of submission\nCapstone: Final grades by May 2\n“Explain ML to a Kid” videos: Rolling submissions, graded within 3 days",
+    "section": "Other Key Dates",
+    "text": "Other Key Dates\n\nFirst Day of Class: Monday, August 25\nLabor Day (No Class): Monday, September 1\nThanksgiving Break (No Class): Monday, November 24 - Wednesday, November 26\nCapstone Spotlight Presentations: Wednesday, December 3\nLast Day of Class: Wednesday, December 10",
     "crumbs": [
       "Home",
       "Course Info",
@@ -182,9 +170,9 @@
   {
     "objectID": "syllabus.html",
     "href": "syllabus.html",
-    "title": "Course Syllabus",
+    "title": "ECE4424/CS4824: Machine Learning",
     "section": "",
-    "text": "Course: ECE4424/CS4824 - Machine Learning\nTime: MW 5:30pm - 6:45pm\nLocation: GOODW 125\nCourse Website: https://jinming99.github.io/learn-ml-by-building/\n\n\nDr. Ming Jin\nEmail: jinming@vt.edu\nOffice: Whittemore 420 Office Hours: TBD\n\n\n\nSherawat, Kamal\nEmail: kamals@vt.edu\nOffice Hours: TBD",
+    "text": "-title: “Course Syllabus” subtitle: “ECE4424/CS4824: Machine Learning - Fall 2025”",
     "crumbs": [
       "Home",
       "Course Info",
@@ -192,11 +180,11 @@
     ]
   },
   {
-    "objectID": "syllabus.html#course-information",
-    "href": "syllabus.html#course-information",
-    "title": "Course Syllabus",
-    "section": "",
-    "text": "Course: ECE4424/CS4824 - Machine Learning\nTime: MW 5:30pm - 6:45pm\nLocation: GOODW 125\nCourse Website: https://jinming99.github.io/learn-ml-by-building/\n\n\nDr. Ming Jin\nEmail: jinming@vt.edu\nOffice: Whittemore 420 Office Hours: TBD\n\n\n\nSherawat, Kamal\nEmail: kamals@vt.edu\nOffice Hours: TBD",
+    "objectID": "syllabus.html#official-syllabus",
+    "href": "syllabus.html#official-syllabus",
+    "title": "ECE4424/CS4824: Machine Learning",
+    "section": "Official Syllabus",
+    "text": "Official Syllabus\nFor the most up-to-date and complete syllabus, please refer to the official Google Doc:\n\nSyllabus (published): https://docs.google.com/document/d/e/2PACX-1vRawfzMzEKCan7nd1jOMbaCGrcMYo-DGU1XgfIBKJSRBiuF_Fj0E4KCeslTIGzRs5R60XAsYvURItxv/pub\n\nAny updates will appear in the Google Doc.",
     "crumbs": [
       "Home",
       "Course Info",
@@ -204,107 +192,11 @@
     ]
   },
   {
-    "objectID": "syllabus.html#course-description",
-    "href": "syllabus.html#course-description",
-    "title": "Course Syllabus",
-    "section": "Course Description",
-    "text": "Course Description\nAlgorithms and principles involved in machine learning with applications to various engineering domains; fundamentals of representing uncertainty, learning from data, supervised learning, unsupervised learning, and learning theory; design and analysis of machine learning systems; design and implementation of a technical project applied to real-world datasets.",
-    "crumbs": [
-      "Home",
-      "Course Info",
-      "Syllabus"
-    ]
-  },
-  {
-    "objectID": "syllabus.html#course-philosophy",
-    "href": "syllabus.html#course-philosophy",
-    "title": "Course Syllabus",
-    "section": "Course Philosophy",
-    "text": "Course Philosophy\nThis course embraces a “Learn ML by Building” philosophy:\n\nFundamentals First: Core concepts and unifying principles form the foundation\nScaffolded Learning: Progressive complexity with provided code skeletons\nAI Portfolio: Build a collection of projects as mini research papers\nPractical Impact: Bridge theory and application through hands-on implementation",
-    "crumbs": [
-      "Home",
-      "Course Info",
-      "Syllabus"
-    ]
-  },
-  {
-    "objectID": "syllabus.html#course-learning-objectives",
-    "href": "syllabus.html#course-learning-objectives",
-    "title": "Course Syllabus",
-    "section": "Course Learning Objectives",
-    "text": "Course Learning Objectives\nUpon successful completion of this course, students will be able to:\n\nAnalyze and contrast broad classes of machine learning algorithms (supervised vs. unsupervised)\nDescribe and apply fundamental concepts of learning from data (maximum likelihood estimation, maximum a posteriori, overfitting vs underfitting, regularization, cross-validation)\nDesign and implement supervised learning algorithms for regression and classification\nApply unsupervised learning algorithms for clustering and dimensionality reduction\nBuild and train neural networks using modern deep learning frameworks\nImplement basic reinforcement learning agents\nEvaluate ML systems for performance, fairness, and societal impact\nCommunicate complex ML concepts clearly through written reports and presentations",
-    "crumbs": [
-      "Home",
-      "Course Info",
-      "Syllabus"
-    ]
-  },
-  {
-    "objectID": "syllabus.html#virginia-tech-grading-scale",
-    "href": "syllabus.html#virginia-tech-grading-scale",
-    "title": "Course Syllabus",
-    "section": "Virginia Tech Grading Scale",
-    "text": "Virginia Tech Grading Scale\n\n\n\nLetter Grade\nPercentage\nGrade Points\n\n\n\n\nA\n93-100%\n4.0\n\n\nA-\n90-92%\n3.7\n\n\nB+\n87-89%\n3.3\n\n\nB\n83-86%\n3.0\n\n\nB-\n80-82%\n2.7\n\n\nC+\n77-79%\n2.3\n\n\nC\n73-76%\n2.0\n\n\nC-\n70-72%\n1.7\n\n\nD+\n67-69%\n1.3\n\n\nD\n63-66%\n1.0\n\n\nD-\n60-62%\n0.7\n\n\nF\n&lt;60%\n0.0",
-    "crumbs": [
-      "Home",
-      "Course Info",
-      "Syllabus"
-    ]
-  },
-  {
-    "objectID": "syllabus.html#course-assessment",
-    "href": "syllabus.html#course-assessment",
-    "title": "Course Syllabus",
-    "section": "Course Assessment",
-    "text": "Course Assessment\n\nGrade Components (100 points total)\n\n\n\n\n\n\n\n\nComponent\nWeight\nDescription\n\n\n\n\nProject 1: Foundations\n15%\nKNN and fundamental principles\n\n\nProject 2: Neural Networks\n15%\nDeep learning architectures & applications\n\n\nProject 3: Reinforcement Learning\n15%\nAdvanced topics (RL/GenAI)\n\n\nCapstone Project\n45%\nSelf-directed research project\n\n\nEducational Content\n5%\n“Explain ML to a Kid” videos (2 required)\n\n\nParticipation\n5%\nPiazza contributions, peer engagement\n\n\nFlex/Adjustment\nup to 5%\nReserved for bonus opportunities\n\n\n\n\n\nProject Specifications\n\nFormat: Mini research papers following conference paper structure\n\nSubmission: PDF report via Canvas, code via GitHub\n\nCollaboration: Individual work required for Projects 1-3\nCapstone: Teams of 2-3 allowed with contribution statements\n\n\n\nLate Policy\n\nThree (3) free late days for the entire semester (use strategically)\nAfter exhausting free days: 10% penalty per day\nNo late submissions accepted for final capstone project\nMedical/emergency extensions require documentation through Dean of Students",
-    "crumbs": [
-      "Home",
-      "Course Info",
-      "Syllabus"
-    ]
-  },
-  {
-    "objectID": "syllabus.html#course-policies",
-    "href": "syllabus.html#course-policies",
-    "title": "Course Syllabus",
-    "section": "Course Policies",
-    "text": "Course Policies\n\nAcademic Integrity\nVirginia Tech Honor Code: “As a Hokie, I will conduct myself with honor and integrity at all times. I will not lie, cheat, or steal, nor will I accept the actions of those who do.”\nSpecific to this course:\n\nAll submitted work must be your own or properly cited\nCollaboration is encouraged for understanding concepts\nUse of AI tools (ChatGPT, etc.) must be explicitly disclosed\nViolations will result in a grade of F(0) for the assignment and referral to the Honor System\n\n\n\nAttendance Policy\n\nIn-class activities may contribute to participation grade\nConsistent absence may impact ability to succeed\n\n\n\nCommunication\n\nPrimary: Piazza for all course-related questions\nEmail: For personal/confidential matters only",
-    "crumbs": [
-      "Home",
-      "Course Info",
-      "Syllabus"
-    ]
-  },
-  {
-    "objectID": "syllabus.html#university-policies",
-    "href": "syllabus.html#university-policies",
-    "title": "Course Syllabus",
-    "section": "University Policies",
-    "text": "University Policies\n\nPrinciples of Community\nVirginia Tech is committed to creating an inclusive community that values diversity and seeks to promote an environment of mutual respect. Full statement\n\n\nServices for Students with Disabilities (SSD)\nStudents with disabilities who need academic accommodations should: 1. Register with Services for Students with Disabilities (SSD) - 540-231-3788 2. Provide accommodation letter to instructor 3. Discuss accommodations early in the semester",
-    "crumbs": [
-      "Home",
-      "Course Info",
-      "Syllabus"
-    ]
-  },
-  {
-    "objectID": "syllabus.html#required-resources",
-    "href": "syllabus.html#required-resources",
-    "title": "Course Syllabus",
-    "section": "Required Resources",
-    "text": "Required Resources\n\nHardware\n\nLaptop capable of running Python\nInternet connection for Colab/Canvas\nNo GPU required",
-    "crumbs": [
-      "Home",
-      "Course Info",
-      "Syllabus"
-    ]
-  },
-  {
-    "objectID": "syllabus.html#tentative-nature-of-syllabus",
-    "href": "syllabus.html#tentative-nature-of-syllabus",
-    "title": "Course Syllabus",
-    "section": "Tentative Nature of Syllabus",
-    "text": "Tentative Nature of Syllabus\nThis syllabus is subject to change. Students will be notified of any changes during class and updated on the course website.\n\nLast Updated: August 2025",
+    "objectID": "syllabus.html#capstone-project-rubrics",
+    "href": "syllabus.html#capstone-project-rubrics",
+    "title": "ECE4424/CS4824: Machine Learning",
+    "section": "Capstone Project Rubrics",
+    "text": "Capstone Project Rubrics\nRubrics for the capstone project are available here:\n\nCapstone Rubrics (Google Doc): https://docs.google.com/document/d/19t7HrBbnLVrmRtOs5qiSXxERDdMcxxKG-LZQqSTZmJs/edit?usp=sharing\n\nIf you need a printable or offline copy, use File → Download in Google Docs.",
     "crumbs": [
       "Home",
       "Course Info",
@@ -688,14 +580,14 @@
     "href": "index.html",
     "title": "Machine Learning: Learn by Building",
     "section": "",
-    "text": "This course takes a hands-on approach to machine learning. You’ll:\n\nBuild real ML systems, not just study theory\nCreate an AI portfolio of mini research papers\nExplain complex concepts simply (teaching = understanding)\nWork with cutting-edge tools while mastering fundamentals\n\nWe believe the best way to understand machine learning is to build it, break it, and rebuild it better."
+    "text": "This course takes a hands-on approach to machine learning. You’ll:\n\nBuild real ML systems, not just study theory\nCreate an AI portfolio of mini research papers\nExplain complex concepts simply (teaching = understanding)\nWork with cutting-edge tools while mastering fundamentals\n\nWe believe the best way to understand machine learning is to build it, break it, and rebuild it better.\nOur practical, project-first ethos is inspired by the excellent work from fast.ai."
   },
   {
     "objectID": "index.html#course-philosophy",
     "href": "index.html#course-philosophy",
     "title": "Machine Learning: Learn by Building",
     "section": "",
-    "text": "This course takes a hands-on approach to machine learning. You’ll:\n\nBuild real ML systems, not just study theory\nCreate an AI portfolio of mini research papers\nExplain complex concepts simply (teaching = understanding)\nWork with cutting-edge tools while mastering fundamentals\n\nWe believe the best way to understand machine learning is to build it, break it, and rebuild it better."
+    "text": "This course takes a hands-on approach to machine learning. You’ll:\n\nBuild real ML systems, not just study theory\nCreate an AI portfolio of mini research papers\nExplain complex concepts simply (teaching = understanding)\nWork with cutting-edge tools while mastering fundamentals\n\nWe believe the best way to understand machine learning is to build it, break it, and rebuild it better.\nOur practical, project-first ethos is inspired by the excellent work from fast.ai."
   },
   {
     "objectID": "index.html#getting-started",
@@ -874,6 +766,6 @@
     "href": "resources.html#documentation",
     "title": "Resources",
     "section": "Documentation",
-    "text": "Documentation\n\nNumPy Documentation\nPyTorch Tutorials\nScikit-learn User Guide"
+    "text": "Documentation\n\nNumPy Documentation\nPyTorch Tutorials\nfast.ai — inspiration for our practical, project-first teaching approach\nScikit-learn User Guide"
   }
 ]

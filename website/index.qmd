@@ -14,6 +14,7 @@ This course takes a **hands-on approach** to machine learning. You'll:
 
 We believe the best way to understand machine learning is to build it, break it, and rebuild it better.
 
+Our practical, project-first ethos is inspired by the excellent work from [fast.ai](https://www.fast.ai/).
 
 ## Getting Started
 
