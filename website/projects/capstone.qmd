@@ -1,6 +1,7 @@
 ---
 title: "Capstone Project"
 subtitle: "Your Individual ML Research Project"
+draft: true
 ---
 
 ## Overview

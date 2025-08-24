@@ -18,7 +18,7 @@ website:
       - text: "Schedule"
         href: schedule.qmd
       - text: "Projects"
-        href: projects/index.qmd
+        href: projects/project1.qmd
       - text: "Resources"
         href: resources.qmd
     right:
@@ -80,14 +80,10 @@ website:
       
       - section: "Projects"
         contents:
-          - text: "Overview"
-            href: projects/index.qmd
-          - text: "Project 1: Foundations"
+          - text: "Project 1: KNN Music Recommender"
             href: projects/project1.qmd
           - text: "Project 2-3: Coming Soon"
             href: "#"
-          - text: "Capstone Guidelines"
-            href: projects/capstone.qmd
 
 format:
   html:

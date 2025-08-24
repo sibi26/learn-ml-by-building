@@ -24,30 +24,6 @@
     ]
   },
   {
-    "objectID": "schedule.html#important-dates",
-    "href": "schedule.html#important-dates",
-    "title": "Course Schedule",
-    "section": "Important Dates",
-    "text": "Important Dates\n\n\n\n\n\n\nAssignment & Capstone Due Dates\n\n\n\n\nProject 1 (KNN): Friday, September 12\nCapstone Proposal: Friday, September 19\nML Video for Kids 1: Friday, October 3\nCapstone Milestone Report: Friday, October 17\nProject 2 (Unsupervised Learning): Friday, October 31\nML Video for Kids 2: Friday, November 14\nProject 3 (RL): Friday, November 21\nCapstone Final Report: Friday, December 12\n\n\nOther Key Dates\n\nFirst Day of Class: Monday, August 25\nLabor Day (No Class): Monday, September 1\nThanksgiving Break (No Class): Monday, November 24 - Wednesday, November 26\nCapstone Spotlight Presentations: Wednesday, December 3\nLast Day of Class: Wednesday, December 10",
-    "crumbs": [
-      "Home",
-      "Course Info",
-      "Schedule"
-    ]
-  },
-  {
-    "objectID": "schedule.html#other-key-dates",
-    "href": "schedule.html#other-key-dates",
-    "title": "Course Schedule",
-    "section": "Other Key Dates",
-    "text": "Other Key Dates\n\nFirst Day of Class: Monday, August 25\nLabor Day (No Class): Monday, September 1\nThanksgiving Break (No Class): Monday, November 24 - Wednesday, November 26\nCapstone Spotlight Presentations: Wednesday, December 3\nLast Day of Class: Wednesday, December 10",
-    "crumbs": [
-      "Home",
-      "Course Info",
-      "Schedule"
-    ]
-  },
-  {
     "objectID": "lectures/00-setup.html",
     "href": "lectures/00-setup.html",
     "title": "Lecture 0: Environment Setup",
@@ -170,9 +146,9 @@
   {
     "objectID": "syllabus.html",
     "href": "syllabus.html",
-    "title": "ECE4424/CS4824: Machine Learning",
+    "title": "Course Syllabus",
     "section": "",
-    "text": "-title: “Course Syllabus” subtitle: “ECE4424/CS4824: Machine Learning - Fall 2025”",
+    "text": "For the most up-to-date and complete syllabus, please refer to the official Google Doc:\n\nSyllabus (published): https://docs.google.com/document/d/e/2PACX-1vRawfzMzEKCan7nd1jOMbaCGrcMYo-DGU1XgfIBKJSRBiuF_Fj0E4KCeslTIGzRs5R60XAsYvURItxv/pub\n\nAny updates will appear in the Google Doc.",
     "crumbs": [
       "Home",
       "Course Info",
@@ -182,9 +158,9 @@
   {
     "objectID": "syllabus.html#official-syllabus",
     "href": "syllabus.html#official-syllabus",
-    "title": "ECE4424/CS4824: Machine Learning",
-    "section": "Official Syllabus",
-    "text": "Official Syllabus\nFor the most up-to-date and complete syllabus, please refer to the official Google Doc:\n\nSyllabus (published): https://docs.google.com/document/d/e/2PACX-1vRawfzMzEKCan7nd1jOMbaCGrcMYo-DGU1XgfIBKJSRBiuF_Fj0E4KCeslTIGzRs5R60XAsYvURItxv/pub\n\nAny updates will appear in the Google Doc.",
+    "title": "Course Syllabus",
+    "section": "",
+    "text": "For the most up-to-date and complete syllabus, please refer to the official Google Doc:\n\nSyllabus (published): https://docs.google.com/document/d/e/2PACX-1vRawfzMzEKCan7nd1jOMbaCGrcMYo-DGU1XgfIBKJSRBiuF_Fj0E4KCeslTIGzRs5R60XAsYvURItxv/pub\n\nAny updates will appear in the Google Doc.",
     "crumbs": [
       "Home",
       "Course Info",
@@ -194,133 +170,13 @@
   {
     "objectID": "syllabus.html#capstone-project-rubrics",
     "href": "syllabus.html#capstone-project-rubrics",
-    "title": "ECE4424/CS4824: Machine Learning",
+    "title": "Course Syllabus",
     "section": "Capstone Project Rubrics",
     "text": "Capstone Project Rubrics\nRubrics for the capstone project are available here:\n\nCapstone Rubrics (Google Doc): https://docs.google.com/document/d/19t7HrBbnLVrmRtOs5qiSXxERDdMcxxKG-LZQqSTZmJs/edit?usp=sharing\n\nIf you need a printable or offline copy, use File → Download in Google Docs.",
     "crumbs": [
       "Home",
       "Course Info",
       "Syllabus"
-    ]
-  },
-  {
-    "objectID": "projects/capstone.html",
-    "href": "projects/capstone.html",
-    "title": "Capstone Project",
-    "section": "",
-    "text": "The capstone project is your opportunity to conduct independent research in machine learning, applying everything you’ve learned to a problem you’re passionate about. This individual project represents 45% of your course grade and culminates in a conference-style paper and presentation.",
-    "crumbs": [
-      "Home",
-      "Projects",
-      "Capstone Guidelines"
-    ]
-  },
-  {
-    "objectID": "projects/capstone.html#overview",
-    "href": "projects/capstone.html#overview",
-    "title": "Capstone Project",
-    "section": "",
-    "text": "The capstone project is your opportunity to conduct independent research in machine learning, applying everything you’ve learned to a problem you’re passionate about. This individual project represents 45% of your course grade and culminates in a conference-style paper and presentation.",
-    "crumbs": [
-      "Home",
-      "Projects",
-      "Capstone Guidelines"
-    ]
-  },
-  {
-    "objectID": "projects/capstone.html#timeline-deliverables",
-    "href": "projects/capstone.html#timeline-deliverables",
-    "title": "Capstone Project",
-    "section": "Timeline & Deliverables",
-    "text": "Timeline & Deliverables\n\n\n\n\n\n\n\n\n\nDeliverable\nDue Date\nWeight\nFormat\n\n\n\n\nProposal\nApril 11 (Week 13)\n10% of capstone\n1-2 pages\n\n\nMilestone Report\nApril 18 (Week 14)\n20% of capstone\n3-4 pages + code\n\n\nSpotlight Presentation\nApril 21-23 (Week 15)\n10% of capstone\n10 min talk\n\n\nFinal Report\nApril 25 (Week 15)\n60% of capstone\n6-8 pages",
-    "crumbs": [
-      "Home",
-      "Projects",
-      "Capstone Guidelines"
-    ]
-  },
-  {
-    "objectID": "projects/capstone.html#detailed-rubrics-guidelines",
-    "href": "projects/capstone.html#detailed-rubrics-guidelines",
-    "title": "Capstone Project",
-    "section": "Detailed Rubrics & Guidelines",
-    "text": "Detailed Rubrics & Guidelines\n\n\n\n\n\n\n📋 Complete Rubrics Document\n\n\n\nView Detailed Rubrics in Google Docs →\nThis document contains: - Detailed grading criteria for each deliverable - Point breakdowns and weights - Submission requirements - Tips for success",
-    "crumbs": [
-      "Home",
-      "Projects",
-      "Capstone Guidelines"
-    ]
-  },
-  {
-    "objectID": "projects/capstone.html#project-scope",
-    "href": "projects/capstone.html#project-scope",
-    "title": "Capstone Project",
-    "section": "Project Scope",
-    "text": "Project Scope\n\nGood Capstone Projects:\n\nApplied ML: Apply ML to a novel domain or dataset\nReproduce & Extend: Replicate a recent paper and add improvements\nComparative Study: Systematic comparison of methods on new task\nTool/Library: Build a useful ML tool with documentation\nTheory: Prove something about an algorithm or propose new method\n\n\n\nTopic Selection Criteria:\n\nAligned with course content\nFeasible in 3 weeks\nHas clear evaluation metrics\nPotential for interesting findings\nRelates to your interests/research",
-    "crumbs": [
-      "Home",
-      "Projects",
-      "Capstone Guidelines"
-    ]
-  },
-  {
-    "objectID": "projects/capstone.html#resources-support",
-    "href": "projects/capstone.html#resources-support",
-    "title": "Capstone Project",
-    "section": "Resources & Support",
-    "text": "Resources & Support\n\nCompute Resources\n\nGoogle Colab Pro available (request access)\nVirginia Tech ARC clusters for GPU jobs\nContact instructor for cloud credits if needed\n\n\n\nDatasets\n\nKaggle Datasets\nUCI ML Repository\nPapers with Code\nYour own research data (with advisor permission)\n\n\n\nWriting Resources\n\nNeurIPS Paper Template\nHow to Write a Good ML Paper\nVT Writing Center",
-    "crumbs": [
-      "Home",
-      "Projects",
-      "Capstone Guidelines"
-    ]
-  },
-  {
-    "objectID": "projects/capstone.html#submission-instructions",
-    "href": "projects/capstone.html#submission-instructions",
-    "title": "Capstone Project",
-    "section": "Submission Instructions",
-    "text": "Submission Instructions\n\nFor All Deliverables:\n\nSubmit PDF via Canvas\nInclude GitHub repository link\nUse NeurIPS/ICML format for reports\nName files: LastName_Capstone_[Deliverable].pdf\n\n\n\nCode Repository Must Include:\n\nREADME with setup instructions\nRequirements file\nCore implementation\nExample notebook\nData preprocessing (if applicable)",
-    "crumbs": [
-      "Home",
-      "Projects",
-      "Capstone Guidelines"
-    ]
-  },
-  {
-    "objectID": "projects/capstone.html#faq",
-    "href": "projects/capstone.html#faq",
-    "title": "Capstone Project",
-    "section": "FAQ",
-    "text": "FAQ\nQ: Can I extend one of Projects 1-3?\nA: Yes, but the extension must be substantial and clearly beyond the original scope.\nQ: Can I use my research for the capstone?\nA: Yes, with advisor approval and clear statement of your individual contribution.\nQ: What if my project fails?\nA: Negative results are valuable! Document what you tried, why it didn’t work, and what you learned.\nQ: Can I collaborate with others?\nA: You can discuss ideas, but implementation and writing must be individual. All discussions must be acknowledged.\nQ: How much code is expected?\nA: Quality over quantity. A well-documented, clean implementation of one algorithm is better than messy code for five.",
-    "crumbs": [
-      "Home",
-      "Projects",
-      "Capstone Guidelines"
-    ]
-  },
-  {
-    "objectID": "projects/capstone.html#past-successful-projects",
-    "href": "projects/capstone.html#past-successful-projects",
-    "title": "Capstone Project",
-    "section": "Past Successful Projects",
-    "text": "Past Successful Projects\nExamples of A-grade capstones from previous years:\n\n“Predicting Solar Panel Efficiency from Weather Data” - Applied various models, created useful tool\n“Reproducing and Improving BERT for Low-Resource Languages” - Extended paper with new language\n“Comparative Study of RL Algorithms on Custom Game Environment” - Built environment, tested 5 algorithms\n“Neural Architecture Search for Edge Devices” - Novel constraints, practical application\n“Fairness Analysis of Admission Algorithms” - Important social impact, thorough analysis",
-    "crumbs": [
-      "Home",
-      "Projects",
-      "Capstone Guidelines"
-    ]
-  },
-  {
-    "objectID": "projects/capstone.html#office-hours-support",
-    "href": "projects/capstone.html#office-hours-support",
-    "title": "Capstone Project",
-    "section": "Office Hours & Support",
-    "text": "Office Hours & Support\n\nSpecial Capstone Support (Weeks 13-15):\n\nRegular OH: Wednesday 10-11 AM\nExtra Capstone OH:\n\nMonday 2-4 PM\nFriday 1-3 PM\n\nBy Appointment: Email for additional help\n\n\n\nPiazza Support:\n\nUse tag [capstone] for capstone questions\nCheck pinned post for common issues\nPeer feedback encouraged (acknowledge in report)\n\n\nReady to start? Begin with the Detailed Rubrics → and brainstorm ideas!",
-    "crumbs": [
-      "Home",
-      "Projects",
-      "Capstone Guidelines"
     ]
   },
   {
@@ -332,7 +188,7 @@
     "crumbs": [
       "Home",
       "Projects",
-      "Project 1: Foundations"
+      "Project 1: KNN Music Recommender"
     ]
   },
   {
@@ -344,7 +200,7 @@
     "crumbs": [
       "Home",
       "Projects",
-      "Project 1: Foundations"
+      "Project 1: KNN Music Recommender"
     ]
   },
   {
@@ -356,7 +212,7 @@
     "crumbs": [
       "Home",
       "Projects",
-      "Project 1: Foundations"
+      "Project 1: KNN Music Recommender"
     ]
   },
   {
@@ -368,7 +224,7 @@
     "crumbs": [
       "Home",
       "Projects",
-      "Project 1: Foundations"
+      "Project 1: KNN Music Recommender"
     ]
   },
   {
@@ -380,7 +236,7 @@
     "crumbs": [
       "Home",
       "Projects",
-      "Project 1: Foundations"
+      "Project 1: KNN Music Recommender"
     ]
   },
   {
@@ -392,7 +248,7 @@
     "crumbs": [
       "Home",
       "Projects",
-      "Project 1: Foundations"
+      "Project 1: KNN Music Recommender"
     ]
   },
   {
@@ -404,7 +260,7 @@
     "crumbs": [
       "Home",
       "Projects",
-      "Project 1: Foundations"
+      "Project 1: KNN Music Recommender"
     ]
   },
   {
@@ -416,7 +272,7 @@
     "crumbs": [
       "Home",
       "Projects",
-      "Project 1: Foundations"
+      "Project 1: KNN Music Recommender"
     ]
   },
   {
@@ -428,7 +284,7 @@
     "crumbs": [
       "Home",
       "Projects",
-      "Project 1: Foundations"
+      "Project 1: KNN Music Recommender"
     ]
   },
   {
@@ -440,7 +296,7 @@
     "crumbs": [
       "Home",
       "Projects",
-      "Project 1: Foundations"
+      "Project 1: KNN Music Recommender"
     ]
   },
   {
@@ -452,7 +308,7 @@
     "crumbs": [
       "Home",
       "Projects",
-      "Project 1: Foundations"
+      "Project 1: KNN Music Recommender"
     ]
   },
   {
@@ -464,115 +320,7 @@
     "crumbs": [
       "Home",
       "Projects",
-      "Project 1: Foundations"
-    ]
-  },
-  {
-    "objectID": "projects/index.html",
-    "href": "projects/index.html",
-    "title": "Projects Overview",
-    "section": "",
-    "text": "Each project is designed to deepen your understanding while building practical skills. You’ll submit mini research papers that demonstrate both technical implementation and critical analysis.",
-    "crumbs": [
-      "Home",
-      "Projects",
-      "Overview"
-    ]
-  },
-  {
-    "objectID": "projects/index.html#project-structure",
-    "href": "projects/index.html#project-structure",
-    "title": "Projects Overview",
-    "section": "",
-    "text": "Each project is designed to deepen your understanding while building practical skills. You’ll submit mini research papers that demonstrate both technical implementation and critical analysis.",
-    "crumbs": [
-      "Home",
-      "Projects",
-      "Overview"
-    ]
-  },
-  {
-    "objectID": "projects/index.html#grading-distribution",
-    "href": "projects/index.html#grading-distribution",
-    "title": "Projects Overview",
-    "section": "Grading Distribution",
-    "text": "Grading Distribution\n\n\n\nProject\nWeight\nDue Date\nFocus Area\n\n\n\n\nProject 1: Foundations\n15%\nFeb 14\nClassical ML algorithms\n\n\nProject 2: Neural Networks\n15%\nMar 21\nDeep learning\n\n\nProject 3: Modern AI\n15%\nApr 4\nRL/Unsupervised/GenAI\n\n\nCapstone Project\n45%\nApr 25\nSelf-directed research",
-    "crumbs": [
-      "Home",
-      "Projects",
-      "Overview"
-    ]
-  },
-  {
-    "objectID": "projects/index.html#project-reports",
-    "href": "projects/index.html#project-reports",
-    "title": "Projects Overview",
-    "section": "Project Reports",
-    "text": "Project Reports\n\nFormat Requirements\n\nLength: 3-5 pages (Projects 1-3), 6-8 pages (Capstone)\nStructure:\n\nIntroduction & Problem Statement\nDataset Description\nMethods & Implementation\nExperiments & Results\nAnalysis & Discussion\nConclusion & Future Work\n\nCode: Submit via GitHub links\nFormat: PDF via Canvas\n\n\n\nEvaluation Criteria\nEach project will be evaluated on:\n\nTechnical Implementation (40%)\n\nCorrectness of algorithms\nCode quality and documentation\nAppropriate use of libraries\n\nExperimental Design (30%)\n\nSystematic evaluation\nAppropriate metrics\nHyperparameter tuning\n\nAnalysis & Insights (20%)\n\nUnderstanding of results\nDiscussion of limitations\nBias-variance analysis where appropriate\n\nPresentation (10%)\n\nClear writing\nEffective visualizations\nProper citations",
-    "crumbs": [
-      "Home",
-      "Projects",
-      "Overview"
-    ]
-  },
-  {
-    "objectID": "projects/index.html#collaboration-policy",
-    "href": "projects/index.html#collaboration-policy",
-    "title": "Projects Overview",
-    "section": "Collaboration Policy",
-    "text": "Collaboration Policy\n\nTeams of 2-3 students allowed for Projects 1-3\nIndividual work required for Capstone\nClear contribution statements required for team projects",
-    "crumbs": [
-      "Home",
-      "Projects",
-      "Overview"
-    ]
-  },
-  {
-    "objectID": "projects/index.html#getting-started",
-    "href": "projects/index.html#getting-started",
-    "title": "Projects Overview",
-    "section": "Getting Started",
-    "text": "Getting Started\n\nReview project descriptions and starter code\nForm teams (if desired) via Piazza\nStart early - these projects require iteration\nUse office hours for guidance",
-    "crumbs": [
-      "Home",
-      "Projects",
-      "Overview"
-    ]
-  },
-  {
-    "objectID": "projects/index.html#resources",
-    "href": "projects/index.html#resources",
-    "title": "Projects Overview",
-    "section": "Resources",
-    "text": "Resources\n\nStarter Code\nAll starter code is available in the main repository: - Project 1 Starter - Project 2 Starter (Coming Soon) - Project 3 Starter (Coming Soon)\n\n\nCompute Resources\n\nGoogle Colab free tier is sufficient for Projects 1-2\nGPU access available for advanced projects\nContact instructors for additional compute needs",
-    "crumbs": [
-      "Home",
-      "Projects",
-      "Overview"
-    ]
-  },
-  {
-    "objectID": "projects/index.html#tips-for-success",
-    "href": "projects/index.html#tips-for-success",
-    "title": "Projects Overview",
-    "section": "Tips for Success",
-    "text": "Tips for Success\n\n\n\n\n\n\nBest Practices\n\n\n\n\nStart Early: ML projects always take longer than expected\nIterate: Your first model won’t be your best\nDocument: Keep notes on what you try and why\nVisualize: A good plot is worth 1000 numbers\nCollaborate: Discuss ideas, but write your own code",
-    "crumbs": [
-      "Home",
-      "Projects",
-      "Overview"
-    ]
-  },
-  {
-    "objectID": "projects/index.html#example-projects",
-    "href": "projects/index.html#example-projects",
-    "title": "Projects Overview",
-    "section": "Example Projects",
-    "text": "Example Projects\n\nPast Successful Projects\n\nImage classification with CNNs on custom datasets\nTime series prediction for energy consumption\nReinforcement learning for game playing\nText generation with fine-tuned transformers\nClustering analysis of social media data\n\n\n\nCapstone Ideas\n\nApply ML to your research area\nReproduce and extend a recent paper\nCreate a novel dataset and benchmark\nCombine multiple techniques for a complex problem\nBuild an interactive ML application\n\n\nReady to start? → Project 1: Foundational Predictive Modeling",
-    "crumbs": [
-      "Home",
-      "Projects",
-      "Overview"
+      "Project 1: KNN Music Recommender"
     ]
   },
   {

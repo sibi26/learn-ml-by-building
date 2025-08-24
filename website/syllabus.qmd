@@ -1,5 +1,7 @@
--title: "Course Syllabus"
+---
+title: "Course Syllabus"
 subtitle: "ECE4424/CS4824: Machine Learning - Fall 2025"
+---
 
 ## Official Syllabus
 

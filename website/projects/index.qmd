@@ -1,6 +1,7 @@
 ---
 title: "Projects Overview"
 subtitle: "Building Your AI Portfolio"
+draft: true
 ---
 
 ## Project Structure

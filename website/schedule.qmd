@@ -18,26 +18,3 @@ The schedule below is embedded from Google Sheets and updates automatically.
   frameborder="0"
   style="border: 1px solid #ddd; border-radius: 4px;">
 </iframe>
-
-## Important Dates
-
-:::{.callout-warning}
-## Assignment & Capstone Due Dates
-
-- Project 1 (KNN): Friday, September 12
-- Capstone Proposal: Friday, September 19
-- ML Video for Kids 1: Friday, October 3
-- Capstone Milestone Report: Friday, October 17
-- Project 2 (Unsupervised Learning): Friday, October 31
-- ML Video for Kids 2: Friday, November 14
-- Project 3 (RL): Friday, November 21
-- Capstone Final Report: Friday, December 12
-
-## Other Key Dates
-
-- First Day of Class: Monday, August 25
-- Labor Day (No Class): Monday, September 1
-- Thanksgiving Break (No Class): Monday, November 24 - Wednesday, November 26
-- Capstone Spotlight Presentations: Wednesday, December 3
-- Last Day of Class: Wednesday, December 10
-:::
