@@ -19,11 +19,11 @@ subtitle: "Fall 2025"
 :::{.callout-tip}
 ## Live Schedule
 The schedule below is embedded from Google Sheets and updates automatically. 
-[Open in Google Sheets →](YOUR_GOOGLE_SHEET_LINK)
+[Open in Google Sheets →](https://docs.google.com/spreadsheets/d/1Rfe9l8TIzAjvbFVapTWAr60tp_GFOB0yn-YckQa4O94/edit?usp=sharing)
 :::
 
 <iframe 
-  src="YOUR_GOOGLE_SHEET_EMBED_URL" 
+  src="https://docs.google.com/spreadsheets/d/1Rfe9l8TIzAjvbFVapTWAr60tp_GFOB0yn-YckQa4O94/pubhtml?widget=true&headers=false" 
   width="100%" 
   height="800" 
   frameborder="0"
