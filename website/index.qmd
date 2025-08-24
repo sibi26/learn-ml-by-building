@@ -36,13 +36,8 @@ Office Hours: TBD
 :::
 :::
 
-:::{.grid .align-items-center .g-4 mt-3}
-:::{.g-col-12 .g-col-md-3 .text-center}
-<!-- Add a TA photo later if desired -->
-<!-- ![Sherawat, Kamal](images/ta.jpg){width=160 .rounded-circle fig-cap=" "} -->
-:::
-
-:::{.g-col-12 .g-col-md-9}
+::{.grid .g-4 .mt-3}
+:::{.g-col-12}
 **Teaching Assistant**: Sherawat, Kamal  
 Email: kamals@vt.edu  
 Office Hours: TBD
