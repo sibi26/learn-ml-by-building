@@ -24,22 +24,10 @@ We believe the best way to understand machine learning is to build it, break it,
 
 ## Course Team
 
-:::{.grid .align-items-center .g-4}
-:::{.g-col-12 .g-col-md-3 .text-center}
-<img src="images/mingjin.jpg" alt="Ming Jin" width="160" class="rounded-circle mx-auto d-block">
-:::
-
-:::{.g-col-12 .g-col-md-9}
 **Instructor**: Ming Jin  
 Email: jinming@vt.edu  
 Office Hours: TBD
-:::
-:::
 
-::{.grid .g-4 .mt-3}
-:::{.g-col-12}
 **Teaching Assistant**: Sherawat, Kamal  
 Email: kamals@vt.edu  
 Office Hours: TBD
-:::
-:::
