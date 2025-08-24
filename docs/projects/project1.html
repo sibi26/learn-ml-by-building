@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Project 1: Foundations – ECE4424/CS4824: Machine Learning</title>
+<title>Project 1: Music Recommendation System with k-NN – ECE4424/CS4824: Machine Learning</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -336,8 +371,17 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul class="collapse">
-  <li><a href="#deliverables" id="toc-deliverables" class="nav-link active" data-scroll-target="#deliverables">Deliverables</a></li>
-  <li><a href="#timeline" id="toc-timeline" class="nav-link" data-scroll-target="#timeline">Timeline</a></li>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
+  <li><a href="#materials" id="toc-materials" class="nav-link" data-scroll-target="#materials">Materials</a></li>
+  <li><a href="#what-youll-build" id="toc-what-youll-build" class="nav-link" data-scroll-target="#what-youll-build">What You’ll Build</a></li>
+  <li><a href="#key-technologies" id="toc-key-technologies" class="nav-link" data-scroll-target="#key-technologies">Key Technologies</a></li>
+  <li><a href="#interactive-features" id="toc-interactive-features" class="nav-link" data-scroll-target="#interactive-features">Interactive Features</a></li>
+  <li><a href="#setup-guide" id="toc-setup-guide" class="nav-link" data-scroll-target="#setup-guide">Setup Guide</a></li>
+  <li><a href="#data-setup" id="toc-data-setup" class="nav-link" data-scroll-target="#data-setup">Data Setup</a></li>
+  <li><a href="#real-world-challenges-youll-tackle" id="toc-real-world-challenges-youll-tackle" class="nav-link" data-scroll-target="#real-world-challenges-youll-tackle">Real-World Challenges You’ll Tackle</a></li>
+  <li><a href="#project-insights" id="toc-project-insights" class="nav-link" data-scroll-target="#project-insights">Project Insights</a></li>
+  <li><a href="#additional-resources" id="toc-additional-resources" class="nav-link" data-scroll-target="#additional-resources">Additional Resources</a></li>
   </ul>
 </nav>
     </div>
@@ -346,8 +390,8 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../projects/index.html">Projects</a></li><li class="breadcrumb-item"><a href="../projects/project1.html">Project 1: Foundations</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Project 1: Foundations</h1>
-<p class="subtitle lead">Data handling, EDA, and a first model</p>
+<h1 class="title">Project 1: Music Recommendation System with k-NN</h1>
+<p class="subtitle lead">From Algorithm Implementation to Web Deployment</p>
 </div>
 
 
@@ -364,18 +408,167 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This is a placeholder page for Project 1. Detailed instructions, rubric, and starter notebooks will be posted here.</p>
-<section id="deliverables" class="level2">
-<h2 class="anchored" data-anchor-id="deliverables">Deliverables</h2>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>Build a <strong>Spotify-inspired music recommendation engine</strong> from scratch, implementing the k-Nearest Neighbors algorithm and deploying it as an interactive web application. This project bridges the gap between academic ML and real-world applications, taking you through the complete pipeline from data exploration to production deployment. You’ll work with actual Spotify audio features to recommend songs based on musical similarity.</p>
+</section>
+<section id="learning-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="learning-objectives">Learning Objectives</h2>
+<p>By completing this project, you will:</p>
 <ul>
-<li>To be announced.</li>
+<li><strong>Implement</strong> k-NN from scratch with multiple distance metrics (Euclidean, Cosine)</li>
+<li><strong>Analyze</strong> Spotify’s audio features (energy, valence, danceability) through exploratory data analysis</li>
+<li><strong>Engineer</strong> features and apply scaling techniques to handle multi-scale data</li>
+<li><strong>Design</strong> hybrid distance functions that combine audio features with metadata</li>
+<li><strong>Evaluate</strong> computational complexity and scalability challenges</li>
+<li><strong>Deploy</strong> your ML model as a REST API with a responsive web interface</li>
+<li><strong>Optimize</strong> with caching strategies for production performance</li>
 </ul>
 </section>
-<section id="timeline" class="level2">
-<h2 class="anchored" data-anchor-id="timeline">Timeline</h2>
+<section id="materials" class="level2">
+<h2 class="anchored" data-anchor-id="materials">Materials</h2>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Quick Access
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong><a href="https://github.com/jinming99/learn-ml-by-building/blob/main/Project%201%20KNN%20Music%20Recommender/music_recommender.ipynb">Project Notebook (GitHub)</a></strong> — Complete implementation guide and assignment<br>
+<strong><a href="https://github.com/jinming99/learn-ml-by-building">Repository</a></strong> — Full codebase with web application<br>
+<strong><a href="http://localhost:5002">Live Demo</a></strong> — after running <code>python app.py</code></p>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Submission Requirements
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li>Completed Jupyter notebook exported as PDF</li>
+<li><code>utils/student_adapter.py</code> with your implementations</li>
+<li>Working web application demonstration</li>
+</ol>
+<p><strong>Due:</strong> [Insert Due Date]</p>
+</div>
+</div>
+</div>
+</section>
+<section id="what-youll-build" class="level2">
+<h2 class="anchored" data-anchor-id="what-youll-build">What You’ll Build</h2>
+<section id="core-algorithm" class="level3">
+<h3 class="anchored" data-anchor-id="core-algorithm">Core Algorithm</h3>
+<p>You’ll implement k-NN from the ground up, including: - Distance metric calculations (Euclidean and Cosine) - Efficient neighbor search - Feature scaling for fair comparisons - Hybrid distance functions combining multiple signals</p>
+</section>
+<section id="web-application" class="level3">
+<h3 class="anchored" data-anchor-id="web-application">Web Application</h3>
+<p>Your algorithm will power a full-stack music discovery application featuring: - Search for any track in a 600k+ song database - Real-time recommendations based on audio similarity - YouTube integration for music previews - Interactive controls for algorithm parameters - Mobile-responsive design</p>
+</section>
+<section id="data-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="data-analysis">Data Analysis</h3>
+<p>Working with real Spotify data, you’ll explore: - 9 audio features extracted by Spotify’s ML models - Feature distributions, correlations, and outliers - The impact of scaling on distance-based algorithms - Trade-offs between different similarity measures</p>
+</section>
+</section>
+<section id="key-technologies" class="level2">
+<h2 class="anchored" data-anchor-id="key-technologies">Key Technologies</h2>
 <ul>
-<li>To be announced.</li>
+<li><strong>Backend</strong>: Flask, NumPy, Pandas, Scikit-learn</li>
+<li><strong>Frontend</strong>: Vanilla JavaScript, HTML5, CSS3</li>
+<li><strong>APIs</strong>: YouTube Data API for music previews</li>
+<li><strong>Data</strong>: 600k+ tracks with Spotify audio analysis</li>
 </ul>
+</section>
+<section id="interactive-features" class="level2">
+<h2 class="anchored" data-anchor-id="interactive-features">Interactive Features</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+🎵 Try It Yourself
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Once deployed, your system will let users:</p>
+<ul>
+<li>Search and discover music from over half a million tracks</li>
+<li>Get personalized recommendations based on any song</li>
+<li>Adjust algorithm parameters (k, distance metrics) in real-time</li>
+<li>Listen to preview clips before adding to playlists</li>
+<li>Understand why songs were recommended through feature visualization</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="setup-guide" class="level2">
+<h2 class="anchored" data-anchor-id="setup-guide">Setup Guide</h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Quick setup</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">python3.11</span> <span class="at">-m</span> venv .venv-music</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="bu">source</span> .venv-music/bin/activate</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install <span class="at">-r</span> requirements.txt</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Configure YouTube API (see notebook for detailed instructions)</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"YOUTUBE_API_KEY=your_key_here"</span> <span class="op">&gt;</span> .env</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Run the application</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> app.py</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Navigate to http://localhost:5002</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="data-setup" class="level2">
+<h2 class="anchored" data-anchor-id="data-setup">Data Setup</h2>
+<p>Place the dataset CSV(s) in the project’s <code>data/</code> folder:</p>
+<ul>
+<li>Required: <code>data/mergedFile.csv</code> — main catalog with track metadata and audio features</li>
+<li>Optional: <code>data/item_profile.csv</code> — alternative profile file if you choose to separate it</li>
+</ul>
+<p>Notes:</p>
+<ul>
+<li>Column expectations include song/artist identifiers and audio features (e.g., energy, danceability, etc.).</li>
+<li>The application won’t function without <code>mergedFile.csv</code>. See repository README for more details and dataset link.</li>
+</ul>
+</section>
+<section id="real-world-challenges-youll-tackle" class="level2">
+<h2 class="anchored" data-anchor-id="real-world-challenges-youll-tackle">Real-World Challenges You’ll Tackle</h2>
+<ol type="1">
+<li><strong>The Curse of Dimensionality</strong>: Understand why distance metrics behave unexpectedly in high dimensions</li>
+<li><strong>Feature Scale Bias</strong>: See how tempo (0-200 BPM) can dominate valence (0-1) without proper scaling</li>
+<li><strong>Computational Complexity</strong>: Analyze why brute-force k-NN doesn’t scale to millions of songs</li>
+<li><strong>Production Engineering</strong>: Implement caching and API design for responsive user experience</li>
+<li><strong>Hybrid Metrics</strong>: Balance audio similarity with artist diversity for better recommendations</li>
+</ol>
+</section>
+<section id="project-insights" class="level2">
+<h2 class="anchored" data-anchor-id="project-insights">Project Insights</h2>
+<p>This project demonstrates several key ML concepts:</p>
+<ul>
+<li><strong>Instance-based learning</strong> requires no training phase but trades computation at query time</li>
+<li><strong>Feature engineering</strong> can be more important than algorithm choice</li>
+<li><strong>Distance metrics</strong> encode our notion of similarity - choosing the right one is crucial</li>
+<li><strong>Production ML</strong> involves much more than just the algorithm - APIs, caching, and UX matter</li>
+</ul>
+</section>
+<section id="additional-resources" class="level2">
+<h2 class="anchored" data-anchor-id="additional-resources">Additional Resources</h2>
+<ul>
+<li><a href="https://developer.spotify.com/documentation/web-api/reference/get-audio-features">Spotify Web API - Audio Features Documentation</a></li>
+<li><a href="https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm">k-NN Algorithm Explained</a></li>
+<li><a href="https://flask.palletsprojects.com/en/latest/quickstart/">Flask Quick Start Guide</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Curse_of_dimensionality">Curse of Dimensionality in ML</a></li>
+<li><a href="https://github.com/vraj152/RUMusic">RUMusic</a> - Conceptual inspiration for this project (our implementation has significantly diverged)</li>
+</ul>
+<hr>
+<p><strong>Previous</strong>: [← Previous Assignment] | <strong>Next</strong>: [Next Assignment →]</p>
 
 
 </section>

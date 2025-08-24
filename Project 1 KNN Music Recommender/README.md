@@ -118,7 +118,6 @@ Note:
    - Supports multiple distance metrics:
      - Cosine similarity
      - Euclidean distance
-     - Manhattan distance
    - (Optional/Future work) Feature weighting can be added if desired
 
 3. **Frontend**

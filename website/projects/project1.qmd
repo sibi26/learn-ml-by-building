@@ -1,14 +1,139 @@
 ---
-title: "Project 1: Foundations"
-subtitle: "Data handling, EDA, and a first model"
+title: "Project 1: Music Recommendation System with k-NN"
+subtitle: "From Algorithm Implementation to Web Deployment"
 ---
 
-This is a placeholder page for Project 1. Detailed instructions, rubric, and starter notebooks will be posted here.
+## Overview
 
-## Deliverables
+Build a **Spotify-inspired music recommendation engine** from scratch, implementing the k-Nearest Neighbors algorithm and deploying it as an interactive web application. This project bridges the gap between academic ML and real-world applications, taking you through the complete pipeline from data exploration to production deployment. You'll work with actual Spotify audio features to recommend songs based on musical similarity.
 
-- To be announced.
+## Learning Objectives
 
-## Timeline
+By completing this project, you will:
 
-- To be announced.
+- **Implement** k-NN from scratch with multiple distance metrics (Euclidean, Cosine)
+- **Analyze** Spotify's audio features (energy, valence, danceability) through exploratory data analysis
+- **Engineer** features and apply scaling techniques to handle multi-scale data
+- **Design** hybrid distance functions that combine audio features with metadata
+- **Evaluate** computational complexity and scalability challenges
+- **Deploy** your ML model as a REST API with a responsive web interface
+- **Optimize** with caching strategies for production performance
+
+## Materials
+
+:::{.callout-tip}
+## Quick Access
+**[Project Notebook (GitHub)](https://github.com/jinming99/learn-ml-by-building/blob/main/Project%201%20KNN%20Music%20Recommender/music_recommender.ipynb)** — Complete implementation guide and assignment  
+**[Repository](https://github.com/jinming99/learn-ml-by-building)** — Full codebase with web application  
+**[Live Demo](http://localhost:5002)** — after running `python app.py`
+:::
+
+:::{.callout-important collapse=false}
+## Submission Requirements
+1. Completed Jupyter notebook exported as PDF
+2. `utils/student_adapter.py` with your implementations
+3. Working web application demonstration
+
+**Due:** [Insert Due Date]
+:::
+
+## What You'll Build
+
+### Core Algorithm
+You'll implement k-NN from the ground up, including:
+- Distance metric calculations (Euclidean and Cosine)
+- Efficient neighbor search
+- Feature scaling for fair comparisons
+- Hybrid distance functions combining multiple signals
+
+### Web Application
+Your algorithm will power a full-stack music discovery application featuring:
+- Search for any track in a 600k+ song database
+- Real-time recommendations based on audio similarity
+- YouTube integration for music previews
+- Interactive controls for algorithm parameters
+- Mobile-responsive design
+
+### Data Analysis
+Working with real Spotify data, you'll explore:
+- 9 audio features extracted by Spotify's ML models
+- Feature distributions, correlations, and outliers
+- The impact of scaling on distance-based algorithms
+- Trade-offs between different similarity measures
+
+## Key Technologies
+
+- **Backend**: Flask, NumPy, Pandas, Scikit-learn
+- **Frontend**: Vanilla JavaScript, HTML5, CSS3
+- **APIs**: YouTube Data API for music previews
+- **Data**: 600k+ tracks with Spotify audio analysis
+
+## Interactive Features
+
+:::{.callout-note}
+## 🎵 Try It Yourself
+Once deployed, your system will let users:
+
+- Search and discover music from over half a million tracks
+- Get personalized recommendations based on any song
+- Adjust algorithm parameters (k, distance metrics) in real-time
+- Listen to preview clips before adding to playlists
+- Understand why songs were recommended through feature visualization
+:::
+
+## Setup Guide
+
+```bash
+# Quick setup
+python3.11 -m venv .venv-music
+source .venv-music/bin/activate
+pip install -r requirements.txt
+
+# Configure YouTube API (see notebook for detailed instructions)
+echo "YOUTUBE_API_KEY=your_key_here" > .env
+
+# Run the application
+python app.py
+# Navigate to http://localhost:5002
+```
+
+## Data Setup
+
+Place the dataset CSV(s) in the project’s `data/` folder:
+
+- Required: `data/mergedFile.csv` — main catalog with track metadata and audio features
+- Optional: `data/item_profile.csv` — alternative profile file if you choose to separate it
+
+Notes:
+
+- Column expectations include song/artist identifiers and audio features (e.g., energy, danceability, etc.).
+- The application won’t function without `mergedFile.csv`. See repository README for more details and dataset link.
+
+## Real-World Challenges You'll Tackle
+
+1. **The Curse of Dimensionality**: Understand why distance metrics behave unexpectedly in high dimensions
+2. **Feature Scale Bias**: See how tempo (0-200 BPM) can dominate valence (0-1) without proper scaling
+3. **Computational Complexity**: Analyze why brute-force k-NN doesn't scale to millions of songs
+4. **Production Engineering**: Implement caching and API design for responsive user experience
+5. **Hybrid Metrics**: Balance audio similarity with artist diversity for better recommendations
+
+## Project Insights
+
+This project demonstrates several key ML concepts:
+
+- **Instance-based learning** requires no training phase but trades computation at query time
+- **Feature engineering** can be more important than algorithm choice
+- **Distance metrics** encode our notion of similarity - choosing the right one is crucial
+- **Production ML** involves much more than just the algorithm - APIs, caching, and UX matter
+
+## Additional Resources
+
+- [Spotify Web API - Audio Features Documentation](https://developer.spotify.com/documentation/web-api/reference/get-audio-features)
+- [k-NN Algorithm Explained](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm)
+- [Flask Quick Start Guide](https://flask.palletsprojects.com/en/latest/quickstart/)
+- [Curse of Dimensionality in ML](https://en.wikipedia.org/wiki/Curse_of_dimensionality)
+- [RUMusic](https://github.com/vraj152/RUMusic) - Conceptual inspiration for this project (our implementation has significantly diverged)
+
+---
+
+**Previous**: [← Previous Assignment] | **Next**: [Next Assignment →]

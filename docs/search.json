@@ -434,9 +434,9 @@
   {
     "objectID": "projects/project1.html",
     "href": "projects/project1.html",
-    "title": "Project 1: Foundations",
+    "title": "Project 1: Music Recommendation System with k-NN",
     "section": "",
-    "text": "This is a placeholder page for Project 1. Detailed instructions, rubric, and starter notebooks will be posted here.",
+    "text": "Build a Spotify-inspired music recommendation engine from scratch, implementing the k-Nearest Neighbors algorithm and deploying it as an interactive web application. This project bridges the gap between academic ML and real-world applications, taking you through the complete pipeline from data exploration to production deployment. You’ll work with actual Spotify audio features to recommend songs based on musical similarity.",
     "crumbs": [
       "Home",
       "Projects",
@@ -444,11 +444,11 @@
     ]
   },
   {
-    "objectID": "projects/project1.html#deliverables",
-    "href": "projects/project1.html#deliverables",
-    "title": "Project 1: Foundations",
-    "section": "Deliverables",
-    "text": "Deliverables\n\nTo be announced.",
+    "objectID": "projects/project1.html#overview",
+    "href": "projects/project1.html#overview",
+    "title": "Project 1: Music Recommendation System with k-NN",
+    "section": "",
+    "text": "Build a Spotify-inspired music recommendation engine from scratch, implementing the k-Nearest Neighbors algorithm and deploying it as an interactive web application. This project bridges the gap between academic ML and real-world applications, taking you through the complete pipeline from data exploration to production deployment. You’ll work with actual Spotify audio features to recommend songs based on musical similarity.",
     "crumbs": [
       "Home",
       "Projects",
@@ -456,11 +456,119 @@
     ]
   },
   {
-    "objectID": "projects/project1.html#timeline",
-    "href": "projects/project1.html#timeline",
-    "title": "Project 1: Foundations",
-    "section": "Timeline",
-    "text": "Timeline\n\nTo be announced.",
+    "objectID": "projects/project1.html#learning-objectives",
+    "href": "projects/project1.html#learning-objectives",
+    "title": "Project 1: Music Recommendation System with k-NN",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nBy completing this project, you will:\n\nImplement k-NN from scratch with multiple distance metrics (Euclidean, Cosine)\nAnalyze Spotify’s audio features (energy, valence, danceability) through exploratory data analysis\nEngineer features and apply scaling techniques to handle multi-scale data\nDesign hybrid distance functions that combine audio features with metadata\nEvaluate computational complexity and scalability challenges\nDeploy your ML model as a REST API with a responsive web interface\nOptimize with caching strategies for production performance",
+    "crumbs": [
+      "Home",
+      "Projects",
+      "Project 1: Foundations"
+    ]
+  },
+  {
+    "objectID": "projects/project1.html#materials",
+    "href": "projects/project1.html#materials",
+    "title": "Project 1: Music Recommendation System with k-NN",
+    "section": "Materials",
+    "text": "Materials\n\n\n\n\n\n\nQuick Access\n\n\n\nProject Notebook (GitHub) — Complete implementation guide and assignment\nRepository — Full codebase with web application\nLive Demo — after running python app.py\n\n\n\n\n\n\n\n\nSubmission Requirements\n\n\n\n\n\n\nCompleted Jupyter notebook exported as PDF\nutils/student_adapter.py with your implementations\nWorking web application demonstration\n\nDue: [Insert Due Date]",
+    "crumbs": [
+      "Home",
+      "Projects",
+      "Project 1: Foundations"
+    ]
+  },
+  {
+    "objectID": "projects/project1.html#what-youll-build",
+    "href": "projects/project1.html#what-youll-build",
+    "title": "Project 1: Music Recommendation System with k-NN",
+    "section": "What You’ll Build",
+    "text": "What You’ll Build\n\nCore Algorithm\nYou’ll implement k-NN from the ground up, including: - Distance metric calculations (Euclidean and Cosine) - Efficient neighbor search - Feature scaling for fair comparisons - Hybrid distance functions combining multiple signals\n\n\nWeb Application\nYour algorithm will power a full-stack music discovery application featuring: - Search for any track in a 600k+ song database - Real-time recommendations based on audio similarity - YouTube integration for music previews - Interactive controls for algorithm parameters - Mobile-responsive design\n\n\nData Analysis\nWorking with real Spotify data, you’ll explore: - 9 audio features extracted by Spotify’s ML models - Feature distributions, correlations, and outliers - The impact of scaling on distance-based algorithms - Trade-offs between different similarity measures",
+    "crumbs": [
+      "Home",
+      "Projects",
+      "Project 1: Foundations"
+    ]
+  },
+  {
+    "objectID": "projects/project1.html#key-technologies",
+    "href": "projects/project1.html#key-technologies",
+    "title": "Project 1: Music Recommendation System with k-NN",
+    "section": "Key Technologies",
+    "text": "Key Technologies\n\nBackend: Flask, NumPy, Pandas, Scikit-learn\nFrontend: Vanilla JavaScript, HTML5, CSS3\nAPIs: YouTube Data API for music previews\nData: 600k+ tracks with Spotify audio analysis",
+    "crumbs": [
+      "Home",
+      "Projects",
+      "Project 1: Foundations"
+    ]
+  },
+  {
+    "objectID": "projects/project1.html#interactive-features",
+    "href": "projects/project1.html#interactive-features",
+    "title": "Project 1: Music Recommendation System with k-NN",
+    "section": "Interactive Features",
+    "text": "Interactive Features\n\n\n\n\n\n\n🎵 Try It Yourself\n\n\n\nOnce deployed, your system will let users:\n\nSearch and discover music from over half a million tracks\nGet personalized recommendations based on any song\nAdjust algorithm parameters (k, distance metrics) in real-time\nListen to preview clips before adding to playlists\nUnderstand why songs were recommended through feature visualization",
+    "crumbs": [
+      "Home",
+      "Projects",
+      "Project 1: Foundations"
+    ]
+  },
+  {
+    "objectID": "projects/project1.html#setup-guide",
+    "href": "projects/project1.html#setup-guide",
+    "title": "Project 1: Music Recommendation System with k-NN",
+    "section": "Setup Guide",
+    "text": "Setup Guide\n# Quick setup\npython3.11 -m venv .venv-music\nsource .venv-music/bin/activate\npip install -r requirements.txt\n\n# Configure YouTube API (see notebook for detailed instructions)\necho \"YOUTUBE_API_KEY=your_key_here\" &gt; .env\n\n# Run the application\npython app.py\n# Navigate to http://localhost:5002",
+    "crumbs": [
+      "Home",
+      "Projects",
+      "Project 1: Foundations"
+    ]
+  },
+  {
+    "objectID": "projects/project1.html#data-setup",
+    "href": "projects/project1.html#data-setup",
+    "title": "Project 1: Music Recommendation System with k-NN",
+    "section": "Data Setup",
+    "text": "Data Setup\nPlace the dataset CSV(s) in the project’s data/ folder:\n\nRequired: data/mergedFile.csv — main catalog with track metadata and audio features\nOptional: data/item_profile.csv — alternative profile file if you choose to separate it\n\nNotes:\n\nColumn expectations include song/artist identifiers and audio features (e.g., energy, danceability, etc.).\nThe application won’t function without mergedFile.csv. See repository README for more details and dataset link.",
+    "crumbs": [
+      "Home",
+      "Projects",
+      "Project 1: Foundations"
+    ]
+  },
+  {
+    "objectID": "projects/project1.html#real-world-challenges-youll-tackle",
+    "href": "projects/project1.html#real-world-challenges-youll-tackle",
+    "title": "Project 1: Music Recommendation System with k-NN",
+    "section": "Real-World Challenges You’ll Tackle",
+    "text": "Real-World Challenges You’ll Tackle\n\nThe Curse of Dimensionality: Understand why distance metrics behave unexpectedly in high dimensions\nFeature Scale Bias: See how tempo (0-200 BPM) can dominate valence (0-1) without proper scaling\nComputational Complexity: Analyze why brute-force k-NN doesn’t scale to millions of songs\nProduction Engineering: Implement caching and API design for responsive user experience\nHybrid Metrics: Balance audio similarity with artist diversity for better recommendations",
+    "crumbs": [
+      "Home",
+      "Projects",
+      "Project 1: Foundations"
+    ]
+  },
+  {
+    "objectID": "projects/project1.html#project-insights",
+    "href": "projects/project1.html#project-insights",
+    "title": "Project 1: Music Recommendation System with k-NN",
+    "section": "Project Insights",
+    "text": "Project Insights\nThis project demonstrates several key ML concepts:\n\nInstance-based learning requires no training phase but trades computation at query time\nFeature engineering can be more important than algorithm choice\nDistance metrics encode our notion of similarity - choosing the right one is crucial\nProduction ML involves much more than just the algorithm - APIs, caching, and UX matter",
+    "crumbs": [
+      "Home",
+      "Projects",
+      "Project 1: Foundations"
+    ]
+  },
+  {
+    "objectID": "projects/project1.html#additional-resources",
+    "href": "projects/project1.html#additional-resources",
+    "title": "Project 1: Music Recommendation System with k-NN",
+    "section": "Additional Resources",
+    "text": "Additional Resources\n\nSpotify Web API - Audio Features Documentation\nk-NN Algorithm Explained\nFlask Quick Start Guide\nCurse of Dimensionality in ML\nRUMusic - Conceptual inspiration for this project (our implementation has significantly diverged)\n\n\nPrevious: [← Previous Assignment] | Next: [Next Assignment →]",
     "crumbs": [
       "Home",
       "Projects",
