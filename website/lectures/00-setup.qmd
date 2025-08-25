@@ -24,7 +24,7 @@ subtitle: "Getting Your ML Development Environment Ready"
 ## Reminder
 Join the course Piazza forum (Required for participation)
 
-Complete the [Project Matchmaker Form](https://docs.google.com/forms/d/e/1FAIpQLSfx5iz7JF3ePe1-c-HkKMlxiUICjjog9D89YGy5VtqfhUFu_g/viewform?usp=sharing&ouid=116115729328867711828) by Mon 8/26, 12:00 PM ET. Required for [Lecture 2: k-NN](02-knn.qmd); counts toward participation.
+Complete the [Project Matchmaker Form](https://docs.google.com/forms/d/e/1FAIpQLSfx5iz7JF3ePe1-c-HkKMlxiUICjjog9D89YGy5VtqfhUFu_g/viewform?usp=sharing&ouid=116115729328867711828) by Tue 8/26, 12:00 PM ET. Required for [Lecture 2: k-NN](02-knn.qmd); counts toward participation.
 :::
 
 ## Pre-Class Preparation

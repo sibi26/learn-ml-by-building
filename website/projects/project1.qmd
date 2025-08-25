@@ -33,8 +33,6 @@ By completing this project, you will:
 1. Completed Jupyter notebook exported as PDF
 2. `utils/student_adapter.py` with your implementations
 3. Working web application demonstration
-
-**Due:** [Insert Due Date]
 :::
 
 ## What You'll Build

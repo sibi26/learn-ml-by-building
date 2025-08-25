@@ -52,7 +52,7 @@
     "href": "lectures/00-setup.html#materials",
     "title": "Lecture 0: Environment Setup",
     "section": "Materials",
-    "text": "Materials\n\n\n\n\n\n\nQuick Access\n\n\n\nSetup Notebook\nOpen in Colab\nLecture Folder\n\n\n\n\n\n\n\n\nReminder\n\n\n\n\n\nJoin the course Piazza forum (Required for participation)\nComplete the Project Matchmaker Form by Mon 8/26, 12:00 PM ET. Required for Lecture 2: k-NN; counts toward participation.",
+    "text": "Materials\n\n\n\n\n\n\nQuick Access\n\n\n\nSetup Notebook\nOpen in Colab\nLecture Folder\n\n\n\n\n\n\n\n\nReminder\n\n\n\n\n\nJoin the course Piazza forum (Required for participation)\nComplete the Project Matchmaker Form by Tue 8/26, 12:00 PM ET. Required for Lecture 2: k-NN; counts toward participation.",
     "crumbs": [
       "Home",
       "Module 1: Let's Predict",
@@ -220,7 +220,7 @@
     "href": "projects/project1.html#materials",
     "title": "Project 1: Music Recommendation System with k-NN",
     "section": "Materials",
-    "text": "Materials\n\n\n\n\n\n\nQuick Access\n\n\n\nProject Notebook (GitHub) — Complete implementation guide and assignment\nRepository — Full codebase with web application\nLive Demo — after running python app.py\n\n\n\n\n\n\n\n\nSubmission Requirements\n\n\n\n\n\n\nCompleted Jupyter notebook exported as PDF\nutils/student_adapter.py with your implementations\nWorking web application demonstration\n\nDue: [Insert Due Date]",
+    "text": "Materials\n\n\n\n\n\n\nQuick Access\n\n\n\nProject Notebook (GitHub) — Complete implementation guide and assignment\nRepository — Full codebase with web application\nLive Demo — after running python app.py\n\n\n\n\n\n\n\n\nSubmission Requirements\n\n\n\n\n\n\nCompleted Jupyter notebook exported as PDF\nutils/student_adapter.py with your implementations\nWorking web application demonstration",
     "crumbs": [
       "Home",
       "Projects",
