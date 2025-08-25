@@ -20,6 +20,7 @@ venv/
 ENV/
 ml_env/
 venv_macbook/
+Lecture 1 Overview/venv_lecture1/
 
 # Lecture 3 Linear Regression specific venv
 Lecture 3 Linear Regression/linear_regression_env/
