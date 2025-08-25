@@ -21,6 +21,7 @@ ENV/
 ml_env/
 venv_macbook/
 Lecture 1 Overview/venv_lecture1/
+lecture1_overview_env/
 
 # Lecture 3 Linear Regression specific venv
 Lecture 3 Linear Regression/linear_regression_env/
@@ -32,6 +33,10 @@ Thumbs.db
 .Spotlight-V100
 .Trashes
 
+# Generic caches
+.cache/
+**/.cache/
+
 # ===== IDE / Editor files =====
 .vscode/
 .idea/
@@ -41,6 +46,12 @@ Thumbs.db
 # ===== Compiled/binary or serialized artifacts =====
 # Note: keep .pkl out of git unless absolutely essential
 *.pkl
+
+# ===== Python packaging/build artifacts =====
+build/
+dist/
+*.egg-info/
+**/*.egg-info/
 
 # ===== Notebook/Report HTML exports (can be regenerated) =====
 # Avoid ignoring all HTML globally; only ignore common Jupyter export patterns
@@ -95,6 +106,7 @@ grades/
 submissions/
 Project 1 KNN Music Recommender (instructor)/
 temp/
+**/logs/**
 
 # To force-include a specific file, add a negate rule below, e.g.:
 # !path/to/allowed-small-file.csv
@@ -120,6 +132,14 @@ Lecture 1 Overview/models/lecture_assets/
 Lecture 1 Overview/web_agent_site/
 Lecture 1 Overview/catshop/models/gemma-cat-lora/
 Lecture 1 Overview/models/
+
+# ===== Root-level model artifacts =====
+# Ignore everything in models/ except curated lecture assets images
+models/*
+!models/lecture_assets/
+!models/lecture_assets/*.png
+!models/lecture_assets/*.jpg
+!models/lecture_assets/*.svg
 
 # ===== Quarto website build artifacts =====
 # Keep docs/ committed because GitHub Pages serves from /docs (configured in website/_quarto.yml)
