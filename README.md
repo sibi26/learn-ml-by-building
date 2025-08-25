@@ -2,13 +2,13 @@
 
 A comprehensive, hands-on machine learning course using interactive Jupyter notebooks. Build real ML systems while understanding the fundamental principles.
 
-## 🎯 Course Philosophy
+## Course Philosophy
 
 **"Build first, understand deeply, deploy responsibly"**
 
 This course takes a practical approach to machine learning, where you'll implement algorithms from scratch and apply them to real problems.
 
-## 📚 Course Overview
+## Course Overview
 
 ### What You'll Learn
 - **Foundations**: Core ML algorithms (kNN, Linear/Logistic Regression, Trees)
@@ -21,7 +21,7 @@ This course takes a practical approach to machine learning, where you'll impleme
 - High school mathematics
 - Curiosity and willingness to experiment
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Clone the Repository
 ```bash
