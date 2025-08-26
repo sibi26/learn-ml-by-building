@@ -4,9 +4,9 @@ A comprehensive, hands-on machine learning course using interactive Jupyter note
 
 ## Course Philosophy
 
-**"Build first, understand deeply, deploy responsibly"**
+Inspired by fast.ai, our motto is "build first, understand later." We believe the best way to develop a deep intuition for machine learning is to start by building real systems.
 
-This course takes a practical approach to machine learning, where you'll implement algorithms from scratch and apply them to real problems.
+**Note on AI in Development:** To model modern and transparent development practices, AI-powered tools were used to assist in the creation of these course materials. All content has been directed, reviewed, and validated by the instructor.
 
 ## Course Overview
 
