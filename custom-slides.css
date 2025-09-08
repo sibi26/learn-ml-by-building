@@ -1,0 +1,192 @@
+/* custom-slides.css */
+/* Custom CSS for ML Lecture Reveal.js Presentations */
+
+/* Enable scrolling on slides */
+.reveal .slides section {
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  height: 100vh !important;
+  display: block !important;
+}
+
+/* Scrollbar styling for dark theme */
+.reveal .slides section::-webkit-scrollbar {
+  width: 10px;
+}
+
+.reveal .slides section::-webkit-scrollbar-track {
+  background: #2d2d2d;
+  border-radius: 5px;
+}
+
+.reveal .slides section::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 5px;
+}
+
+.reveal .slides section::-webkit-scrollbar-thumb:hover {
+  background: #777;
+}
+
+/* Fix navigation issues */
+.reveal .slides {
+  pointer-events: auto !important;
+}
+
+/* Dark theme enhancements */
+.reveal {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+}
+
+.reveal h1, .reveal h2, .reveal h3, .reveal h4 {
+  color: #ffffff;
+  text-transform: none;
+}
+
+/* Code blocks for dark theme */
+.reveal pre {
+  background-color: #2d2d2d;
+  color: #e0e0e0;
+  border: 1px solid #444;
+  box-shadow: none;
+}
+
+.reveal code {
+  color: #ffcc00;
+  background-color: #2d2d2d;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+/* Tables for dark theme */
+.reveal table {
+  color: #e0e0e0;
+}
+
+.reveal table th {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.reveal table td {
+  background-color: #2d2d2d;
+  color: #e0e0e0;
+}
+
+/* Callout boxes for dark theme */
+.callout {
+  margin: 1em 0;
+  padding: 1em;
+  border-radius: 8px;
+  border-left: 5px solid;
+}
+
+.callout-note {
+  background-color: rgba(0, 212, 255, 0.1);
+  border-left-color: #00d4ff;
+  color: #e0e0e0;
+}
+
+.callout-warning {
+  background-color: rgba(255, 214, 10, 0.1);
+  border-left-color: #ffd60a;
+  color: #e0e0e0;
+}
+
+.callout-important {
+  background-color: rgba(255, 107, 107, 0.1);
+  border-left-color: #ff6b6b;
+  color: #e0e0e0;
+}
+
+.callout-tip {
+  background-color: rgba(6, 255, 165, 0.1);
+  border-left-color: #06ffa5;
+  color: #e0e0e0;
+}
+
+.callout-question {
+  background-color: rgba(157, 78, 221, 0.1);
+  border-left-color: #9d4edd;
+  color: #e0e0e0;
+}
+
+/* Fragment animations */
+.reveal .slides section .fragment {
+  opacity: 0.3;
+  visibility: visible !important;
+}
+
+.reveal .slides section .fragment.visible {
+  opacity: 1;
+}
+
+/* Slide numbers */
+.reveal .slide-number {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+}
+
+/* Progress bar */
+.reveal .progress {
+  color: #00d4ff;
+}
+
+.reveal .progress span {
+  background-color: #00d4ff;
+}
+
+/* Controls */
+.reveal .controls {
+  color: #00d4ff;
+}
+
+/* Links */
+.reveal a {
+  color: #00d4ff;
+}
+
+.reveal a:hover {
+  color: #66e5ff;
+}
+
+/* Key point styling */
+.key-point {
+  background-color: rgba(255, 204, 0, 0.1);
+  border: 2px solid #ffcc00;
+  border-radius: 8px;
+  padding: 1.5em;
+  margin: 1.5em 0;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+/* Smaller text class */
+.smaller {
+  font-size: 0.9em;
+}
+
+/* Scrollable class */
+.scrollable {
+  overflow-y: auto !important;
+  max-height: 90vh !important;
+}
+
+/* Fix for nested scrolling */
+.reveal .slides>section.present {
+  overflow: visible;
+}
+
+/* Ensure images don't overflow */
+.reveal img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Make matplotlib figures responsive */
+.reveal .jp-OutputArea-output img {
+  max-width: 100%;
+  height: auto;
+}

@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Matchmaker - Find Your ML Project Partners</title>
+    
+    <!-- Plotly.js -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        /* Modern gradient background */
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        /* Glassmorphism effect */
+        .glass {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+        }
+        
+        /* Custom styles for the visualization */
+        #plotDiv {
+            height: 600px;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        
+        .student-card {
+            transition: all 0.3s ease;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+        
+        .student-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            border-color: rgba(99, 102, 241, 0.3);
+        }
+        
+        /* Modern input styling */
+        input[type="email"], select {
+            transition: all 0.3s ease;
+        }
+        
+        input[type="email"]:focus, select:focus {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(99, 102, 241, 0.15);
+        }
+        
+        /* Slider styling */
+        input[type="range"] {
+            -webkit-appearance: none;
+            appearance: none;
+            background: transparent;
+            cursor: pointer;
+        }
+        
+        input[type="range"]::-webkit-slider-track {
+            background: #e5e7eb;
+            height: 6px;
+            border-radius: 3px;
+        }
+        
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            background: #6366f1;
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            margin-top: -7px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            transition: all 0.2s ease;
+        }
+        
+        input[type="range"]::-webkit-slider-thumb:hover {
+            transform: scale(1.2);
+            background: #4f46e5;
+        }
+        
+        @media (max-width: 768px) {
+            #plotDiv {
+                height: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="min-h-screen py-8">
+        <div class="container mx-auto px-4">
+            <!-- Header -->
+            <div class="glass rounded-2xl shadow-xl p-8 mb-8 text-center">
+                <h1 class="text-4xl font-bold text-gray-800 mb-3">🤝 Project Matchmaker</h1>
+                <p class="text-gray-600 text-lg">Find your ideal ML project partners using k-Nearest Neighbors</p>
+            </div>
+            
+            <!-- User Identification -->
+            <div class="glass rounded-2xl shadow-lg p-6 mb-6">
+                <label class="block text-sm font-semibold text-gray-700 mb-3">
+                    📧 Enter your email to highlight your position:
+                </label>
+                <input 
+                    type="email" 
+                    id="userEmail" 
+                    placeholder="your.email@example.com"
+                    class="w-full md:w-96 px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+                >
+            </div>
+            
+            <!-- Controls -->
+            <div class="glass rounded-2xl shadow-lg p-6 mb-6">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- Dimension Selectors -->
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-3">📊 X-Axis Dimension:</label>
+                        <select id="xDimension" class="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-transparent">
+                            <!-- Options will be populated by JavaScript -->
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-3">📈 Y-Axis Dimension:</label>
+                        <select id="yDimension" class="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-transparent">
+                            <!-- Options will be populated by JavaScript -->
+                        </select>
+                    </div>
+                    
+                    <!-- Categorical Feature Selector -->
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-3">🎨 Color By:</label>
+                        <select id="colorBy" class="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-transparent">
+                            <!-- Options will be populated by JavaScript -->
+                        </select>
+                    </div>
+                </div>
+                
+                <!-- k-NN Controls -->
+                <div class="mt-8 p-6 bg-gradient-to-r from-indigo-50 to-purple-50 rounded-xl">
+                    <label class="block text-sm font-semibold text-gray-700 mb-3">
+                        🎯 Number of Nearest Neighbors (k): <span id="kValue" class="text-2xl font-bold text-indigo-600 ml-2">3</span>
+                    </label>
+                    <input 
+                        type="range" 
+                        id="kSlider" 
+                        min="1" 
+                        max="10" 
+                        value="3" 
+                        class="w-full"
+                    >
+                </div>
+            </div>
+            
+            <!-- Main Content Area -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <!-- Visualization -->
+                <div class="lg:col-span-2 glass rounded-2xl shadow-lg p-6">
+                    <div id="plotDiv" class="bg-white shadow-inner"></div>
+                    
+                    <!-- Legend -->
+                    <div id="legend" class="mt-6 p-5 bg-gradient-to-r from-gray-50 to-gray-100 rounded-xl">
+                        <!-- Legend will be populated by JavaScript -->
+                    </div>
+                </div>
+                
+                <!-- Sidebar -->
+                <div class="glass rounded-2xl shadow-lg p-6">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                        <span class="mr-2">👤</span> Student Details
+                    </h2>
+                    
+                    <!-- Selected Student -->
+                    <div id="selectedStudent" class="mb-8">
+                        <div class="text-center py-8">
+                            <div class="text-6xl mb-4">👆</div>
+                            <p class="text-gray-500">Click on a student to see details</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Nearest Neighbors -->
+                    <div id="nearestNeighbors">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4 flex items-center">
+                            <span class="mr-2">🎯</span> Nearest Neighbors
+                        </h3>
+                        <div id="neighborsList" class="space-y-3">
+                            <div class="text-center py-8">
+                                <div class="text-5xl mb-4">🔍</div>
+                                <p class="text-gray-500">Select a student to see matches</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Global variables
+        let studentData = null;
+        let currentStudent = null;
+        let plotData = null;
+        let knnLines = [];
+        
+        // Load student data
+        async function loadData() {
+            try {
+                const response = await fetch('student_data.json');
+                studentData = await response.json();
+                initializeControls();
+                updateVisualization();
+            } catch (error) {
+                console.error('Error loading data:', error);
+                alert('Error loading student_data.json. Make sure to run process_data.py first!');
+            }
+        }
+        
+        // Initialize control dropdowns
+        function initializeControls() {
+            // Get available dimensions
+            const dimensions = studentData.dimensions;
+            
+            // Populate dimension dropdowns
+            const xSelect = document.getElementById('xDimension');
+            const ySelect = document.getElementById('yDimension');
+            
+            dimensions.forEach((dim, index) => {
+                const optionX = new Option(
+                    studentData.dimension_descriptions[dim] || dim,
+                    dim
+                );
+                const optionY = new Option(
+                    studentData.dimension_descriptions[dim] || dim,
+                    dim
+                );
+                xSelect.add(optionX);
+                ySelect.add(optionY);
+            });
+            
+            // Set defaults to first two dimensions
+            xSelect.value = dimensions[0];
+            ySelect.value = dimensions[1];
+            
+            // Populate categorical feature dropdown
+            const colorSelect = document.getElementById('colorBy');
+            Object.entries(studentData.categorical_features).forEach(([key, feature]) => {
+                const option = new Option(feature.name, key);
+                colorSelect.add(option);
+            });
+            
+            // Add event listeners
+            xSelect.addEventListener('change', updateVisualization);
+            ySelect.addEventListener('change', updateVisualization);
+            colorSelect.addEventListener('change', updateVisualization);
+            document.getElementById('kSlider').addEventListener('input', (e) => {
+                document.getElementById('kValue').textContent = e.target.value;
+                updateKNN();
+            });
+            document.getElementById('userEmail').addEventListener('input', updateVisualization);
+        }
+        
+        // Calculate Euclidean distance
+        function calculateDistance(s1, s2, xDim, yDim) {
+            const dx = s1[xDim] - s2[xDim];
+            const dy = s1[yDim] - s2[yDim];
+            return Math.sqrt(dx * dx + dy * dy);
+        }
+        
+        // Find k nearest neighbors
+        function findKNN(student, k) {
+            const xDim = document.getElementById('xDimension').value;
+            const yDim = document.getElementById('yDimension').value;
+            
+            const distances = studentData.students
+                .filter(s => s.email !== student.email)
+                .map(s => ({
+                    student: s,
+                    distance: calculateDistance(student, s, xDim, yDim)
+                }))
+                .sort((a, b) => a.distance - b.distance)
+                .slice(0, k);
+            
+            return distances;
+        }
+        
+        // Update visualization
+        function updateVisualization() {
+            const xDim = document.getElementById('xDimension').value;
+            const yDim = document.getElementById('yDimension').value;
+            const colorBy = document.getElementById('colorBy').value;
+            const userEmail = document.getElementById('userEmail').value.toLowerCase();
+            
+            const feature = studentData.categorical_features[colorBy];
+            
+            // Create color mapping
+            const colorMap = {};
+            feature.values.forEach((val, idx) => {
+                colorMap[val] = feature.colors[idx];
+            });
+            
+            // Prepare plot data
+            const x = [];
+            const y = [];
+            const colors = [];
+            const texts = [];
+            const customdata = [];
+            const symbols = [];
+            const sizes = [];
+            
+            studentData.students.forEach(student => {
+                x.push(student[xDim]);
+                y.push(student[yDim]);
+                colors.push(colorMap[student[colorBy]]);
+                texts.push(`${student.name}<br>${colorBy}: ${student[colorBy]}`);
+                customdata.push(student);
+                
+                // Highlight current user
+                if (student.email.toLowerCase() === userEmail) {
+                    symbols.push('star');
+                    sizes.push(15);
+                    currentStudent = student;
+                } else {
+                    symbols.push('circle');
+                    sizes.push(10);
+                }
+            });
+            
+            plotData = [{
+                x: x,
+                y: y,
+                mode: 'markers',
+                type: 'scatter',
+                marker: {
+                    color: colors,
+                    size: sizes,
+                    symbol: symbols,
+                    line: {
+                        width: 2,
+                        color: 'white'
+                    }
+                },
+                text: texts,
+                hoverinfo: 'text',
+                customdata: customdata
+            }];
+            
+            const layout = {
+                title: 'Student Project Preferences',
+                xaxis: {
+                    title: studentData.dimension_descriptions[xDim] || xDim,
+                    range: [-1.2, 1.2]
+                },
+                yaxis: {
+                    title: studentData.dimension_descriptions[yDim] || yDim,
+                    range: [-1.2, 1.2]
+                },
+                hovermode: 'closest',
+                showlegend: false
+            };
+            
+            Plotly.newPlot('plotDiv', plotData, layout);
+            
+            // Add click handler
+            document.getElementById('plotDiv').on('plotly_click', function(data) {
+                const student = data.points[0].customdata;
+                selectStudent(student);
+            });
+            
+            // Update legend
+            updateLegend(feature, colorMap);
+            
+            // Update KNN if a student is selected
+            if (currentStudent) {
+                updateKNN();
+            }
+        }
+        
+        // Update legend
+        function updateLegend(feature, colorMap) {
+            const legendDiv = document.getElementById('legend');
+            let html = `<h3 class="font-semibold mb-2">${feature.name} Legend:</h3>`;
+            html += '<div class="flex flex-wrap gap-4">';
+            
+            feature.values.forEach(val => {
+                html += `
+                    <div class="flex items-center">
+                        <div class="w-4 h-4 rounded-full mr-2" style="background-color: ${colorMap[val]}"></div>
+                        <span class="text-sm">${val}</span>
+                    </div>
+                `;
+            });
+            
+            html += '</div>';
+            legendDiv.innerHTML = html;
+        }
+        
+        // Select a student
+        function selectStudent(student) {
+            currentStudent = student;
+            
+            // Update selected student display
+            const selectedDiv = document.getElementById('selectedStudent');
+            selectedDiv.innerHTML = `
+                <div class="student-card p-5 bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl">
+                    <h3 class="font-bold text-xl mb-3">${student.name}</h3>
+                    <p class="text-sm text-gray-600 mb-3">${student.email}</p>
+                    <p class="text-sm mb-3"><strong>📱 Contact:</strong> ${student.contact || 'Not provided'}</p>
+                    
+                    <div class="mt-4 space-y-3">
+                        <div class="flex items-center">
+                            <span class="text-lg mr-2">👥</span>
+                            <p class="text-sm"><strong>Team Status:</strong> ${student.team_status}</p>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-lg mr-2">💡</span>
+                            <p class="text-sm"><strong>Main Interest:</strong> ${student.main_interest}</p>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-lg mr-2">📊</span>
+                            <p class="text-sm"><strong>Experience:</strong> ${student.experience_level}</p>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-lg mr-2">🎯</span>
+                            <p class="text-sm"><strong>Problem Type:</strong> ${student.problem_preference}</p>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-lg mr-2">🤝</span>
+                            <p class="text-sm"><strong>Collaboration:</strong> ${student.collaboration_style}</p>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-lg mr-2">💭</span>
+                            <p class="text-sm"><strong>Has Project Idea:</strong> 
+                                <span class="px-2 py-1 rounded-full text-xs ${student.has_project_idea ? 'bg-green-200 text-green-800' : 'bg-gray-200 text-gray-600'}">
+                                    ${student.has_project_idea ? 'Yes' : 'No'}
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <details class="mt-4">
+                        <summary class="cursor-pointer text-sm font-semibold text-indigo-600 hover:text-indigo-800">View Survey Responses ▼</summary>
+                        <div class="mt-3 text-xs space-y-2 p-3 bg-white rounded-lg">
+                            ${Object.entries(student.original_responses || {}).map(([key, value]) => 
+                                `<p><strong>${key}:</strong> ${value}</p>`
+                            ).join('')}
+                        </div>
+                    </details>
+                </div>
+            `;
+            
+            updateKNN();
+        }
+        
+        // Update KNN visualization and list
+        function updateKNN() {
+            if (!currentStudent) return;
+            
+            const k = parseInt(document.getElementById('kSlider').value);
+            const neighbors = findKNN(currentStudent, k);
+            
+            // Remove existing KNN lines
+            knnLines.forEach(line => {
+                Plotly.deleteTraces('plotDiv', [plotData.length]);
+            });
+            knnLines = [];
+            
+            // Add new KNN lines
+            const xDim = document.getElementById('xDimension').value;
+            const yDim = document.getElementById('yDimension').value;
+            
+            neighbors.forEach(({student: neighbor}) => {
+                const line = {
+                    x: [currentStudent[xDim], neighbor[xDim]],
+                    y: [currentStudent[yDim], neighbor[yDim]],
+                    mode: 'lines',
+                    line: {
+                        color: 'rgba(0, 0, 0, 0.2)',
+                        width: 2
+                    },
+                    hoverinfo: 'skip'
+                };
+                Plotly.addTraces('plotDiv', [line]);
+                knnLines.push(line);
+            });
+            
+            // Update neighbors list
+            const neighborsList = document.getElementById('neighborsList');
+            neighborsList.innerHTML = neighbors.map(({student: neighbor, distance}, idx) => `
+                <div class="student-card p-4 bg-gradient-to-r from-gray-50 to-indigo-50 rounded-xl cursor-pointer hover:from-indigo-50 hover:to-purple-50" 
+                     onclick="selectStudent(studentData.students.find(s => s.email === '${neighbor.email}'))">
+                    <div class="flex justify-between items-start">
+                        <div class="flex-1">
+                            <p class="font-semibold text-lg">${idx + 1}. ${neighbor.name}</p>
+                            <p class="text-sm text-gray-600 mt-1">
+                                <span class="inline-flex items-center">
+                                    <span class="text-xs">💡</span>
+                                    <span class="ml-1">${neighbor.main_interest}</span>
+                                </span>
+                                <span class="mx-2">•</span>
+                                <span class="inline-flex items-center">
+                                    <span class="text-xs">👥</span>
+                                    <span class="ml-1">${neighbor.team_status}</span>
+                                </span>
+                            </p>
+                            <p class="text-xs text-gray-500 mt-2">📏 Distance: ${distance.toFixed(3)}</p>
+                        </div>
+                        <span class="text-xs px-3 py-1 rounded-full font-medium ${neighbor.team_status !== 'solo' ? 'bg-green-200 text-green-800' : 'bg-gray-200 text-gray-600'}">
+                            ${neighbor.team_status !== 'solo' ? '✓ Seeking' : '- Solo/Set'}
+                        </span>
+                    </div>
+                </div>
+            `).join('');
+        }
+        
+        // Initialize on load
+        window.addEventListener('DOMContentLoaded', loadData);
+    </script>
+</body>
+</html>
