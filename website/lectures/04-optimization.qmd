@@ -49,9 +49,7 @@ By the end of this lecture, you will:
 ## Datasets & Acknowledgments
 
 ### California Housing Dataset
-- Source: **[Scikit-learn California housing dataset](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.fetch_california_housing.html)**
-- Size: 20,640 samples with 8 features
-- Why This Dataset: Strong income–price correlation makes it perfect for demonstrating optimization concepts while being complex enough to show real challenges
+- Source: **[Scikit-learn California housing dataset](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.fetch_california_housing.html)**- Why This Dataset: Strong income–price correlation makes it perfect for demonstrating optimization concepts while being complex enough to show real challenges
 
 ---
 
