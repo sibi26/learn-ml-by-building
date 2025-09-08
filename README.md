@@ -27,3 +27,27 @@ Inspired by fast.ai, our motto is "build first, understand later." We believe th
 ```bash
 git clone https://github.com/yourusername/practical-ml-course.git
 cd practical-ml-course
+```
+
+### 2. Create a Virtual Environment
+```bash
+python3 -m venv ml_lectures_env
+source ml_lectures_env/bin/activate   # Windows: ml_lectures_env\\Scripts\\activate
+```
+
+### 3. Install Requirements
+```bash
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+```
+
+Note: The requirements include deep learning dependencies `torch==2.2.2` and `torchvision==0.17.2` (CPU wheels). First install can take several minutes and a few hundred MB of disk.
+
+### 4. Launch Jupyter Notebook (classic)
+```bash
+jupyter notebook
+```
+
+Optional: Register the environment as a named kernel to select it in notebooks:
+```bash
+python -m ipykernel install --user --name ml_lectures_env --display-name "Python (ml_lectures_env)"
