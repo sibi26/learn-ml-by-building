@@ -1,74 +1,74 @@
 [
   {
-    "objectID": "schedule.html",
-    "href": "schedule.html",
-    "title": "Course Schedule",
+    "objectID": "lectures/01-overview.html",
+    "href": "lectures/01-overview.html",
+    "title": "Lecture 1: Welcome to Machine Learning",
     "section": "",
-    "text": "Live Schedule\n\n\n\nThe schedule below is embedded from Google Sheets and updates automatically. Open in Google Sheets →",
-    "crumbs": [
-      "Home",
-      "Course Info",
-      "Schedule"
-    ]
-  },
-  {
-    "objectID": "schedule.html#week-by-week-schedule",
-    "href": "schedule.html#week-by-week-schedule",
-    "title": "Course Schedule",
-    "section": "",
-    "text": "Live Schedule\n\n\n\nThe schedule below is embedded from Google Sheets and updates automatically. Open in Google Sheets →",
-    "crumbs": [
-      "Home",
-      "Course Info",
-      "Schedule"
-    ]
-  },
-  {
-    "objectID": "lectures/00-setup.html",
-    "href": "lectures/00-setup.html",
-    "title": "Lecture 0: Environment Setup",
-    "section": "",
-    "text": "Set up Python environment for ML development\nUse Jupyter notebooks effectively\nRun code both locally and on Google Colab\nNavigate course GitHub repository",
+    "text": "Welcome to Machine Learning! This course takes a unique “Learn by Building” approach where you’ll implement real ML systems from day one. In today’s hands-on session, we’ll explore the three fundamental paradigms of machine learning—supervised, unsupervised, and active learning—by building CatShop, an e-commerce system that thinks like a cat using Google’s Gemma-3 language model.",
     "crumbs": [
       "Home",
       "Module 1: Let's Predict",
-      "L0: Environment Setup"
+      "L1: Welcome to ML"
     ]
   },
   {
-    "objectID": "lectures/00-setup.html#learning-objectives",
-    "href": "lectures/00-setup.html#learning-objectives",
-    "title": "Lecture 0: Environment Setup",
+    "objectID": "lectures/01-overview.html#overview",
+    "href": "lectures/01-overview.html#overview",
+    "title": "Lecture 1: Welcome to Machine Learning",
     "section": "",
-    "text": "Set up Python environment for ML development\nUse Jupyter notebooks effectively\nRun code both locally and on Google Colab\nNavigate course GitHub repository",
+    "text": "Welcome to Machine Learning! This course takes a unique “Learn by Building” approach where you’ll implement real ML systems from day one. In today’s hands-on session, we’ll explore the three fundamental paradigms of machine learning—supervised, unsupervised, and active learning—by building CatShop, an e-commerce system that thinks like a cat using Google’s Gemma-3 language model.",
     "crumbs": [
       "Home",
       "Module 1: Let's Predict",
-      "L0: Environment Setup"
+      "L1: Welcome to ML"
     ]
   },
   {
-    "objectID": "lectures/00-setup.html#materials",
-    "href": "lectures/00-setup.html#materials",
-    "title": "Lecture 0: Environment Setup",
+    "objectID": "lectures/01-overview.html#learning-objectives",
+    "href": "lectures/01-overview.html#learning-objectives",
+    "title": "Lecture 1: Welcome to Machine Learning",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nBy the end of this lecture, you will:\n\nExperience all three ML paradigms through hands-on implementation\nFine-tune Gemma-3 (270M parameters) using LoRA for efficient adaptation\nObserve catastrophic forgetting and model trade-offs\nBuild a complete ML application from data to deployment\nUnderstand how active learning reduces labeling costs",
+    "crumbs": [
+      "Home",
+      "Module 1: Let's Predict",
+      "L1: Welcome to ML"
+    ]
+  },
+  {
+    "objectID": "lectures/01-overview.html#materials",
+    "href": "lectures/01-overview.html#materials",
+    "title": "Lecture 1: Welcome to Machine Learning",
     "section": "Materials",
-    "text": "Materials\n\n\n\n\n\n\nQuick Access\n\n\n\nSetup Notebook\nOpen in Colab\nLecture Folder\n\n\n\n\n\n\n\n\nReminder\n\n\n\n\n\nJoin the course Piazza forum (Required for participation)\nComplete the Project Matchmaker Form by Tue 8/26, 12:00 PM ET. Required for Lecture 2: k-NN; counts toward participation.",
+    "text": "Materials\n\n\n\n\n\n\nQuick Access\n\n\n\nPre-Lecture Setup\nCourse Overview\nCatShop Notebook\nOpen in Colab\nLecture Folder\n\n\n\n\n\n\n\n\nPre-Class Requirements\n\n\n\n\n\nComplete Pre-Lecture 1 Setup before the lecture!\n\n\n\n\n\n\n\n\n\nReminder\n\n\n\n\n\nJoin the course Piazza forum (Required for participation)\nComplete the Project Matchmaker Form by Mon 8/26, 12:00 PM ET. Required for Lecture 2: k-NN; counts toward participation.",
     "crumbs": [
       "Home",
       "Module 1: Let's Predict",
-      "L0: Environment Setup"
+      "L1: Welcome to ML"
     ]
   },
   {
-    "objectID": "lectures/00-setup.html#pre-class-preparation",
-    "href": "lectures/00-setup.html#pre-class-preparation",
-    "title": "Lecture 0: Environment Setup",
-    "section": "Pre-Class Preparation",
-    "text": "Pre-Class Preparation\n\nComplete environment setup: Setup Guide (SETUP.md)\nRun through the setup notebook\nPost any issues on Piazza\n\n\nNext: Lecture 1: Welcome to Machine Learning →",
+    "objectID": "lectures/01-overview.html#interactive-demo",
+    "href": "lectures/01-overview.html#interactive-demo",
+    "title": "Lecture 1: Welcome to Machine Learning",
+    "section": "Interactive Demo",
+    "text": "Interactive Demo\n\n\n\n\n\n\n🐱 CatShop Web Application\n\n\n\nExperience your trained model in action with the CatShop e-commerce demo, featuring real-time cat perspective classifications, confidence visualization, and interactive chat.\nBuilt upon the WebShop environment with modifications for educational purposes.",
     "crumbs": [
       "Home",
       "Module 1: Let's Predict",
-      "L0: Environment Setup"
+      "L1: Welcome to ML"
+    ]
+  },
+  {
+    "objectID": "lectures/01-overview.html#acknowledgments-resources",
+    "href": "lectures/01-overview.html#acknowledgments-resources",
+    "title": "Lecture 1: Welcome to Machine Learning",
+    "section": "Acknowledgments & Resources",
+    "text": "Acknowledgments & Resources\n\nCore Technologies\n\nGemma-3 270M: Google’s efficient language model\nPEFT/LoRA: Parameter-efficient fine-tuning\nTransformers: Hugging Face’s model library\n\n\n\nDataset & Environment\n\nWebShop: E-commerce product data and environment\nYao et al., “WebShop: Towards Scalable Real-World Web Interaction with Grounded Language Agents”, NeurIPS 2022\n\n\nNext: Lecture 2: k-Nearest Neighbors →",
+    "crumbs": [
+      "Home",
+      "Module 1: Let's Predict",
+      "L1: Welcome to ML"
     ]
   },
   {
@@ -216,32 +216,28 @@
     ]
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Machine Learning: Learn by Building",
+    "objectID": "schedule.html",
+    "href": "schedule.html",
+    "title": "Course Schedule",
     "section": "",
-    "text": "This course takes a hands-on approach to machine learning. You’ll:\n\nBuild real ML systems, not just study theory\nCreate an AI portfolio of mini research papers\nExplain complex concepts simply (teaching = understanding)\nWork with cutting-edge tools while mastering fundamentals\n\nWe believe the best way to understand machine learning is to build it, break it, and rebuild it better.\nOur practical, project-first ethos is inspired by the excellent work from fast.ai.\nCourse Philosophy: Inspired by fast.ai, our motto is “build first, understand later.” You’ll start by building and fine-tuning powerful models, and then we’ll dive deep into the theory to understand why they work.\nA Note on AI in Course Development: In the spirit of transparency, I want to acknowledge that AI-powered tools were used to help develop these course materials, from refining explanations to generating boilerplate code. This is to model the professional practice of using the best tools available to produce a high-quality result. Your goal in this course is different: it’s to learn the fundamental process yourself. Our course policies will reflect this important distinction."
+    "text": "Live Schedule\n\n\n\nThe schedule below is embedded from Google Sheets and updates automatically. Open in Google Sheets →",
+    "crumbs": [
+      "Home",
+      "Course Info",
+      "Schedule"
+    ]
   },
   {
-    "objectID": "index.html#course-philosophy",
-    "href": "index.html#course-philosophy",
-    "title": "Machine Learning: Learn by Building",
+    "objectID": "schedule.html#week-by-week-schedule",
+    "href": "schedule.html#week-by-week-schedule",
+    "title": "Course Schedule",
     "section": "",
-    "text": "This course takes a hands-on approach to machine learning. You’ll:\n\nBuild real ML systems, not just study theory\nCreate an AI portfolio of mini research papers\nExplain complex concepts simply (teaching = understanding)\nWork with cutting-edge tools while mastering fundamentals\n\nWe believe the best way to understand machine learning is to build it, break it, and rebuild it better.\nOur practical, project-first ethos is inspired by the excellent work from fast.ai.\nCourse Philosophy: Inspired by fast.ai, our motto is “build first, understand later.” You’ll start by building and fine-tuning powerful models, and then we’ll dive deep into the theory to understand why they work.\nA Note on AI in Course Development: In the spirit of transparency, I want to acknowledge that AI-powered tools were used to help develop these course materials, from refining explanations to generating boilerplate code. This is to model the professional practice of using the best tools available to produce a high-quality result. Your goal in this course is different: it’s to learn the fundamental process yourself. Our course policies will reflect this important distinction."
-  },
-  {
-    "objectID": "index.html#getting-started",
-    "href": "index.html#getting-started",
-    "title": "Machine Learning: Learn by Building",
-    "section": "Getting Started",
-    "text": "Getting Started\n\nSet up your environment → Setup Guide\nJoin Piazza for discussions and announcements\nReview the syllabus → Course Policies\nCheck the schedule → Week-by-Week"
-  },
-  {
-    "objectID": "index.html#course-team",
-    "href": "index.html#course-team",
-    "title": "Machine Learning: Learn by Building",
-    "section": "Course Team",
-    "text": "Course Team\nInstructor: Ming Jin\nEmail: jinming@vt.edu\n\n\n\n\n\n\n\n\n\nTeaching Assistant\nLocation\nOffice Hours\nEmail\n\n\n\n\nSherawat, Kamal\nWhittemore 256\nTue/Thu 11:00 AM–12:00 Noon\nkamals@vt.edu\n\n\nNere, Darshan\nWhittemore 256\nTue/Thu 3:00–4:00 PM\ndarshannere@vt.edu"
+    "text": "Live Schedule\n\n\n\nThe schedule below is embedded from Google Sheets and updates automatically. Open in Google Sheets →",
+    "crumbs": [
+      "Home",
+      "Course Info",
+      "Schedule"
+    ]
   },
   {
     "objectID": "projects/project1.html",
@@ -388,6 +384,27 @@
     ]
   },
   {
+    "objectID": "resources.html",
+    "href": "resources.html",
+    "title": "Resources",
+    "section": "",
+    "text": "Python Installation\nGoogle Colab\nGitHub Student Pack"
+  },
+  {
+    "objectID": "resources.html#software-tools",
+    "href": "resources.html#software-tools",
+    "title": "Resources",
+    "section": "",
+    "text": "Python Installation\nGoogle Colab\nGitHub Student Pack"
+  },
+  {
+    "objectID": "resources.html#documentation",
+    "href": "resources.html#documentation",
+    "title": "Resources",
+    "section": "Documentation",
+    "text": "Documentation\n\nNumPy Documentation\nPyTorch Tutorials\nfast.ai — inspiration for our practical, project-first teaching approach\nScikit-learn User Guide"
+  },
+  {
     "objectID": "syllabus.html",
     "href": "syllabus.html",
     "title": "Course Syllabus",
@@ -424,76 +441,32 @@
     ]
   },
   {
-    "objectID": "lectures/01-overview.html",
-    "href": "lectures/01-overview.html",
-    "title": "Lecture 1: Welcome to Machine Learning",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Machine Learning: Learn by Building",
     "section": "",
-    "text": "Welcome to Machine Learning! This course takes a unique “Learn by Building” approach where you’ll implement real ML systems from day one. In today’s hands-on session, we’ll explore the three fundamental paradigms of machine learning—supervised, unsupervised, and active learning—by building CatShop, an e-commerce system that thinks like a cat using Google’s Gemma-3 language model.",
-    "crumbs": [
-      "Home",
-      "Module 1: Let's Predict",
-      "L1: Welcome to ML"
-    ]
+    "text": "This course takes a hands-on approach to machine learning. You’ll:\n\nBuild real ML systems, not just study theory\nCreate an AI portfolio of mini research papers\nExplain complex concepts simply (teaching = understanding)\nWork with cutting-edge tools while mastering fundamentals\n\nWe believe the best way to understand machine learning is to build it, break it, and rebuild it better.\nOur practical, project-first ethos is inspired by the excellent work from fast.ai.\nCourse Philosophy: Inspired by fast.ai, our motto is “build first, understand later.” You’ll start by building and fine-tuning powerful models, and then we’ll dive deep into the theory to understand why they work.\nA Note on AI in Course Development: In the spirit of transparency, I want to acknowledge that AI-powered tools were used to help develop these course materials, from refining explanations to generating boilerplate code. This is to model the professional practice of using the best tools available to produce a high-quality result. Your goal in this course is different: it’s to learn the fundamental process yourself. Our course policies will reflect this important distinction."
   },
   {
-    "objectID": "lectures/01-overview.html#overview",
-    "href": "lectures/01-overview.html#overview",
-    "title": "Lecture 1: Welcome to Machine Learning",
+    "objectID": "index.html#course-philosophy",
+    "href": "index.html#course-philosophy",
+    "title": "Machine Learning: Learn by Building",
     "section": "",
-    "text": "Welcome to Machine Learning! This course takes a unique “Learn by Building” approach where you’ll implement real ML systems from day one. In today’s hands-on session, we’ll explore the three fundamental paradigms of machine learning—supervised, unsupervised, and active learning—by building CatShop, an e-commerce system that thinks like a cat using Google’s Gemma-3 language model.",
-    "crumbs": [
-      "Home",
-      "Module 1: Let's Predict",
-      "L1: Welcome to ML"
-    ]
+    "text": "This course takes a hands-on approach to machine learning. You’ll:\n\nBuild real ML systems, not just study theory\nCreate an AI portfolio of mini research papers\nExplain complex concepts simply (teaching = understanding)\nWork with cutting-edge tools while mastering fundamentals\n\nWe believe the best way to understand machine learning is to build it, break it, and rebuild it better.\nOur practical, project-first ethos is inspired by the excellent work from fast.ai.\nCourse Philosophy: Inspired by fast.ai, our motto is “build first, understand later.” You’ll start by building and fine-tuning powerful models, and then we’ll dive deep into the theory to understand why they work.\nA Note on AI in Course Development: In the spirit of transparency, I want to acknowledge that AI-powered tools were used to help develop these course materials, from refining explanations to generating boilerplate code. This is to model the professional practice of using the best tools available to produce a high-quality result. Your goal in this course is different: it’s to learn the fundamental process yourself. Our course policies will reflect this important distinction."
   },
   {
-    "objectID": "lectures/01-overview.html#learning-objectives",
-    "href": "lectures/01-overview.html#learning-objectives",
-    "title": "Lecture 1: Welcome to Machine Learning",
-    "section": "Learning Objectives",
-    "text": "Learning Objectives\nBy the end of this lecture, you will:\n\nExperience all three ML paradigms through hands-on implementation\nFine-tune Gemma-3 (270M parameters) using LoRA for efficient adaptation\nObserve catastrophic forgetting and model trade-offs\nBuild a complete ML application from data to deployment\nUnderstand how active learning reduces labeling costs",
-    "crumbs": [
-      "Home",
-      "Module 1: Let's Predict",
-      "L1: Welcome to ML"
-    ]
+    "objectID": "index.html#getting-started",
+    "href": "index.html#getting-started",
+    "title": "Machine Learning: Learn by Building",
+    "section": "Getting Started",
+    "text": "Getting Started\n\nSet up your environment → Setup Guide\nJoin Piazza for discussions and announcements\nReview the syllabus → Course Policies\nCheck the schedule → Week-by-Week"
   },
   {
-    "objectID": "lectures/01-overview.html#materials",
-    "href": "lectures/01-overview.html#materials",
-    "title": "Lecture 1: Welcome to Machine Learning",
-    "section": "Materials",
-    "text": "Materials\n\n\n\n\n\n\nQuick Access\n\n\n\nPre-Lecture Setup\nCourse Overview\nCatShop Notebook\nOpen in Colab\nLecture Folder\n\n\n\n\n\n\n\n\nPre-Class Requirements\n\n\n\n\n\nComplete Pre-Lecture 1 Setup before the lecture!\n\n\n\n\n\n\n\n\n\nReminder\n\n\n\n\n\nJoin the course Piazza forum (Required for participation)\nComplete the Project Matchmaker Form by Mon 8/26, 12:00 PM ET. Required for Lecture 2: k-NN; counts toward participation.",
-    "crumbs": [
-      "Home",
-      "Module 1: Let's Predict",
-      "L1: Welcome to ML"
-    ]
-  },
-  {
-    "objectID": "lectures/01-overview.html#interactive-demo",
-    "href": "lectures/01-overview.html#interactive-demo",
-    "title": "Lecture 1: Welcome to Machine Learning",
-    "section": "Interactive Demo",
-    "text": "Interactive Demo\n\n\n\n\n\n\n🐱 CatShop Web Application\n\n\n\nExperience your trained model in action with the CatShop e-commerce demo, featuring real-time cat perspective classifications, confidence visualization, and interactive chat.\nBuilt upon the WebShop environment with modifications for educational purposes.",
-    "crumbs": [
-      "Home",
-      "Module 1: Let's Predict",
-      "L1: Welcome to ML"
-    ]
-  },
-  {
-    "objectID": "lectures/01-overview.html#acknowledgments-resources",
-    "href": "lectures/01-overview.html#acknowledgments-resources",
-    "title": "Lecture 1: Welcome to Machine Learning",
-    "section": "Acknowledgments & Resources",
-    "text": "Acknowledgments & Resources\n\nCore Technologies\n\nGemma-3 270M: Google’s efficient language model\nPEFT/LoRA: Parameter-efficient fine-tuning\nTransformers: Hugging Face’s model library\n\n\n\nDataset & Environment\n\nWebShop: E-commerce product data and environment\nYao et al., “WebShop: Towards Scalable Real-World Web Interaction with Grounded Language Agents”, NeurIPS 2022\n\n\nNext: Lecture 2: k-Nearest Neighbors →",
-    "crumbs": [
-      "Home",
-      "Module 1: Let's Predict",
-      "L1: Welcome to ML"
-    ]
+    "objectID": "index.html#course-team",
+    "href": "index.html#course-team",
+    "title": "Machine Learning: Learn by Building",
+    "section": "Course Team",
+    "text": "Course Team\nInstructor: Ming Jin\nEmail: jinming@vt.edu\n\n\n\n\n\n\n\n\n\nTeaching Assistant\nLocation\nOffice Hours\nEmail\n\n\n\n\nSherawat, Kamal\nWhittemore 256\nTue/Thu 11:00 AM–12:00 Noon\nkamals@vt.edu\n\n\nNere, Darshan\nWhittemore 256\nTue/Thu 3:00–4:00 PM\ndarshannere@vt.edu"
   },
   {
     "objectID": "lectures/04-optimization.html",
@@ -568,24 +541,51 @@
     ]
   },
   {
-    "objectID": "resources.html",
-    "href": "resources.html",
-    "title": "Resources",
+    "objectID": "lectures/00-setup.html",
+    "href": "lectures/00-setup.html",
+    "title": "Lecture 0: Environment Setup",
     "section": "",
-    "text": "Python Installation\nGoogle Colab\nGitHub Student Pack"
+    "text": "Set up Python environment for ML development\nUse Jupyter notebooks effectively\nRun code both locally and on Google Colab\nNavigate course GitHub repository",
+    "crumbs": [
+      "Home",
+      "Module 1: Let's Predict",
+      "L0: Environment Setup"
+    ]
   },
   {
-    "objectID": "resources.html#software-tools",
-    "href": "resources.html#software-tools",
-    "title": "Resources",
+    "objectID": "lectures/00-setup.html#learning-objectives",
+    "href": "lectures/00-setup.html#learning-objectives",
+    "title": "Lecture 0: Environment Setup",
     "section": "",
-    "text": "Python Installation\nGoogle Colab\nGitHub Student Pack"
+    "text": "Set up Python environment for ML development\nUse Jupyter notebooks effectively\nRun code both locally and on Google Colab\nNavigate course GitHub repository",
+    "crumbs": [
+      "Home",
+      "Module 1: Let's Predict",
+      "L0: Environment Setup"
+    ]
   },
   {
-    "objectID": "resources.html#documentation",
-    "href": "resources.html#documentation",
-    "title": "Resources",
-    "section": "Documentation",
-    "text": "Documentation\n\nNumPy Documentation\nPyTorch Tutorials\nfast.ai — inspiration for our practical, project-first teaching approach\nScikit-learn User Guide"
+    "objectID": "lectures/00-setup.html#materials",
+    "href": "lectures/00-setup.html#materials",
+    "title": "Lecture 0: Environment Setup",
+    "section": "Materials",
+    "text": "Materials\n\n\n\n\n\n\nQuick Access\n\n\n\nSetup Notebook\nOpen in Colab\nLecture Folder\n\n\n\n\n\n\n\n\nReminder\n\n\n\n\n\nJoin the course Piazza forum (Required for participation)\nComplete the Project Matchmaker Form by Tue 8/26, 12:00 PM ET. Required for Lecture 2: k-NN; counts toward participation.",
+    "crumbs": [
+      "Home",
+      "Module 1: Let's Predict",
+      "L0: Environment Setup"
+    ]
+  },
+  {
+    "objectID": "lectures/00-setup.html#pre-class-preparation",
+    "href": "lectures/00-setup.html#pre-class-preparation",
+    "title": "Lecture 0: Environment Setup",
+    "section": "Pre-Class Preparation",
+    "text": "Pre-Class Preparation\n\nComplete environment setup: Setup Guide (SETUP.md)\nRun through the setup notebook\nPost any issues on Piazza\n\n\nNext: Lecture 1: Welcome to Machine Learning →",
+    "crumbs": [
+      "Home",
+      "Module 1: Let's Predict",
+      "L0: Environment Setup"
+    ]
   }
 ]
