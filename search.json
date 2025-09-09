@@ -280,7 +280,7 @@
     "href": "projects/project1.html#materials",
     "title": "Project 1: Music Recommendation System with k-NN",
     "section": "Materials",
-    "text": "Materials\n\n\n\n\n\n\nQuick Access\n\n\n\nProject Notebook (GitHub) — Complete implementation guide and assignment\nRepository — Full codebase with web application\nLive Demo — after running python app.py\n\n\n\n\n\n\n\n\nSubmission Requirements\n\n\n\n\n\n\nCompleted Jupyter notebook exported as PDF\nutils/student_adapter.py with your implementations\nWorking web application demonstration",
+    "text": "Materials\n\n\n\n\n\n\nQuick Access\n\n\n\nProject Notebook (GitHub) — Complete implementation guide and assignment\nRepository — Full codebase with web application\nLive Demo (Static UI) — UI preview only (no backend)\nLive Demo — after running python app.py\n\n\n\n\n\n\n\n\nSubmission Requirements\n\n\n\n\n\n\nCompleted Jupyter notebook exported as PDF\nutils/student_adapter.py with your implementations\nWorking web application demonstration",
     "crumbs": [
       "Home",
       "Projects",
