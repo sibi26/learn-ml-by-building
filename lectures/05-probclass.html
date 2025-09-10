@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Lecture 1: Welcome to Machine Learning – ECE4424/CS4824: Machine Learning</title>
+<title>Lecture 5: Probabilistic Classification – ECE4424/CS4824: Machine Learning</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -134,7 +134,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lectures/00-setup.html">Module 1: Let’s Predict</a></li><li class="breadcrumb-item"><a href="../lectures/01-overview.html">L1: Welcome to ML</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lectures/00-setup.html">Module 1: Let’s Predict</a></li><li class="breadcrumb-item"><a href="../lectures/05-probclass.html">L5: Probabilistic Classification</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -186,7 +186,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lectures/01-overview.html" class="sidebar-item-text sidebar-link active">
+  <a href="../lectures/01-overview.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">L1: Welcome to ML</span></a>
   </div>
 </li>
@@ -210,7 +210,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lectures/05-probclass.html" class="sidebar-item-text sidebar-link">
+  <a href="../lectures/05-probclass.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">L5: Probabilistic Classification</span></a>
   </div>
 </li>
@@ -343,18 +343,18 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
   <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
   <li><a href="#materials" id="toc-materials" class="nav-link" data-scroll-target="#materials">Materials</a></li>
-  <li><a href="#interactive-demo" id="toc-interactive-demo" class="nav-link" data-scroll-target="#interactive-demo">Interactive Demo</a></li>
-  <li><a href="#acknowledgments-resources" id="toc-acknowledgments-resources" class="nav-link" data-scroll-target="#acknowledgments-resources">Acknowledgments &amp; Resources</a></li>
+  <li><a href="#datasets-acknowledgments" id="toc-datasets-acknowledgments" class="nav-link" data-scroll-target="#datasets-acknowledgments">Datasets &amp; Acknowledgments</a></li>
+  <li><a href="#key-takeaways" id="toc-key-takeaways" class="nav-link" data-scroll-target="#key-takeaways">Key Takeaways</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lectures/00-setup.html">Module 1: Let’s Predict</a></li><li class="breadcrumb-item"><a href="../lectures/01-overview.html">L1: Welcome to ML</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lectures/00-setup.html">Module 1: Let’s Predict</a></li><li class="breadcrumb-item"><a href="../lectures/05-probclass.html">L5: Probabilistic Classification</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Lecture 1: Welcome to Machine Learning</h1>
-<p class="subtitle lead">Course Introduction &amp; Learning ML Through a Cat’s Eyes</p>
+<h1 class="title">Lecture 5: Probabilistic Classification</h1>
+<p class="subtitle lead">Logistic Regression &amp; Naive Bayes - When Predictions Can Save Lives</p>
 </div>
 
 
@@ -373,17 +373,18 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>Welcome to Machine Learning! This course takes a unique “Learn by Building” approach where you’ll implement real ML systems from day one. In today’s hands-on session, we’ll explore the three fundamental paradigms of machine learning—supervised, unsupervised, and active learning—by building <strong>CatShop</strong>, an e-commerce system that thinks like a cat using Google’s Gemma-3 language model.</p>
+<p>In this critical lecture, we tackle a life-or-death classification problem: identifying poisonous mushrooms. Through this compelling case study, you’ll discover why probabilistic outputs are essential for risk-aware decisions, moving beyond simple yes/no predictions. We’ll build two fundamental probabilistic classifiers—Logistic Regression and Naive Bayes—and learn how to calibrate them for safety-critical applications where the cost of false negatives can be fatal.</p>
 </section>
 <section id="learning-objectives" class="level2">
 <h2 class="anchored" data-anchor-id="learning-objectives">Learning Objectives</h2>
 <p>By the end of this lecture, you will:</p>
 <ul>
-<li><strong>Experience</strong> all three ML paradigms through hands-on implementation</li>
-<li><strong>Fine-tune</strong> Gemma-3 (270M parameters) using LoRA for efficient adaptation</li>
-<li><strong>Observe</strong> catastrophic forgetting and model trade-offs</li>
-<li><strong>Build</strong> a complete ML application from data to deployment</li>
-<li><strong>Understand</strong> how active learning reduces labeling costs</li>
+<li>Understand why probabilistic outputs are essential for risk-aware decisions</li>
+<li>Implement logistic regression as a “soft” decision maker that expresses confidence</li>
+<li>Master Naive Bayes as a probabilistic detective gathering and combining evidence</li>
+<li>Calibrate models and tune decision thresholds for safety-critical applications</li>
+<li>Diagnose model disagreements and understand edge cases</li>
+<li>Build production-ready classifiers that prioritize safety over accuracy</li>
 </ul>
 </section>
 <section id="materials" class="level2">
@@ -398,11 +399,7 @@ Quick Access
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong><a href="https://github.com/jinming99/learn-ml-by-building/blob/main/Lecture%201%20Overview/01-Pre-Lecture-Setup.ipynb">Pre-Lecture Setup</a></strong><br>
-<strong><a href="https://github.com/jinming99/learn-ml-by-building/blob/main/Lecture%201%20Overview/01-Course-Overview.ipynb">Course Overview</a></strong><br>
-<strong><a href="https://github.com/jinming99/learn-ml-by-building/blob/main/Lecture%201%20Overview/01-Catshop.ipynb">CatShop Notebook</a></strong><br>
-<strong><a href="https://colab.research.google.com/github/jinming99/learn-ml-by-building/blob/main/Lecture%201%20Overview/01-Catshop.ipynb">Open in Colab</a></strong><br>
-<strong><a href="https://github.com/jinming99/learn-ml-by-building/tree/main/Lecture%201%20Overview">Lecture Folder</a></strong></p>
+<p><strong><a href="https://github.com/jinming99/learn-ml-by-building/blob/main/Lecture%205%20Probabilistic%20Classification/05-ProbClass.ipynb">Probabilistic Classification Notebook</a></strong></p>
 </div>
 </div>
 <div class="callout callout-style-default callout-important callout-titled">
@@ -417,66 +414,46 @@ Pre-Class Requirements
 </div>
 <div id="callout-2" class="callout-2-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
-<p>Complete <strong><a href="https://github.com/jinming99/learn-ml-by-building/blob/main/Lecture%201%20Overview/01-Pre-Lecture-Setup.ipynb">Pre-Lecture 1 Setup</a></strong> before the lecture!</p>
-</div>
-</div>
-</div>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="true" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Reminder
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-3" class="callout-3-contents callout-collapse collapse show">
-<div class="callout-body-container callout-body">
-<p>Join the course Piazza forum (Required for participation)</p>
-<p>Complete the <a href="https://docs.google.com/forms/d/e/1FAIpQLSfx5iz7JF3ePe1-c-HkKMlxiUICjjog9D89YGy5VtqfhUFu_g/viewform?usp=sharing&amp;ouid=116115729328867711828">Project Matchmaker Form</a> by Mon 8/26, 12:00 PM ET. Required for <a href="../lectures/02-knn.html">Lecture 2: k-NN</a>; counts toward participation.</p>
+<ul>
+<li>Python environment with scikit-learn, pandas, matplotlib, and seaborn</li>
+<li>Understanding of linear regression from Lecture 3</li>
+<li>Basic probability theory (Bayes’ theorem helpful but not required)</li>
+<li>Completed Lecture 4 on optimization</li>
+</ul>
 </div>
 </div>
 </div>
 </section>
-<section id="interactive-demo" class="level2">
-<h2 class="anchored" data-anchor-id="interactive-demo">Interactive Demo</h2>
-<div class="callout callout-style-default callout-note callout-titled">
+<section id="datasets-acknowledgments" class="level2">
+<h2 class="anchored" data-anchor-id="datasets-acknowledgments">Datasets &amp; Acknowledgments</h2>
+<section id="uci-mushroom-dataset" class="level3">
+<h3 class="anchored" data-anchor-id="uci-mushroom-dataset">UCI Mushroom Dataset</h3>
+<ul>
+<li>Source: <strong><a href="https://archive.ics.uci.edu/dataset/73/mushroom">UCI Machine Learning Repository</a></strong></li>
+<li>Size: 8,124 mushrooms with 22 categorical features</li>
+<li>Why This Dataset: Perfect 52/48 class balance, real mushroom characteristics from field guides, and life-or-death stakes make it ideal for teaching safety-critical classification</li>
+</ul>
+</section>
+</section>
+<section id="key-takeaways" class="level2">
+<h2 class="anchored" data-anchor-id="key-takeaways">Key Takeaways</h2>
+<div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-🐱 CatShop Web Application
+Critical Safety Principle
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Experience your trained model in action with the CatShop e-commerce demo, featuring real-time cat perspective classifications, confidence visualization, and interactive chat.</p>
-<p>Built upon the <a href="https://webshop-pnlp.github.io/">WebShop environment</a> with modifications for educational purposes.</p>
+<p>In mushroom classification, it’s better to skip a meal than risk your life! This principle extends to all safety-critical applications where false negatives have catastrophic consequences.</p>
 </div>
 </div>
-</section>
-<section id="acknowledgments-resources" class="level2">
-<h2 class="anchored" data-anchor-id="acknowledgments-resources">Acknowledgments &amp; Resources</h2>
-<section id="core-technologies" class="level3">
-<h3 class="anchored" data-anchor-id="core-technologies">Core Technologies</h3>
-<ul>
-<li><strong><a href="https://huggingface.co/google/gemma-3-270m">Gemma-3 270M</a></strong>: Google’s efficient language model</li>
-<li><strong><a href="https://github.com/huggingface/peft">PEFT/LoRA</a></strong>: Parameter-efficient fine-tuning</li>
-<li><strong><a href="https://huggingface.co/docs/transformers">Transformers</a></strong>: Hugging Face’s model library</li>
-</ul>
-</section>
-<section id="dataset-environment" class="level3">
-<h3 class="anchored" data-anchor-id="dataset-environment">Dataset &amp; Environment</h3>
-<ul>
-<li><strong><a href="https://webshop-pnlp.github.io/">WebShop</a></strong>: E-commerce product data and environment<br>
-<em>Yao et al., “WebShop: Towards Scalable Real-World Web Interaction with Grounded Language Agents”, NeurIPS 2022</em></li>
-</ul>
 <hr>
-<p><strong>Next</strong>: <a href="../lectures/02-knn.html">Lecture 2: k-Nearest Neighbors →</a></p>
+<p><strong>Previous</strong>: <a href="../lectures/04-optimization.html">← Lecture 4: Gradient Descent and Optimization</a> | <strong>Next</strong>: Lecture 6: Decision Trees (Coming Soon)</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
